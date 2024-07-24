@@ -275,10 +275,14 @@
       "merchello": "\\;version:7"
     },
     "description": "Umbraco is an open-source Microsoft ASP.NET based content management system.",
-    "dom": [
-      "script[src*='/UmbracoForms/']",
-      "a[data-udi^='umb://']"
-    ],
+    "dom": {
+      "script[src*='/UmbracoForms/']": {
+        "exists": ""
+      },
+      "a[data-udi^='umb://']": {
+        "exists": "\\;confidence:90"
+      }
+    },
     "headers": {
       "X-Umbraco-Version": "^(.+)$\\;version:\\1"
     },
