@@ -585,7 +585,7 @@
       "generator": "Joomla!(?: ([\\d.]+))?\\;version:\\1"
     },
     "oss": true,
-    "url": "option=com_",
+    "url": "option=com_\\;confidence:90",
     "website": "https://www.joomla.org/"
   },
   "JouwWeb": {
