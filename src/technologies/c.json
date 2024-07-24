@@ -3280,6 +3280,7 @@
     "cats": [
       1
     ],
+    "description": "Contensis, an enterprise headless CMS with an integrated deployment platform",
     "icon": "Contensis.png",
     "implies": [
       "Java",
@@ -3341,7 +3342,8 @@
     "headers": {
       "x-contentful-request-id": ""
     },
-    "html": "<[^>]+(?:assets|downloads|images|videos)\\.(?:ct?fassets\\.net|contentful\\.com)",
+    "html": "<[^>]+(?:assets|downloads|images|videos)\\.(?:ct?fassets\\.net|contentful\\.com)\\;confidence:50",
+    "scripts": "(?:assets|downloads|images|videos)\\.(?:ct?fassets\\.net|contentful\\.com)",
     "icon": "Contentful.svg",
     "pricing": [
       "mid",
@@ -4067,12 +4069,13 @@
       1
     ],
     "cookies": {
-      "CraftSessionId": ""
+      "CraftSessionId": "",
+      "CRAFT_CSRF_TOKEN": ""
     },
     "cpe": "cpe:2.3:a:craftcms:craft_cms:*:*:*:*:*:*:*:*",
     "description": "Craft CMS is a content management system for building bespoke websites.",
     "headers": {
-      "X-Powered-By": "\\bCraft CMS\\b"
+      "X-Powered-By": "Craft CMS"
     },
     "icon": "Craft CMS.svg",
     "implies": "Yii",
