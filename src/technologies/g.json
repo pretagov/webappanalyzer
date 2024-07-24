@@ -1337,6 +1337,11 @@
     "description": "GoDaddy is used as a web host and domain registrar.",
     "icon": "GoDaddy.svg",
     "scripts": "wsimg\\.com/parking-lander",
+    "dom": {
+      "iframe[src*='godaddy.com/park']": {
+        "exists": ""
+      }
+    },
     "website": "https://www.godaddy.com"
   },
   "GoDaddy Escapade": {
