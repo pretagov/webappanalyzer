@@ -86,7 +86,22 @@
     "cats": [
       1
     ],
-    "html": "<img[^>]+_tcm\\d{2,3}-\\d{6}\\.",
+    "_html": "<img[^>]+_tcm\\d{2,3}-\\d{6}\\.",
+    "dom": {
+      "img[src*='_tcm']": {
+        "attributes": {
+          "src": "_tcm\\d{2,3}-\\d{6}\\;confidence:80"
+        }
+      },
+      "a[href*='tcm:']": {
+        "attributes": {
+          "href": "tcm:\\d{2,3}-\\d{6,7}\\;confidence:80"
+        }
+      },
+      "script": {
+        "text": "'TcmId':"
+      }
+    },
     "icon": "SDL Tridion.svg",
     "website": "https://www.sdl.com/products/tridion"
   },
@@ -882,10 +897,11 @@
     ],
     "description": "Sanity is a platform for structured content. It comes with an open-source, headless CMS that can be customized with Javascript, a real-time hosted data store and an asset delivery pipeline.",
     "dom": {
-      "img[src*='cdn.sanity.io'],img[srcset*='cdn.sanity.io'],video[src*='cdn.sanity.io'],source[src*='cdn.sanity.io'],source[srcset*='cdn.sanity.io'],track[src*='cdn.sanity.io']": {
+      "img[src*='cdn.sanity.io'],img[srcset*='cdn.sanity.io'],img[data-src*='cdn.sanity.io'],video[src*='cdn.sanity.io'],source[src*='cdn.sanity.io'],source[srcset*='cdn.sanity.io'],track[src*='cdn.sanity.io']": {
         "attributes": {
           "src": "",
-          "srcset": ""
+          "srcset": "",
+          "data-src": ""
         }
       }
     },
@@ -3694,11 +3710,31 @@
     },
     "cpe": "cpe:2.3:a:sitecore:*:*:*:*:*:*:*:*:*",
     "description": "Sitecore provides web content management, and multichannel marketing automation software.",
-    "dom": [
-      "link[href*='/_sitecore/']",
-      "img[src^='/-/media/']",
-      "img[src*='/~/media/.+\\.ashx']"
+    "_img_pos": [
+      "https://cdn-cms.crowe.com/global/-/media/Crowe/Shared/Image-Library/Country-Landing-Pages/CH-asset-UnitedKingdomv2_l2r_main.jpg?modified=20180320022522",
+      "https://d2qsy1h1438jt3.cloudfront.net/~/media/c412ee30fb584ba083d684041d4e01b5.jpg?mh=180&mw=320",
+      "//d2qsy1h1438jt3.cloudfront.net/~/media/67dfe418551d4b539b9d511005a9c3ec.png",
+      "https://d2qsy1h1438jt3.cloudfront.net/~/media/785b2cf2465b4e7cb12440670df34627.jpg?w=320&h=180"
     ],
+    "dom": {
+      "link[href*='/_sitecore/']": {
+        "exists": ""
+      },
+      "img[src*='/-/media/']": {
+        "exists": ""
+      },
+      "img[src*='/~/media/'][src*='.ashx']": {
+        "exists": ""
+      },
+      "img[src*='/-/jssmedia/'][src*='.ashx']": {
+        "exists": ""
+      },
+      "img[src*='/~/media/']": {
+        "attributes": {
+          "src": "/~/media/[a-z0-9]{32}\\.[a-z]+"
+        }
+      }
+    }, 
     "icon": "Sitecore.svg",
     "implies": "Microsoft ASP.NET",
     "js": {
@@ -6614,7 +6650,11 @@
     ],
     "cpe": "cpe:2.3:a:strikingly:strikingly:*:*:*:*:*:*:*:*",
     "html": "<!-- Powered by Strikingly\\.com",
+    "meta": {
+      "asset-url": "assets.strikingly.com"
+    },
     "icon": "Strikingly.png",
+    "description": "Strikingly is a website builder and hosting platform that allows users to create and publish websites easily and quickly, without requiring extensive technical knowledge or coding skills.",
     "website": "https://strikingly.com"
   },
   "Stripe": {
