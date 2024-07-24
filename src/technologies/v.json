@@ -1256,6 +1256,7 @@
     },
     "scriptSrc": [
       "vue[.-]([\\d.]*\\d)[^/]*\\.js\\;version:\\1",
+      "/vue@([\\d.]*\\d)\\;version:\\1",
       "(?:/([\\d.]+))?/vue(?:\\.min)?\\.js\\;version:\\1"
     ],
     "website": "https://vuejs.org"
