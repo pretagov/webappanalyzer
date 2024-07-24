@@ -475,6 +475,19 @@
     ],
     "cpe": "cpe:2.3:a:torchbox:wagtail:*:*:*:*:*:*:*:*",
     "description": "Wagtail is a Django content management system (CMS) focused on flexibility and user experience.",
+    "_img_pos": [
+      "https://staticassets.oxfam.org.uk/oxfamgb-production/images/RS357936_Pavel_Martiarena_-_Cl.f4424001.fill-470x540-c75.jpg",
+      "https://ams3.digitaloceanspaces.com/girlsnotbrides-org/www/images/A-young-Ugandan-mother-sits-with-h.2e16d0ba.fill-650x435.jpg",
+      "https://media.girlsnotbrides.org/images/A-young-Ugandan-mother-sits-with-h.2e16d0ba.fill-650x435.jpg",
+      "https://s3.eu-west-2.amazonaws.com:443/ambition-institute/images/AB_POO.2e16d0ba.fill-600x400.format-webp.webpquality-50.webp",
+      "https://media.nesta.org.uk/images/post-it_board.2e16d0ba.fill-400x266.png",
+      "https://moneyadvicetrust.org/media/images/website-banner.original.jpg",
+      "https://buckup-ff-stories.s3.amazonaws.com/original_images/Lockup_Logo_-_JPEG-1.png",
+      "see https://thib.me/detecting-wagtail-in-the-wild"
+    ],
+    "_img_neg": [
+      "https://s3-us-west-2.amazonaws.com/utsw-patientcare-web-production/original_images/lipoma-1600x732.jpg"
+    ],
     "dom": {
       "[data-block-key]": {
         "attributes": {
@@ -483,30 +496,30 @@
       },
       "[style*='images/']": {
         "attributes": {
-          "style": "(?:\\.[a-z]+|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\."
+          "style": "(?:\\.[a-z:0-9]+(?:/[\\w-]+)*|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\.\\;confidence:80"
         }
       },
       "img[src*='images/']": {
         "attributes": {
-          "src": "(?:\\.[a-z]+|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\."
+          "src": "(?:\\.[a-z:0-9]+(?:/[\\w-]+)*|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\.\\;confidence:80"
         }
       },
       "img[srcset*='images/'], source[srcset*='images/']": {
         "attributes": {
-          "srcset": "(?:\\.[a-z]+|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\."
+          "srcset": "(?:\\.[a-z:0-9]+(?:/[\\w-]+)*|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\.\\;confidence:80"
         }
       },
       "meta[content*='images/']": {
         "attributes": {
-          "content": "(?:\\.[a-z]+|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\."
+          "content": "(?:\\.[a-z:0-9]+(?:/[\\w-]+)*|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\.\\;confidence:80"
         }
       },
       "style, script": {
-        "text": "(?:\\.[a-z]+|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\."
+        "text": "(?:\\.[a-z:0-9]+(?:/[\\w-]+)*|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\.\\;confidence:80"
       },
       "video[poster*='images/']": {
         "attributes": {
-          "poster": "(?:\\.[a-z]+|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\."
+          "poster": "(?:\\.[a-z:0-9]+(?:/[\\w-]+)*|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\.\\;confidence:80"
         }
       }
     },
@@ -2059,7 +2072,7 @@
       "X-Redirect-By": "WordPress"
     },
     "html": [
-      "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/",
+      "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/\\;confidence:50",
       "<link[^>]+s\\d+\\.wp\\.com"
     ],
     "icon": "WordPress.svg",
@@ -2082,7 +2095,7 @@
     ],
     "saas": true,
     "scriptSrc": [
-      "/wp-(?:content|includes)/",
+      "/wp-(?:content|includes)/\\;confidence:30",
       "wp-embed\\.min\\.js"
     ],
     "website": "https://wordpress.org"
