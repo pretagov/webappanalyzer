@@ -2245,6 +2245,7 @@
       "BreakdanceHeaderBuilder": "",
       "BreakdanceSwiper": ""
     },
+    "implies": ["WordPress"],
     "pricing": [
       "freemium",
       "low",
