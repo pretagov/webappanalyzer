@@ -2519,6 +2519,11 @@
     "meta": {
       "generator": "^Mobirise v([\\d.]+)\\;version:\\1"
     },
+    "dom": {
+      "link[href*='assets/mobirise-']": {
+        "exists": ""
+      }
+    },
     "website": "https://mobirise.com"
   },
   "MochiKit": {
@@ -3291,6 +3296,9 @@
       "website-editor\\.net",
       "mywebsite-editor\\.com"
     ],
+    "meta": {
+      "generator": "1&1 (MyWebsite|DIY Websitebuilder)"
+    },
     "website": "https://www.ionos.com"
   },
   "MyWebsite Now": {
