@@ -1034,6 +1034,9 @@
       "PHP",
       "MySQL"
     ],
+    "dom": {
+      "link[href*='/textpattern/css.php']": ""
+    },
     "meta": {
       "generator": "Textpattern"
     },
