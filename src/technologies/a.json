@@ -1476,8 +1476,9 @@
       18
     ],
     "cpe": "cpe:2.3:a:adobe:coldfusion:*:*:*:*:*:*:*:*",
-    "headers": {
-      "Cookie": "CFTOKEN="
+    "cookies": {
+      "CFTOKEN": "[a-zA-Z0-9-]{4,128}",
+      "CFID": "^\\d{2,128}$"
     },
     "html": "<!-- START headerTags\\.cfm",
     "icon": "Adobe ColdFusion.svg",
@@ -1486,7 +1487,7 @@
       "_cfEmails": ""
     },
     "scriptSrc": "/cfajax/",
-    "url": "\\.cfm(?:$|\\?)",
+    "url": "\\.cfm(?:$|\\?)\\;confidence:40",
     "website": "https://adobe.com/products/coldfusion-family.html"
   },
   "Adobe DTM": {
@@ -2945,13 +2946,23 @@
     "cats": [
       1
     ],
+    "description": "Ametys is a free and open source content management system (CMS) written in Java. It is based on JSR-170 for content storage.",
     "icon": "Ametys.png",
     "implies": "Java",
     "meta": {
       "generator": "(?:Ametys|Anyware Technologies)"
     },
+    "dom": {
+        "img[src*='/_object/ametys']": {
+            "exists": ""
+        },
+        "link[href*='/org.ametys']": {
+            "exists": ""
+        }
+    },
     "scriptSrc": "ametys\\.js",
-    "website": "https://ametys.org"
+    "website": "https://ametys.org",
+    "oss": true
   },
   "Amex Express Checkout": {
     "cats": [
