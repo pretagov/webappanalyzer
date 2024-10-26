@@ -87,7 +87,8 @@
     "dom": "img[data-src*='/polopoly_fs/'], link[href*='/polopoly_fs/'], img[src*='/polopoly_fs/']",
     "icon": "DM Polopoly.png",
     "implies": "Java",
-    "website": "https://www.atex.com/products/dm-polopoly"
+    "website": "https://www.atex.com/products/dm-polopoly",
+    "oss": true
   },
   "DNN": {
     "cats": [
@@ -477,6 +478,7 @@
       "content-security-policy": "\\.datocms-assets\\.com"
     },
     "icon": "DatoCMS.svg",
+    "saas": true,
     "pricing": [
       "freemium",
       "mid",
@@ -1116,6 +1118,11 @@
       "__admin_media_prefix__": "",
       "django": ""
     },
+    "dom": {
+      "input[name='csrfmiddlewaretoken']": {
+        "exists": ""
+      }
+    },
     "oss": true,
     "website": "https://djangoproject.com"
   },
@@ -1702,6 +1709,9 @@
       "<!-- #BeginTemplate\\s\"[\\d_\\w/]+\\.dwt"
     ],
     "icon": "DreamWeaver.png",
+    "meta": {
+      "generator": "DreamWeaver"
+    },
     "js": {
       "MM_preloadImages": "",
       "MM_showHideLayers": "",
@@ -1963,6 +1973,15 @@
     ],
     "saas": true,
     "scriptSrc": "dd-cdn\\.multiscreensite\\.com/",
+    "dom": {
+      "link[href*='dd-cdn\\.multiscreensite\\.com/'].link[href*='ird-cdn\\.multiscreensite\\.com/']": {
+        "exists": ""
+      },
+      "link[href*='/_dm/s/rt/']": {
+        "exists": ""
+      }
+
+    },
     "website": "https://www.duda.co"
   },
   "Duel": {
@@ -2076,13 +2095,20 @@
     "cookies": {
       "Dynamicweb": ""
     },
+    "scriptSrc": [
+      "/Admin/Public/DWscripts.js"
+    ],
     "description": "Dynamicweb is a all-in-one platform for content management, ecommerce, digital marketing​, product information management (PIM) and integration.",
     "icon": "Dynamicweb.svg",
     "implies": "Microsoft ASP.NET",
     "meta": {
       "generator": "Dynamicweb ([\\d.]+)\\;version:\\1"
     },
-    "website": "https://www.dynamicweb.dk"
+    "website": "https://www.dynamicweb.dk",
+    "saas": true,
+    "pricing": [
+      "recurring"
+    ]
   },
   "Dynatrace": {
     "cats": [
