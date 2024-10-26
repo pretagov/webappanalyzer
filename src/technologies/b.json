@@ -1110,9 +1110,14 @@
     "cats": [
       1
     ],
+    "description": "Bloomreach's headless CMS was built for commerce, so you can easily create, manage, and personalize great shopping experiences from one place.",
     "html": "<[^>]+/binaries/(?:[^/]+/)*content/gallery/",
     "icon": "Bloomreach.svg",
-    "website": "https://developers.bloomreach.com"
+    "website": "https://developers.bloomreach.com",
+    "saas": true,
+    "pricing": [
+      "recurring"
+    ]
   },
   "Bloomreach Discovery": {
     "cats": [
@@ -1610,13 +1615,15 @@
     "cats": [
       1
     ],
+    "description": "Bolt is a free, open-source content management system based on PHP. It was released in 2012 and developed by Two Kings and the Bolt community.",
     "cpe": "cpe:2.3:a:bolt:bolt:*:*:*:*:*:*:*:*",
     "icon": "Bolt CMS.png",
     "implies": "PHP",
     "meta": {
       "generator": "Bolt"
     },
-    "website": "https://bolt.cm"
+    "website": "https://bolt.cm",
+    "oss": true
   },
   "Bolt Payments": {
     "cats": [
@@ -2477,12 +2484,15 @@
     "cats": [
       1
     ],
+    "description": "BrowserCMS is a general purpose, open source Web Content Management System (CMS) that supports Ruby on Rails v4.0",
     "icon": "BrowserCMS.png",
-    "implies": "Ruby",
+    "implies": ["Ruby", "Ruby on Rails"],
     "meta": {
       "generator": "BrowserCMS ([\\d.]+)\\;version:\\1"
     },
-    "website": "https://browsercms.org"
+    "website": "https://browsercms.org",
+    "oss": true
+    
   },
   "Bsale": {
     "cats": [
@@ -2728,7 +2738,12 @@
     "html": "<!-- BC_OBNW -->",
     "icon": "Business Catalyst.svg",
     "scriptSrc": "CatalystScripts",
-    "website": "https://businesscatalyst.com"
+    "website": "https://businesscatalyst.com",
+    "saas": true,
+    "pricing": [
+      "recurring",
+      "poa"
+    ]
   },
   "Business Website Builder": {
     "cats": [

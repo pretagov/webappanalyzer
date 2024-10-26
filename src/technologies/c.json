@@ -109,7 +109,8 @@
     "meta": {
       "generator": "CMS Made Simple"
     },
-    "website": "https://cmsmadesimple.org"
+    "website": "https://cmsmadesimple.org",
+    "oss": true
   },
   "CMSimple": {
     "cats": [
@@ -120,7 +121,8 @@
     "meta": {
       "generator": "CMSimple( [\\d.]+)?\\;version:\\1"
     },
-    "website": "https://www.cmsimple.org/en"
+    "website": "https://www.cmsimple.org/en",
+    "oss": true
   },
   "CNZZ": {
     "cats": [
@@ -2548,6 +2550,9 @@
       "exp_last_activity": "",
       "exp_tracker": ""
     },
+    "meta": {
+      "generator": "CodeIgniter[(\\d)\\+?]\\;version:\\1"
+    },
     "cpe": "cpe:2.3:a:codeigniter:codeigniter:*:*:*:*:*:*:*:*",
     "html": "<input[^>]+name=\"ci_csrf_token\"\\;version:2+",
     "icon": "CodeIgniter.png",
@@ -3280,7 +3285,8 @@
     "cats": [
       1
     ],
-    "description": "Contensis, an enterprise headless CMS with an integrated deployment platform",
+    "description": "Contensis, an enterprise headless CMS with an integrated deployment platform making it Hybrid",
+    "headles_since": "2019",
     "icon": "Contensis.png",
     "implies": [
       "Java",
@@ -3289,7 +3295,10 @@
     "meta": {
       "generator": "Contensis CMS Version ([\\d.]+)\\;version:\\1"
     },
-    "website": "https://zengenti.com/en-gb/products/contensis"
+    "website": "https://zengenti.com/en-gb/products/contensis",
+    "pricing": [
+      "recurring"
+    ]
   },
   "ContentBox": {
     "cats": [
