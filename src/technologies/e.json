@@ -533,7 +533,10 @@
       "Ektron": ""
     },
     "scriptSrc": "/ektron\\.javascript\\.ashx",
-    "website": "https://www.optimizely.com/ektron-cms"
+    "website": "https://www.optimizely.com/ektron-cms",
+    "pricing": [
+      "recurring"
+    ]
   },
   "Elastic APM": {
     "cats": [
@@ -2137,6 +2140,7 @@
     "cats": [
       1
     ],
+    "description": "e107 is a time-tested open-source website content management system powered by PHP, MySQL and Twitter Bootstrap.",
     "cpe": "cpe:2.3:a:e107:e107:*:*:*:*:*:*:*:*",
     "cookies": {
       "e107_tz": ""
@@ -2147,7 +2151,8 @@
     "icon": "e107.png",
     "implies": "PHP",
     "scriptSrc": "[^a-z\\d]e107\\.js",
-    "website": "https://e107.org"
+    "website": "https://e107.org",
+    "oss": true
   },
   "eBay Partner Network": {
     "cats": [
@@ -2333,14 +2338,21 @@
     },
     "cpe": "cpe:2.3:a:ez:ez_publish:*:*:*:*:*:*:*:*",
     "headers": {
-      "X-Powered-By": "^eZ Publish"
+      "X-Powered-By": "^eZ Publish",
+      "Set-Cookie": "^eZSESSID_"
+    },
+    "dom": {
+      "img[src*='/ezwebin']": {
+        "exists": ""
+      }
     },
     "icon": "eZ.svg",
     "implies": "PHP",
     "meta": {
       "generator": "eZ Publish"
     },
-    "website": "https://github.com/ezsystems/ezpublish-legacy"
+    "website": "https://github.com/ezsystems/ezpublish-legacy",
+    "oss": true
   },
   "ebisumart": {
     "cats": [
