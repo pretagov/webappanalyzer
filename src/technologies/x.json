@@ -85,7 +85,8 @@
     "meta": {
       "generator": "XOOPS"
     },
-    "website": "https://xoops.org"
+    "website": "https://xoops.org",
+    "oss": true
   },
   "XRegExp": {
     "cats": [
