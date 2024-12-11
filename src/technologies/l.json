@@ -136,7 +136,11 @@
       18
     ],
     "cookies": {
-      "laravel_session": ""
+      "laravel_session": "",
+      "XSRF-TOKEN": "[A-Za-z0-9]{327}%3D"
+    },
+    "headers": {
+      "Set-Cookie": "[a-z0-9]+_session=(?:[A-Za-z0-9]{324}|[A-Za-z0-9]{273})In0%3D"
     },
     "cpe": "cpe:2.3:a:laravel:laravel:*:*:*:*:*:*:*:*",
     "description": "Laravel is a free, open-source PHP web framework.",
@@ -145,6 +149,9 @@
     "js": {
       "Laravel": ""
     },
+    "_img": [
+      "background-image:url(/storage/blog/covers/godot-sdk-integrations.webp)"
+    ],
     "oss": true,
     "website": "https://laravel.com"
   },
@@ -1512,13 +1519,15 @@
     "cats": [
       1
     ],
+    "description": "Locomotive is a beautiful Open Source CMS that makes it super easy to develop and design exactly what your clients need.",
     "html": "<link[^>]*/sites/[a-z\\d]{24}/theme/stylesheets",
     "icon": "LocomotiveCMS.png",
     "implies": [
       "Ruby on Rails",
       "MongoDB"
     ],
-    "website": "https://www.locomotivecms.com"
+    "website": "https://www.locomotivecms.com",
+    "oss": true
   },
   "Lodash": {
     "cats": [
