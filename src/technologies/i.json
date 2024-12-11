@@ -450,13 +450,16 @@
     "cats": [
       1
     ],
+    "description": "ImpressPages is an open-source PHP framework with a built-in content editor and is considered a content management system (CMS). It's distributed under the GNU GPL v. 3.0 and MIT licenses",
     "cpe": "cpe:2.3:a:impresspages:impresspages_cms:*:*:*:*:*:*:*:*",
     "icon": "ImpressPages.png",
     "implies": "PHP",
     "meta": {
       "generator": "ImpressPages(?: CMS)?( [\\d.]*)?\\;version:\\1"
     },
-    "website": "https://impresspages.org"
+    "website": "https://impresspages.org",
+    "saas": true,
+    "oss": true
   },
   "Imunify360": {
     "cats": [
@@ -589,6 +592,7 @@
     "cats": [
       1
     ],
+    "description": " Indexhibit is a portfolio CMS that allows users to create websites, blogs, and apps.",
     "cpe": "cpe:2.3:a:indexhibit:indexhibit:*:*:*:*:*:*:*:*",
     "html": "<(?:link|a href) [^>]+ndxz-studio",
     "implies": [
@@ -599,7 +603,8 @@
     "meta": {
       "generator": "Indexhibit"
     },
-    "website": "https://www.indexhibit.org"
+    "website": "https://www.indexhibit.org",
+    "oss": true
   },
   "Indi": {
     "cats": [
