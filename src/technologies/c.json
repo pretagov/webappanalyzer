@@ -3349,10 +3349,14 @@
     ],
     "description": "Contentful is an API-first content management platform to create, manage and publish content on any digital channel.",
     "headers": {
-      "x-contentful-request-id": ""
+      "x-contentful-request-id": "",
+      "content-security-policy": "(?:assets|downloads|images|videos)\\.(?:ct?fassets\\.net|contentful\\.com)"
     },
     "html": "<[^>]+(?:assets|downloads|images|videos)\\.(?:ct?fassets\\.net|contentful\\.com)\\;confidence:50",
     "scripts": "(?:assets|downloads|images|videos)\\.(?:ct?fassets\\.net|contentful\\.com)",
+    "scriptSrc": [
+      "/contentful@([\\d.]+)/\\;version:\\1"
+    ],
     "icon": "Contentful.svg",
     "pricing": [
       "mid",
