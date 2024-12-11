@@ -164,6 +164,11 @@
       "<form[^>]+id=\"ajaxSearch_form\\;confidence:20",
       "<input[^>]+id=\"ajaxSearch_input\\;confidence:20"
     ],
+    "dom": {
+      "img[src*='/assets/components/phpthumbof']": {
+        "exists": ""
+      }
+    }, 
     "icon": "MODX.svg",
     "implies": "PHP",
     "js": {
@@ -178,7 +183,11 @@
       "low"
     ],
     "saas": true,
-    "scriptSrc": "/assets/components/templates/\\;confidence:50",
+    "scriptSrc": [
+      "/assets/components/templates/\\;confidence:50",
+      "/assets/components/videobox",
+      "assets/modext/util/utilities.js"
+    ],
     "website": "https://modx.com/content-management-framework"
   },
   "Morphext": {
@@ -735,10 +744,17 @@
     ],
     "excludes": "Joomla",
     "icon": "Mambo.png",
+    "html": [
+      "<!-- debug: mod_mambo"
+    ],
+    "scriptSrc": [
+      "/mambots/"
+    ],
     "meta": {
       "generator": "Mambo"
     },
-    "website": "https://mambo-foundation.org"
+    "website": "https://mambo-foundation.org",
+    "oss": true
   },
   "Mangeznotez": {
     "cats": [
@@ -2074,6 +2090,9 @@
     "meta": {
       "generator": "Microsoft SharePoint"
     },
+    "implies": [
+      "Microsoft ASP.NET"
+    ],
     "pricing": [
       "low"
     ],
@@ -2840,13 +2859,21 @@
     "cats": [
       1
     ],
+    "description": "Mono.net is a website builder platform designed for businesses to create and manage their own websites with hosting and online presence tools.",
     "icon": "Mono.net.png",
     "implies": "Matomo Analytics",
     "js": {
       "_monoTracker": ""
     },
-    "scriptSrc": "monotracker(?:\\.min)?\\.js",
-    "website": "https://www.mono.net/en"
+    "scriptSrc": [
+      "monotracker(?:\\.min)?\\.js",
+      "mono-pages-"
+    ],
+    "website": "https://www.mono.net/en",
+    "saas": true,
+    "pricing": [
+      "recurring"
+    ]
   },
   "Monsido": {
     "cats": [
@@ -2910,7 +2937,7 @@
     },
     "cpe": "cpe:2.3:a:moodle:moodle:*:*:*:*:*:*:*:*",
     "description": "Moodle is a free and open-source Learning Management System (LMS) written in PHP and distributed under the GNU General Public License.",
-    "html": "<img[^>]+moodlelogo",
+    "html": "<img[^>]+moodlelogo\\;confidence:30",
     "icon": "Moodle.png",
     "implies": "PHP",
     "js": {
@@ -3048,12 +3075,17 @@
     "cats": [
       1
     ],
+    "description": "An originator of the blogging field, Movable Type offers stability, a user-friendly interface, and beautifully extensive visual customization for websites and blogs.",
     "cpe": "cpe:2.3:a:sixapart:movable_type:*:*:*:*:*:*:*:*",
     "icon": "Movable Type.svg",
     "meta": {
       "generator": "Movable Type"
     },
-    "website": "https://movabletype.org"
+    "website": "https://movabletype.org",
+    "oss":false,
+    "pricing": [
+      "recurring"
+    ]
   },
   "Mozard Suite": {
     "cats": [
@@ -3094,8 +3126,14 @@
     "icon": "Mura CMS.svg",
     "implies": "Adobe ColdFusion",
     "meta": {
-      "generator": "Mura\\sCMS\\s([\\d\\.]+)\\;version:\\1"
+      "generator": "Mura\\sCMS(?:\\s([\\d\\.]+))?\\;version:\\1"
     },
+    "sriptSrc": [
+      "mura.min.js"
+    ],
+    "scripts": [
+      "Mura\\.init"
+    ],
     "pricing": [
       "poa"
     ],
