@@ -938,6 +938,20 @@
     "headers": {
       "x-powered-by": "^Directus$"
     },
+    "_img_pos": [
+      "https://www.skriptfabrik.com/data/assets/14f6e4ba-d194-4f4e-b0dd-c7fae4325d12?format=webp",
+      "https://insurance-news.directus.app/assets/ea7b1034-2816-4651-bf05-47fb30d3c2f2"
+    ],
+    "dom": {
+      "img[src*='directus.app']": {
+        "exists": "" 
+      },
+      "img[src*='/assets/']": {
+        "attributes": {
+          "src": "/assets/[\\da-z]{8}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{12}(?:\\?.*)?$"
+        }
+      }
+    },
     "icon": "Directus.svg",
     "implies": [
       "Vue.js",
