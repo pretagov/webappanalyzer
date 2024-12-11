@@ -268,11 +268,22 @@
     "description": "October is a free, open-source, self-hosted CMS platform based on the Laravel PHP Framework.",
     "icon": "October CMS.png",
     "implies": "Laravel",
+    "_img": [
+      "/storage/app/uploads ??"
+    ],
+    "dom": {
+      "img[src*='/storage/app/uploads/public/']": {
+        "exists": ""
+      },
+      "img[src*='/storage/app/resized/']": {
+        "src": "/storage/app/resized/(?:[0-9a-z]{3}/){3}"
+      }
+    },
     "js": {
       "ocJSON": ""
     },
     "meta": {
-      "generator": "OctoberCMS"
+      "generator": "October ?CMS"
     },
     "oss": true,
     "website": "https://octobercms.com"
@@ -627,13 +638,34 @@
     "dns": {
       "SOA": "ns\\d+\\.one\\.com"
     },
+    "meta": {
+      "generator": "One\\.com"
+    },
     "icon": "One.com.svg",
     "pricing": [
       "low",
       "recurring"
     ],
+    "saas": true,
     "website": "https://www.one.com"
   },
+  "One.com Website Builder": {
+    "cats": [
+      1
+    ],
+    "description": "Creating a website doesn’t need to be complicated. With Website Builder, you can effortlessly design and publish your website – no coding required.",
+    "scriptSrc": [
+      "/onewebstatic/"
+    ],
+    "icon": "One.com.svg",
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://www.one.com/en/websitebuilder"
+  },
+
   "OneAPM": {
     "cats": [
       10
@@ -1165,10 +1197,17 @@
     "cats": [
       1
     ],
-    "html": "<!--[^>]+published by Open Text Web Solutions",
+    "description": "OpenText Web, formerly known as TeamSite, is a web content management system (WCM). It's a composable and extendable platform that helps create, manage, and optimize digital customer experiences.",
+    "html": [
+      "<!--[^>]+published by (?:Open Text Web Solutions|RedDot) [\\d.]+ - ([\\d.]+)\\;version:\\1"
+    ],
     "icon": "OpenText Web Solutions.png",
     "implies": "Microsoft ASP.NET",
-    "website": "https://websolutions.opentext.com"
+    "website": "https://websolutions.opentext.com",
+    "saas": true,
+    "pricing": [
+      "recurring"
+    ]
   },
   "OpenUI5": {
     "cats": [
