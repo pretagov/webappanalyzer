@@ -351,14 +351,22 @@
     "cats": [
       1
     ],
+    "description": "Neos is an open source content application platform based on the PHP framework Neos Flow , which is also developed by the Neos team",
     "excludes": "TYPO3 CMS",
     "headers": {
       "X-Flow-Powered": "Neos/?(.+)?$\\;version:\\1"
     },
+    "dom": {
+      "script[data-neos-node]": {
+          "exists": ""
+      }
+    },
+    "scriptSrc": "/Packages/Neos.Neos/JavaScript/",
     "icon": "Neos.svg",
     "implies": "Neos Flow",
     "url": "/neos/",
-    "website": "https://neos.io"
+    "website": "https://neos.io",
+    "oss": true
   },
   "Neos Flow": {
     "cats": [
