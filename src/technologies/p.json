@@ -43,7 +43,7 @@
     "cpe": "cpe:2.3:a:php:php:*:*:*:*:*:*:*:*",
     "description": "PHP is a general-purpose scripting language used for web development.",
     "headers": {
-      "Server": "php/?([\\d.]+)?\\;version:\\1",
+      "Server": "php/?([\\d.]+)?\\;version:\\1\\;confidence:40",
       "X-Powered-By": "^php/?([\\d.]+)?\\;version:\\1"
     },
     "icon": "PHP.svg",
@@ -61,7 +61,8 @@
     "meta": {
       "generator": "PHP-Nuke"
     },
-    "website": "https://phpnuke.org"
+    "website": "https://phpnuke.org",
+    "oss": true
   },
   "PHPDebugBar": {
     "cats": [
@@ -1109,7 +1110,9 @@
     "meta": {
       "generator": "(?:Percussion|Rhythmyx)"
     },
-    "website": "https://percussion.com"
+    "website": "https://percussion.com",
+    "description": "Percussion Web Content Management products (Rhythmyx, CM1, Percussion CMS) transition to an open source fulfillment model effective June 30, 2023.",
+    "oss": true
   },
   "PerfectApps Swift": {
     "cats": [
@@ -1235,7 +1238,7 @@
     "cpe": "cpe:2.3:a:perl:perl:*:*:*:*:*:*:*:*",
     "description": "Perl is a family of two high-level, general-purpose, interpreted, dynamic programming languages.",
     "headers": {
-      "Server": "\\bPerl\\b(?: ?/?v?([\\d.]+))?\\;version:\\1"
+      "Server": "\\bPerl\\b(?: ?/?v?([\\d.]+))?\\;version:\\1\\;confidence:40"
     },
     "icon": "Perl.png",
     "website": "https://perl.org"
@@ -2049,11 +2052,16 @@
       1,
       62
     ],
+    "description": "platformOS is a managed application development platform. Designed for developers, it provides a flexible and limitless API-first development approach while automating the whole DevOps infrastructure.",
     "headers": {
       "x-powered-by": "^platformOS$"
     },
     "icon": "PlatformOS.svg",
-    "website": "https://www.platform-os.com"
+    "website": "https://www.platform-os.com",
+    "saas": true,
+    "pricing": [
+      "recurring"
+    ]
   },
   "Platforma LP": {
     "cats": [
@@ -2859,7 +2867,7 @@
     "cats": [
       62
     ],
-    "description": "Pressable is a managed hoting platform for WordPress.",
+    "description": "Pressable is a managed hosting platform for WordPress.",
     "headers": {
       "host-header": "^Pressable"
     },
@@ -3049,7 +3057,10 @@
       1
     ],
     "description": "Prismic is a headless CMS for Jamstack.",
-    "dom": "img[src*='images.prismic.io']",
+    "dom": [
+      "img[src*='images.prismic.io'],img[data-src*='images.prismic.io'],meta[content*='images.prismic.io']",
+      "div[data-src*='.cdn.prismic.io/']"
+    ],
     "icon": "Prismic.svg",
     "pricing": [
       "low",
@@ -3060,6 +3071,7 @@
     "scriptSrc": "\\.prismic\\.io/",
     "website": "https://prismic.io",
     "xhr": "\\.cdn\\.prismic\\.io"
+
   },
   "Privy": {
     "cats": [
@@ -3106,6 +3118,13 @@
     "description": "ProcessWire is an open source content management system (CMS) and framework (CMF).",
     "headers": {
       "X-Powered-By": "ProcessWire CMS"
+    },
+    "meta": {
+      "generator": "ProcessWire *([\\d.]*)\\;version:\\1"
+    }, 
+    "cookies": {
+      "wires": "",
+      "wire": ""
     },
     "icon": "ProcessWire.svg",
     "implies": "PHP",
@@ -3725,15 +3744,27 @@
     "cats": [
       1
     ],
+    "description": "PyroCMS is a community-driven, open-source, and free content management system (CMS) built with PHP and Laravel",
     "cookies": {
-      "pyrocms": ""
+      "pyrocms": "",
+      "default_pyrocms": ""
     },
+    "scriptSrc": [
+      "/addons/shared_addons/themes/"
+    ],
     "headers": {
-      "X-Streams-Distribution": "PyroCMS"
+      "X-Streams-Distribution": "PyroCMS(?:-v([\\d.]+))?\\;version:\\1",
+      "Set-Cookie": "_pyrocms="
+    },
+    "meta": {
+      "generator": "PyroCMS"
     },
     "icon": "PyroCMS.png",
-    "implies": "Laravel",
-    "website": "https://pyrocms.com"
+    "implies": [
+      "Laravel"
+    ],
+    "website": "https://pyrocms.com",
+    "oss": true
   },
   "Python": {
     "cats": [
@@ -3742,7 +3773,7 @@
     "cpe": "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*",
     "description": "Python is an interpreted and general-purpose programming language.",
     "headers": {
-      "Server": "(?:^|\\s)Python(?:/([\\d.]+))?\\;version:\\1"
+      "Server": "(?:^|\\s)Python(?:/([\\d.]+))?\\;version:\\1\\;confidence:40"
     },
     "icon": "Python.png",
     "website": "https://python.org"
