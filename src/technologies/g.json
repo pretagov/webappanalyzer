@@ -618,13 +618,15 @@
     "cats": [
       1
     ],
+    "description": "GetSimple is an open source Simple CMS that utilizes the speed and convenience of flat file XML, a best-in-class UI and the easiest learning curve of any lite Content Management System out there.",
     "cpe": "cpe:2.3:a:get-simple:getsimple_cms:*:*:*:*:*:*:*:*",
     "icon": "GetSimple CMS.png",
     "implies": "PHP",
     "meta": {
       "generator": "GetSimple"
     },
-    "website": "https://get-simple.info"
+    "website": "https://get-simple.info",
+    "oss": true
   },
   "GetSocial": {
     "cats": [
@@ -1337,6 +1339,9 @@
     "description": "GoDaddy is used as a web host and domain registrar.",
     "icon": "GoDaddy.svg",
     "scripts": "wsimg\\.com/parking-lander",
+    "meta": {
+      "og:url": "godaddy\\.com/domains/"
+    },
     "dom": {
       "iframe[src*='godaddy.com/park']": {
         "exists": ""
@@ -1423,10 +1428,11 @@
     },
     "icon": "GoDaddy.svg",
     "meta": {
-      "generator": "Go Daddy Website Builder (.+)\\;version:\\1"
+      "generator": "(?:Starfield Technologies;|Go ?Daddy) Website Builder *\\[?v?(.+)\\]?\\;version:\\1"
     },
     "pricing": [
-      "mid"
+      "mid",
+      "recurring"
     ],
     "saas": true,
     "website": "https://www.godaddy.com/websites/website-builder"
@@ -1907,7 +1913,12 @@
     "dom": "[data-abuse-proto*='https://sites.google.com/']",
     "icon": "Google Sites.png",
     "url": "^https?://sites\\.google\\.com",
-    "website": "https://sites.google.com"
+    "website": "https://sites.google.com",
+    "saas": "true",
+    "pricing": [
+      "recurring"
+    ]
+
   },
   "Google Tag Manager": {
     "cats": [
@@ -2098,7 +2109,8 @@
       "generator": "Graffiti CMS ([^\"]+)\\;version:\\1"
     },
     "scriptSrc": "/graffiti\\.js",
-    "website": "https://graffiticms.codeplex.com"
+    "website": "https://github.com/harder/GraffitiCMS",
+    "desription": "Graffiti CMS is an easy-to-use open source content management system created in 2008 and actively developed through 2010."
   },
   "GrandNode": {
     "cats": [
