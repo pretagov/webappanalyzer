@@ -532,7 +532,23 @@
     "js": {
       "Ektron": ""
     },
-    "scriptSrc": "/ektron\\.javascript\\.ashx",
+    "scriptSrc": [
+      "/ektron"
+    ],
+    "_img_pos": [
+      "https://web.archive.org/uploadedImages/Main_Content/Banners/IMG_0854_lb.jpg?n=1579",
+      "https://web.archive.org/uploadedImages/Shared_Assets/Splash_Page_Images/Tickets/anji-tickets-silver.jpg?n=3776"
+    ],
+    "dom": {
+      "img[src*='/uploadedImages/']": {
+        "attributes": {
+          "src": "/uploadedImages/.*?n=\\d{4}"
+        }
+      },
+      "[id*='Ektron']": {
+        "exists": ""
+      }
+    },
     "website": "https://www.optimizely.com/ektron-cms",
     "pricing": [
       "recurring"
@@ -1938,6 +1954,13 @@
       "exp_last_activity": "",
       "exp_tracker": ""
     },
+    "_img_pos": [
+      "maybe http://www.neweconomics.org/page/-/images/feature/zerohours_feature.jpg/@mx_650@my_325",
+      "maybe http://action.neweconomics.org/page/-/images/feature/WEP_freemovementHPH.png/@mx_650@my_325",
+      "/images/made/assets/images/common/issuesMonitor_100_116.png",
+      "http://access.redmanhosting.co.uk/~itecne2/images/uploads/Thermon_UK_Feb_12_003_thumb.JPG",
+      "https://assets-cdn.sums.su/SH/Homepage_Adverts/2425-0280-Cosmos-SheffieldSU-780x95-v3Banner.jpg"
+    ],
     "cpe": "cpe:2.3:a:ellislab:expressionengine:*:*:*:*:*:*:*:*",
     "description": "ExpressionEngine is a free and open-source CMS.",
     "icon": "ExpressionEngine.svg",
