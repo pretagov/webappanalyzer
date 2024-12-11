@@ -224,7 +224,14 @@
     ],
     "cpe": "cpe:2.3:a:typo3:typo3:*:*:*:*:*:*:*:*",
     "description": "TYPO3 is a free and open-source Web content management system written in PHP.",
-    "dom": "link[href*='typo3conf'], link[href*='typo3temp'], img[src*='typo3conf'], img[src*='typo3temp']",
+    "dom": {
+      "link[href*='/typo3'],a[href*='/typo3'],img[src*='/typo3']": {
+        "attributes": {
+          "src": "/typo3(?:conf|temp)/",
+          "href": "/typo3(?:conf|temp)/"
+        }
+      }
+    },
     "icon": "TYPO3.svg",
     "implies": "PHP",
     "meta": {
@@ -233,6 +240,9 @@
     "oss": true,
     "probe": {
       "/typo3/sysext/core/Resources/Public/Images/typo3_orange.svg": ""
+    },
+    "cookies": {
+      "fe_typo_user": ""
     },
     "scriptSrc": "^/?typo3(?:conf|temp)/",
     "url": "/typo3/",
@@ -1035,12 +1045,21 @@
       "MySQL"
     ],
     "dom": {
-      "link[href*='/textpattern/css.php']": ""
+      "link[href*='css.php?n=default']": "",
+      "link[href*='/textpattern/']": ""
     },
+    "html": [
+      "end of textpattern\\(\\) -->"
+    ],
+    "scriptSrc": [
+      "/txplib_misc\\.php",
+      "/textpattern/"
+    ],
     "meta": {
       "generator": "Textpattern"
     },
-    "website": "https://textpattern.com"
+    "website": "https://textpattern.com",
+    "oss": true
   },
   "The Arena Group": {
     "cats": [
@@ -2106,7 +2125,8 @@
       "generator": "^Tiki"
     },
     "scriptSrc": "(?:/|_)tiki",
-    "website": "https://tiki.org"
+    "website": "https://tiki.org",
+    "oss": true
   },
   "Tiktak Pro": {
     "cats": [
