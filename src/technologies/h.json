@@ -563,6 +563,9 @@
     ],
     "description": "Helix Ultimate a free template framework for Joomla.",
     "dom": "header#sp-header, body.helix-ultimate",
+    "meta": {
+      "generator": "HELIX_ULTIMATE"
+    },
     "icon": "HelixUltimate.svg",
     "implies": "Joomla",
     "oss": true,
@@ -1420,8 +1423,11 @@
     "icon": "HubSpot.svg",
     "implies": "HubSpot",
     "meta": {
-      "generator": "HubSpot"
+      "generator": "^HubSpot$\\;confidence:90"
     },
+    "scriptSrc": [
+      "/hub_generated/template_assets/"
+    ],
     "pricing": [
       "mid",
       "recurring"
