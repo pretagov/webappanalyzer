@@ -1759,6 +1759,9 @@
       "Framer.version": "([\\d\\.]+)\\;version:\\1\\;confidence:0",
       "__framer_importFromPackage": ""
     },
+    "meta": {
+      "generator": "Framer *(\\d)*\\;version:\\1"
+    },
     "oss": false,
     "pricing": [
       "low",
