@@ -6298,7 +6298,14 @@
         "/img/.*s=[a-f0-9]{32}$\\;confidence:60"
     ],
     "scriptSrc": [
-      "/build/assets/site-[a-zA-z0-9]{8}\\.js"
+      "/build/assets/site-[a-zA-z0-9]{8}\\.js",
+      "/build/assets/site-[a-zA-z0-9]{8}\\.css\\;confidence:30"
+    ],
+    "dom": {
+      "meta[content='STATAMIC_CSRF_TOKEN']": {}
+    },
+    "html": [
+      "\\.antlers\\.html"
     ],
     "implies": [
       "PHP",
