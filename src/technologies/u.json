@@ -272,7 +272,8 @@
     ],
     "cpe": "cpe:2.3:a:umbraco:umbraco:*:*:*:*:*:*:*:*",
     "cookies": {
-      "merchello": "\\;version:7"
+      "merchello": "\\;version:7",
+      "UMB_SESSION": ""
     },
     "description": "Umbraco is an open-source Microsoft ASP.NET based content management system.",
     "dom": {
@@ -369,6 +370,7 @@
     "headers": {
       "X-Unbounce-PageId": ""
     },
+    "saas": true,
     "icon": "Unbounce.png",
     "scriptSrc": "ubembed\\.com",
     "website": "https://unbounce.com"

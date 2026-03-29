@@ -1103,6 +1103,13 @@
     "meta": {
       "generator": "^Blogger$"
     },
+    "dom": {
+      "link[rel='EditURI']": {
+        "attributes": {
+          "href": "blogger\\.com"
+        }
+      }
+    },
     "url": "^https?://[^/]+\\.(?:blogspot|blogger)\\.com",
     "website": "https://www.blogger.com"
   },
@@ -2647,7 +2654,16 @@
       1
     ],
     "description": "Builder.io is a headless CMS with a powerful drag-and-drop visual editor that lets you build and optimize digital experiences with speed and flexibility. ",
-    "dom": "[data-builder-content-id], img[src*='cdn.builder.io']",
+    "dom": {
+      "link[rel='preconnect'][href*='builder.io']": {
+        "exists": ""
+      },
+      "[data-builder-content-id], img[src*='cdn.builder.io']": {
+        "exists": ""
+      }
+    },
+    "xhr": "cdn\\.builder\\.io",
+    "imgSrc": "cdn\\.builder\\.io",
     "icon": "Builder.svg",
     "pricing": [
       "low",
@@ -2655,8 +2671,7 @@
       "recurring"
     ],
     "saas": true,
-    "website": "https://builder.io",
-    "xhr": "cdn\\.builder\\.io"
+    "website": "https://builder.io"
   },
   "Buildertrend": {
     "cats": [

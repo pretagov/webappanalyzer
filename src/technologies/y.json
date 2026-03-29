@@ -462,7 +462,6 @@
       "<!-- This site is optimized with the Yoast SEO Premium plugin v(?:[^\\s]+) \\(Yoast SEO v([^\\s]+)\\) -\\;version:\\1"
     ],
     "icon": "Yoast SEO.png",
-    "implies": "WordPress",
     "oss": true,
     "website": "https://yoast.com/wordpress/plugins/seo/"
   },

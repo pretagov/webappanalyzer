@@ -268,17 +268,13 @@
     "description": "October is a free, open-source, self-hosted CMS platform based on the Laravel PHP Framework.",
     "icon": "October CMS.png",
     "implies": "Laravel",
-    "_img": [
+    "_test_imgSrc_pos": [
       "/storage/app/uploads ??"
     ],
-    "dom": {
-      "img[src*='/storage/app/uploads/public/']": {
-        "exists": ""
-      },
-      "img[src*='/storage/app/resized/']": {
-        "src": "/storage/app/resized/(?:[0-9a-z]{3}/){3}"
-      }
-    },
+    "imgSrc": [
+      "/storage/app/uploads/public/",
+      "/storage/app/resized/(?:[0-9a-z]{3}/){3}"
+    ],
     "js": {
       "ocJSON": ""
     },
@@ -286,6 +282,9 @@
       "generator": "October ?CMS"
     },
     "oss": true,
+    "pricing": [
+      "onetime"
+    ],
     "website": "https://octobercms.com"
   },
   "Octopress": {
@@ -1045,6 +1044,9 @@
     "icon": "OpenCms.png",
     "implies": "Java",
     "oss": true,
+    "imgSrc": [
+      "/system/systempages/"
+    ],
     "scriptSrc": "opencms",
     "website": "https://www.opencms.org"
   },
@@ -1199,12 +1201,15 @@
     ],
     "description": "OpenText Web, formerly known as TeamSite, is a web content management system (WCM). It's a composable and extendable platform that helps create, manage, and optimize digital customer experiences.",
     "html": [
-      "<!--[^>]+published by (?:Open Text Web Solutions|RedDot) [\\d.]+ - ([\\d.]+)\\;version:\\1"
+      "<!--[^>]+(?:generated|published) by (?:Open Text Web Solutions|OpenText Web Site Management|RedDot) [\\d.]+ - ([\\d.]+)\\;version:\\1"
     ],
+    "meta": {
+      "generator": "(?:generated|published) by (?:Open Text Web Solutions|OpenText Web Site Management|RedDot) [\\d.]+ - ([\\d.]+)\\;version:\\1"
+    },
     "icon": "OpenText Web Solutions.png",
     "implies": "Microsoft ASP.NET",
     "website": "https://websolutions.opentext.com",
-    "saas": true,
+    "saas": false,
     "pricing": [
       "recurring"
     ]
@@ -1373,6 +1378,7 @@
     ],
     "cookies": {
       "EPi:StateMarker": "",
+      "EPiStateMarker": "",
       "EPiServer": "",
       "EPiSessionId": "",
       "EPiTrace": ""
@@ -1667,7 +1673,7 @@
     "icon": "Orchard Core.png",
     "implies": "Microsoft ASP.NET",
     "meta": {
-      "generator": "Orchard"
+      "generator": "^Orchard"
     },
     "oss": true,
     "scriptSrc": "/OrchardCore\\.",

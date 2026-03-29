@@ -137,10 +137,10 @@
     ],
     "cookies": {
       "laravel_session": "",
-      "XSRF-TOKEN": "[A-Za-z0-9]{327}%3D"
+      "XSRF-TOKEN": "(?:[A-Za-z0-9]{327}|[A-Za-z0-9]{242})%3D"
     },
     "headers": {
-      "Set-Cookie": "[a-z0-9]+_session=(?:[A-Za-z0-9]{324}|[A-Za-z0-9]{273})In0%3D"
+      "Set-Cookie": "[a-z0-9_]+_session=(?:[A-Za-z0-9]{330}|[A-Za-z0-9]{244}|,[A-Za-z0-9]{240,279});"
     },
     "cpe": "cpe:2.3:a:laravel:laravel:*:*:*:*:*:*:*:*",
     "description": "Laravel is a free, open-source PHP web framework.",
@@ -754,9 +754,21 @@
       "Liferay-Portal": "[a-z\\s]+([\\d.]+)\\;version:\\1"
     },
     "icon": "Liferay.svg",
-    "implies": "Java",
+    "implies": [
+      "Java Servlet",
+      "JavaServer Pages",
+      "Java"
+    ],
     "js": {
       "Liferay": ""
+    },
+    "html": [
+      "portlet_com_liferay"
+    ],
+    "dom": {
+      "div.lfr-portlet-column": {
+        "exists": ""
+      }
     },
     "oss": true,
     "pricing": [

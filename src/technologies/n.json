@@ -412,6 +412,13 @@
     "cookies": {
       "NS_VER": ""
     },
+    "scriptSrc": [
+      "NS_VER=([\\d.]+)"
+    ],
+    "implies": [
+      "Java Servlet",
+      "JavaServer Pages"
+    ],
     "icon": "NetSuite.png",
     "website": "https://netsuite.com"
   },

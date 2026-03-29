@@ -24,7 +24,7 @@
     "description": "The Jadu Digital Platform provides the foundation of accessible, responsive and award-winning Websites, Forms, CRM and Portal solutions.",
     "dom": "a[href*='www.jadu.net']",
     "headers": {
-      "Node": "jadu-web-1"
+      "Node": "jadu-web-\\d"
     },
     "icon": "jadu.png",
     "pricing": [

@@ -2110,7 +2110,8 @@
     },
     "scriptSrc": "/graffiti\\.js",
     "website": "https://github.com/harder/GraffitiCMS",
-    "desription": "Graffiti CMS is an easy-to-use open source content management system created in 2008 and actively developed through 2010."
+    "desription": "Graffiti CMS is an easy-to-use open source content management system created in 2008 and actively developed through 2010.",
+    "oss": true
   },
   "GrandNode": {
     "cats": [
@@ -2240,7 +2241,8 @@
     "meta": {
       "generator": "GravCMS(?:\\s([\\d.]+))?\\;version:\\1"
     },
-    "website": "https://getgrav.org"
+    "website": "https://getgrav.org",
+    "oss": true
   },
   "Gravatar": {
     "cats": [

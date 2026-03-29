@@ -44,7 +44,10 @@
     "js": {
       "vivvo": ""
     },
-    "website": "https://vivvo.net"
+    "website": "https://vivvo.net",
+    "price": [
+      "recurring"
+    ]
   },
   "VK Pixel": {
     "cats": [
@@ -1254,7 +1257,10 @@
     ],
     "css": "\\.vue-notification-group",
     "description": "Vue.js is an open-source model–view–viewmodel JavaScript framework for building user interfaces and single-page applications.",
-    "dom": ".vue-app",
+    "dom": {
+      ".vue-app": {"exists":""},
+      "*[v-if]": {"exists": ""}
+    },
     "html": "<[^>]+\\sdata-v(?:ue)?-",
     "icon": "vue.svg",
     "js": {

@@ -475,7 +475,7 @@
     ],
     "cpe": "cpe:2.3:a:torchbox:wagtail:*:*:*:*:*:*:*:*",
     "description": "Wagtail is a Django content management system (CMS) focused on flexibility and user experience.",
-    "_img_pos": [
+    "_test_imgSrc_pos": [
       "https://staticassets.oxfam.org.uk/oxfamgb-production/images/RS357936_Pavel_Martiarena_-_Cl.f4424001.fill-470x540-c75.jpg",
       "https://ams3.digitaloceanspaces.com/girlsnotbrides-org/www/images/A-young-Ugandan-mother-sits-with-h.2e16d0ba.fill-650x435.jpg",
       "https://media.girlsnotbrides.org/images/A-young-Ugandan-mother-sits-with-h.2e16d0ba.fill-650x435.jpg",
@@ -483,31 +483,24 @@
       "https://media.nesta.org.uk/images/post-it_board.2e16d0ba.fill-400x266.png",
       "https://moneyadvicetrust.org/media/images/website-banner.original.jpg",
       "https://buckup-ff-stories.s3.amazonaws.com/original_images/Lockup_Logo_-_JPEG-1.png",
+      "https://assets.nhs.uk/nhsuk-cms/images/test5_4nG3bKJ.width-1000.png",
       "see https://thib.me/detecting-wagtail-in-the-wild"
     ],
-    "_img_neg": [
+    "_test_imgSrc_neg": [
       "https://s3-us-west-2.amazonaws.com/utsw-patientcare-web-production/original_images/lipoma-1600x732.jpg",
       "https://thumbor.factoryinternational.org/CvcIMaTLnl4P90bBoZeutaYfmAk=/600x600/filters:focal(711x102:2540x1389):format(webp):quality(60)/https://publicydn4hdgozyjrg.blob.core.windows.net/public/dd/images/FYM_Image_herospace_2.bf77e24.jpg # TODO"
     ],
     "dom": {
       "[data-block-key]": {
         "attributes": {
-          "data-block-key": "^[a-z0-9]{5}$"
+          "data-block-key": "^[a-z0-9]{5}$\\;confidence:55"
         }
-      },
-      "[style*='images/'],img[src*='images/'],img[srcset*='images/'], source[srcset*='images/'],meta[content*='images/'],video[poster*='images/']": {
-        "attributes": {
-          "style": "(?:\\.[a-z:0-9]+(?:/[\\w-]+)*|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\.\\;confidence:80",
-          "src": "(?:\\.[a-z:0-9]+(?:/[\\w-]+)*|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\.\\;confidence:80",
-          "srcset": "(?:\\.[a-z:0-9]+(?:/[\\w-]+)*|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\.\\;confidence:80",
-          "content": "(?:\\.[a-z:0-9]+(?:/[\\w-]+)*|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\.\\;confidence:80",
-          "poster": "(?:\\.[a-z:0-9]+(?:/[\\w-]+)*|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\.\\;confidence:80"
-        }
-      },
-      "style, script": {
-        "text": "(?:\\.[a-z:0-9]+(?:/[\\w-]+)*|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\.\\;confidence:80"
       }
     },
+    "imgSrc": [
+      "(?:\\.[a-z:0-9]+(?:/[\\w-]+)*|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\.\\;confidence:80",
+      "images/[^/]+[a-zA-Z0-9]{7,8}\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-(?:\\d+|original))\\.\\;confidence:80"
+    ],
     "headers": {
       "X-Wagtail-Cache": ""
     },
@@ -861,6 +854,9 @@
     "meta": {
       "generator": "^WebGUI ([\\d.]+)\\;version:\\1"
     },
+    "scriptSrc": [
+      "^/extras/"
+    ],
     "website": "https://www.webgui.org",
     "oss": true
   },
@@ -1240,7 +1236,12 @@
     "meta": {
       "generator": "WebsPlanet"
     },
-    "website": "https://websplanet.com"
+    "website": "https://websplanet.com",
+    "saas":true,
+    "pricing": [
+      "low",
+      "recurring"
+    ]
   },
   "Websale": {
     "cats": [
@@ -1893,7 +1894,10 @@
     "icon": "Woltlab Community Framework.png",
     "implies": "PHP",
     "scriptSrc": "WCF\\..*\\.js",
-    "website": "https://www.woltlab.com"
+    "website": "https://www.woltlab.com",
+    "pricing": [
+      "recurring"
+    ]
   },
   "WooCommerce": {
     "cats": [

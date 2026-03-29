@@ -141,7 +141,10 @@
     "description": "Tessitura is an enterprise application to manage activities in ticketing, fundraising, customer relationship management, and marketing.",
     "icon": "tessitura.svg",
     "implies": "Tessitura",
-    "website": "https://www.tessituranetwork.com"
+    "website": "https://www.tessituranetwork.com",
+    "pricing": [
+      "onetime"
+    ]
   },
   "TNS Payments": {
     "cats": [
@@ -1144,7 +1147,7 @@
       "low",
       "recurring"
     ],
-    "requires": "WordPress",
+    "implies": "WordPress",
     "saas": true,
     "website": "https://theseoframework.com"
   },

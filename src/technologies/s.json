@@ -87,25 +87,22 @@
       1
     ],
     "description": "Tridion is a cloud-based system that helps businesses manage and publish digital content across multiple channels, including websites, mobile apps, and social media.",
-    "_img_pos": [
+    "_test_imgSrc_pos": [
       "https://www.rws.com/media/images/sc-social_tcm228-177731.png",
       "https://www.kone.com/en/Images/shanghai-junction-1440x670_tcm17-26421.jpg",
       "/img/homepage_tcm218-136748.JPG",
       "/global/imagesgig5/Fujitsu_Uvance-new_tcm100-6953380_tcm100-3526242-32.jpg"
     ],
-    "_img_neg": [
+    "_test_imgSrc_neg": [
       "https://web.archive.org/images/Mpemba%20BH_67_tcm18-225732.jpg"
     ],
     "meta": {
       "pagetcmid": "tcm:\\d{1,3}-\\d{1,7}-\\d{1,3}"
     },
+    "imgSrc": [
+        "_tcm\\d{2,3}-\\d{5,7}\\;confidence:80"
+    ],
     "dom": {
-      "img[src*='_tcm'],meta[content*='_tcm']": {
-        "attributes": {
-          "src": "_tcm\\d{2,3}-\\d{5,7}\\;confidence:80",
-          "content": "_tcm\\d{2,3}-\\d{5,7}\\;confidence:80"
-        }
-      },
       "*[data-info='tcm:']": {
         "attributes": {
           "data-info":"tcm:\\d{1,3}-\\d{6,7}"
@@ -923,28 +920,16 @@
       1
     ],
     "description": "Sanity is a platform for structured content. It comes with an open-source, headless CMS that can be customized with Javascript, a real-time hosted data store and an asset delivery pipeline.",
-    "_img_pos": [
+    "_test_imgSrc_pos": [
       "https://cdn.sanity.io/images/zp7mbokg/production/G3i4emG6B8JnTmGoN0UjgAp8-300x450.jpg",
       "https://web.archive.org/web/20230602085043/https://cdn.sanity.io/images/zl9du87e/production/2ca0ed0cd0e2f496d32b1c3b24b416ba56f9a817-2012x1440.png?fit=max&auto=format",
       "https://cdn.sanity.io/images/h3jobfxi/production/1673b04aeb1d8a30ee76021502c43ef9f5ab18e0-3840x2160.jpg?w=750&q=85&auto=format",
       "?? https://www.ontheedge.org/media/max_scale/rc/TEDROMeg//media/sanity/02/e1/ce92b759ab3d43405c1b47ff527b224b2efb-1078x630.jpg"
     ],
-    "dom": {
-      "img[src*='cdn.sanity.io'],img[srcset*='cdn.sanity.io'],img[data-src*='cdn.sanity.io'],video[src*='cdn.sanity.io'],source[src*='cdn.sanity.io'],source[srcset*='cdn.sanity.io'],track[src*='cdn.sanity.io']": {
-        "attributes": {
-          "src": "",
-          "srcset": "",
-          "data-src": ""
-        }
-      },
-      "img[src*='sanity'],meta[content*='sanity'],figure[data-background*='sanity']": {
-        "attributes": {
-          "src": "sanity.*/[a-z0-9]{28}-\\d{3,5}x\\d{3,5}\\.",
-          "content": "sanity.*/[a-z0-9]{36}-\\d{3,5}x\\d{3,5}\\.",
-          "data-background": "sanity.*/[a-z0-9]{36}-\\d{3,5}x\\d{3,5}\\."
-        }
-      }
-    },
+    "imgSrc": [
+      "cdn\\.sanity\\.io",
+      "sanity.*/[a-z0-9]{28}-\\d{3,5}x\\d{3,5}\\."
+    ],
     "headers": {
       "content-security-policy": "cdn\\.sanity\\.io",
       "x-sanity-shard": ""
@@ -2645,6 +2630,9 @@
       "low",
       "recurring"
     ],
+    "implies": [
+      "Ruby on Rails"
+    ],
     "saas": true,
     "scriptSrc": [
       "sdks\\.shopifycdn\\.com",
@@ -3198,6 +3186,9 @@
     "meta": {
       "generator": "^SilverStripe"
     },
+    "cookies": {
+      "SECSESSID": ""
+    },
     "oss": true,
     "website": "https://www.silverstripe.org/"
   },
@@ -3743,7 +3734,7 @@
       1
     ],
     "cookies": {
-      "SC_ANALYTICS_GLOBAL_COOKIE": "",
+      "SC_ANALYTICS_GLOBAL_COOKIE\\;confidence:75": "",
       "SC_OS_SessionId": "",
       "sc_expview": "",
       "sxa_site": ""
@@ -3753,22 +3744,33 @@
     },
     "cpe": "cpe:2.3:a:sitecore:*:*:*:*:*:*:*:*:*",
     "description": "Sitecore provides web content management, and multichannel marketing automation software.",
-    "_img_pos": [
+    "_test_imgSrc_pos": [
       "https://cdn-cms.crowe.com/global/-/media/Crowe/Shared/Image-Library/Country-Landing-Pages/CH-asset-UnitedKingdomv2_l2r_main.jpg?modified=20180320022522",
       "https://d2qsy1h1438jt3.cloudfront.net/~/media/c412ee30fb584ba083d684041d4e01b5.jpg?mh=180&mw=320",
       "//d2qsy1h1438jt3.cloudfront.net/~/media/67dfe418551d4b539b9d511005a9c3ec.png",
       "https://d2qsy1h1438jt3.cloudfront.net/~/media/785b2cf2465b4e7cb12440670df34627.jpg?w=320&h=180",
       "/~/media/Employers/Images/Abstract/Business and finance/Growing-money.jpg?w=201",
       "/~/media/ManUFoundation/NewDesign/FooterItems/MUF-Footer.ashx",
-      "/~/media/shared/widgets/standard_banners/main-banner.png"
+      "/~/media/shared/widgets/standard_banners/main-banner.png",
+      "https://cdn.clarionhg.com/-/jssmedia/clarion-housing-group/images/stock-images/futures-video-image.ashx?h=auto&w=1920&rev=30376ebf0ada42e3ba7b901b6bcd24cb&mw=1920",
+      "https://web.archive.org/scope/media/images/general/homepage/gail-2.jpg?w=21&hash=B178ABEC5B67D81CF786EFEE250771DF"
     ],
-    "_img_neg": [
+    "_test_imgSrc_neg": [
       "https://www.gannett-cdn.com/-mm-/e2095ab875513882e6a859bada876092155aaa0f/c=0-47-900-553/local/-/media/2016/09/15/Memphis/M0012879733--371327.JPG?width=660&amp;height=372&amp;fit=crop&amp;format=pjpg&amp;auto=webp"
     ],
     "_script_pos": [
       "maybe? /WebResource.axd?d=EllAive0ph4tThd4yHIUx0V6DgFOtjXPEaijRb_hBafNNOWn4ztTZtHVScoal5n8xdxbP1Yorjx8Pr6O2EgxbR9uNAo1&t=635370178285126825"
     ],
-    "dom": {
+    "imgSrc": [
+      "/_sitecore/",
+      "/(?:-|~)/(?:jss)?media/.*\\.ashx\\;confidence:60",
+      "/~/media/.+\\.[a-z]+\\?(?:w|h|mw|mh)=\\d",
+      "/(?:-|~)/media/\\;confidence:55"
+    ],
+    "url": [
+      "/api/sitecore/"
+    ],
+    "_dom": {
       "link[href*='/_sitecore/']": {
         "exists": ""
       },
@@ -3776,10 +3778,10 @@
         "exists": "\\;confidence:60"
       },
       "img[src*='/~/media/'][src*='.ashx']": {
-        "exists": ""
+        "exists": "\\;confidence:60"
       },
       "img[src*='/-/jssmedia/'][src*='.ashx']": {
-        "exists": ""
+        "exists": "\\;confidence:60"
       },
       "img[src*='/~/media/'][src*='?']": {
         "attributes": {
@@ -3787,10 +3789,12 @@
         }
       },
       "img[src*='/~/media/'],div[style*='/~/media/']": {
-        "exists": "\\;confidence:50"
-      },
+        "exists": "\\;confidence:55"
+      }
+    },
+    "dom": {
       "div.siteContainer": {
-        "exists": ""
+        "exists": "\\;confidence:50"
       }
     }, 
     "icon": "Sitecore.svg",
@@ -4366,7 +4370,8 @@
     "meta": {
       "author": "Redacteur SmartInstant"
     },
-    "website": "https://www.seneca.nl/pub/Smartsite/Smartsite-Smartsite-iXperion"
+    "website": "https://www.seneca.nl/pub/Smartsite/Smartsite-Smartsite-iXperion",
+    "oss": true
   },
   "SmartWeb": {
     "cats": [
@@ -6278,18 +6283,23 @@
       "x-powered-by": "^Statamic$"
     },
     "icon": "Statamic.svg",
-    "_img": [
+    "_test_imgSrc_pos": [
       "/img/containers/assets/card_backgrounds/image-3-cropped.png/65ae78bd87269454cd60b2f3f023a3e5.webp",
-      "https://www.centreforpublicimpact.org/img/containers/assets/centre-for-public-impact-1614700326.jpg/0bf4038104a311fa17ce937e51284a0e/centre-for-public-impact-1614700326.jpg",
-      "/img/containers/380dc8d9-481c-4d18-9162-ecd5688f98a8/img/home/slides/BF1R8365.jpg/0d231aec3c502674af501596f0218df3.jpg"
+      "/img/containers/assets/centre-for-public-impact-1614700326.jpg/0bf4038104a311fa17ce937e51284a0e/centre-for-public-impact-1614700326.jpg - https://www.centreforpublicimpact.org",
+      "/img/containers/380dc8d9-481c-4d18-9162-ecd5688f98a8/img/home/slides/BF1R8365.jpg/0d231aec3c502674af501596f0218df3.jpg",
+      "/img/id/323c8486-1ae0-4c66-936d-94be624cc886?w=960&h=480&s=c3beab3c3466203bda2480604ccb899c",
+      "/img/asset/Z2FsbGVyaWVzL2Jpb2xvZ3ktd2Vlay0yMDIxLTM4LmpwZw/biology-week-2021-38.jpg?w=1024&q=75&s=9b53cedc4f3baeb5404f16c0572d1673 - https://www.cheltladiescollege.org",
+      "https://www.cheltladiescollege.org/img/asset/YXNzZXRzL2xjMS1nZW9ncmFwaHktcml2ZXJzLXRyaXAtMjAyMy00N193ZWJjcm9wLmpwZw%3D%3D?w=1600&q=75&fm=webp&s=a7f5226d7f65445f97200b1b9d6189ee",
+      "https://www.cheltladiescollege.org/img/asset/YXNzZXRzL3N0YWZmbGlzdC9pc2ktbG9nby0xNjg2NjcwMDU4LmpwZw==?h=300&s=949d9e3b9507a969fd3d201f9756ffae",
+      "maybe? https://www.dovehouse.org.uk /assets/img/resized/29468898_1825165314443561_4381133634266988544_n-s-w390-h270-q100-m1528823413.jpg"
     ],
-    "dom": {
-      "img[src*='/img/containers/']": {
-        "attributes": {
-          "src": "/img/containers/.*/[a-z0-9]{32}"
-        }
-      }
-    },
+    "imgSrc": [
+        "/img/containers/.*/[a-z0-9]{32}",
+        "/img/.*s=[a-f0-9]{32}$\\;confidence:60"
+    ],
+    "scriptSrc": [
+      "/build/assets/site-[a-zA-z0-9]{8}\\.js"
+    ],
     "implies": [
       "PHP",
       "Laravel"
@@ -6297,7 +6307,7 @@
     "js": {
       "Statamic": ""
     },
-    "oss": true,
+    "oss": false,
     "pricing": [
       "freemium",
       "mid",

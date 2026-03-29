@@ -2546,12 +2546,10 @@
     ],
     "cookies": {
       "ci_csrf_token": "^(.+)$\\;version:\\1?2+:",
-      "ci_session": "",
-      "exp_last_activity": "",
-      "exp_tracker": ""
+      "ci_session": ""
     },
     "meta": {
-      "generator": "CodeIgniter[(\\d)\\+?]\\;version:\\1"
+      "generator": "CodeIgniter\\[(\\d)\\+?\\]\\;version:\\1"
     },
     "cpe": "cpe:2.3:a:codeigniter:codeigniter:*:*:*:*:*:*:*:*",
     "html": "<input[^>]+name=\"ci_csrf_token\"\\;version:2+",
@@ -3285,13 +3283,21 @@
     "cats": [
       1
     ],
-    "description": "Contensis, an enterprise headless CMS with an integrated deployment platform making it Hybrid",
-    "headles_since": "2019",
+    "description": "Contensis, an enterprise headless CMS",
+    "history": {
+        "2019-01-01": {
+            "description": "Contensis is a Digital Experience Platform (DXP) and Content Management System (CMS) used for managing and creating content for websites and other digital experiences."
+        }
+    },
+    "headless_since": "2019",
     "icon": "Contensis.png",
     "implies": [
       "Java",
       "CFML"
     ],
+    "headers": {
+      "x-host": "contensis.cloud"
+    },
     "meta": {
       "generator": "Contensis CMS Version ([\\d.]+)\\;version:\\1"
     },
@@ -3838,7 +3844,7 @@
     "icon": "CoreMedia Content Cloud.svg",
     "meta": {
       "coremedia_content_id": "",
-      "generator": "^CoreMedia C(?:ontent Cloud|MS)$"
+      "generator": "^CoreMedia (\\d)(?:C(?:ontent Cloud|MS))?\\;version:\\1"
     },
     "pricing": [
       "poa"

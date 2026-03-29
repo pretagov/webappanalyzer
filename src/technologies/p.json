@@ -353,6 +353,11 @@
     ],
     "cpe": "cpe:2.3:a:pagekit:pagekit:*:*:*:*:*:*:*:*",
     "icon": "Pagekit.png",
+    "script": "$pagekit",
+    "scriptSrc":[
+      "/packages/pagekit/",
+      "/pagekit-assets/"
+    ],
     "meta": {
       "generator": "Pagekit"
     },
@@ -1100,19 +1105,6 @@
     "description": "Percona server is an opensource, fully compatible, enhanced drop-in replacement for MySQL, providing superior performance, scalability, and instrumentation.",
     "icon": "percona.svg",
     "website": "https://www.percona.com"
-  },
-  "Percussion": {
-    "cats": [
-      1
-    ],
-    "html": "<[^>]+class=\"perc-region\"",
-    "icon": "Percussion.png",
-    "meta": {
-      "generator": "(?:Percussion|Rhythmyx)"
-    },
-    "website": "https://percussion.com",
-    "description": "Percussion Web Content Management products (Rhythmyx, CM1, Percussion CMS) transition to an open source fulfillment model effective June 30, 2023.",
-    "oss": true
   },
   "PerfectApps Swift": {
     "cats": [

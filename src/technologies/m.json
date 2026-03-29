@@ -371,10 +371,14 @@
     "cookies": {
       "X-Magento-Vary": "",
       "frontend": "\\;confidence:50",
+      "CACHED_FRONT_FORM_KEY": "",
       "mage-cache-storage": "",
       "mage-cache-storage-section-invalidation": "",
       "mage-translation-file-version": "",
       "mage-translation-storage": ""
+    },
+    "headers": {
+      "Server": "MageStack"
     },
     "cpe": "cpe:2.3:a:magento:magento:*:*:*:*:*:*:*:*",
     "description": "Magento is an open-source ecommerce platform written in PHP.",
@@ -403,7 +407,8 @@
       "js/mage",
       "skin/frontend/(?:default|(enterprise))\\;version:\\1?1 (Enterprise):1 (Community)",
       "skin/frontend/\\;confidence:50",
-      "static/_requirejs\\;confidence:50\\;version:2"
+      "static/_requirejs\\;confidence:50\\;version:2",
+      "\\,mage/"
     ],
     "website": "https://magento.com"
   },
@@ -746,9 +751,6 @@
     "icon": "Mambo.png",
     "html": [
       "<!-- debug: mod_mambo"
-    ],
-    "scriptSrc": [
-      "/mambots/"
     ],
     "meta": {
       "generator": "Mambo"

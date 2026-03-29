@@ -535,16 +535,14 @@
     "scriptSrc": [
       "/ektron"
     ],
-    "_img_pos": [
+    "_test_imgSrc_pos": [
       "https://web.archive.org/uploadedImages/Main_Content/Banners/IMG_0854_lb.jpg?n=1579",
       "https://web.archive.org/uploadedImages/Shared_Assets/Splash_Page_Images/Tickets/anji-tickets-silver.jpg?n=3776"
     ],
+    "imgSrc": [
+      "/uploadedImages/.*?n=\\d{4}"
+    ],
     "dom": {
-      "img[src*='/uploadedImages/']": {
-        "attributes": {
-          "src": "/uploadedImages/.*?n=\\d{4}"
-        }
-      },
       "[id*='Ektron']": {
         "exists": ""
       }
@@ -1954,19 +1952,37 @@
       "exp_last_activity": "",
       "exp_tracker": ""
     },
-    "_img_pos": [
+    "headers": {
+      "Set-Cookie": "[A-Za-z0-9_]+_last_activity="
+    },
+    "_test_imgSrc_pos": [
       "maybe http://www.neweconomics.org/page/-/images/feature/zerohours_feature.jpg/@mx_650@my_325",
       "maybe http://action.neweconomics.org/page/-/images/feature/WEP_freemovementHPH.png/@mx_650@my_325",
+      "maybe https://web.archive.org/images/made/images/uploads/main-1000x678-individual-winter-offer_300_200_c1_c_c.jpg",
       "/images/made/assets/images/common/issuesMonitor_100_116.png",
       "http://access.redmanhosting.co.uk/~itecne2/images/uploads/Thermon_UK_Feb_12_003_thumb.JPG",
-      "https://assets-cdn.sums.su/SH/Homepage_Adverts/2425-0280-Cosmos-SheffieldSU-780x95-v3Banner.jpg"
+      "https://assets-cdn.sums.su/SH/Homepage_Adverts/2425-0280-Cosmos-SheffieldSU-780x95-v3Banner.jpg",
+      "https://web.archive.org/images/made/images/remote/http_s3-eu-west-1.amazonaws.com/img.buttle.org.uk/Creative_Commons_Images/lab-385348_960_720_600_550_90_s_c1.jpg",
+      "docs https://docs.causingeffect.com/expressionengine/ce-image/user-guide/basics.html"
+    ],
+    "imgSrc": [
+      "/images/made/images/",
+      "_\\d{2,4}_\\d{2,4}_c1\\.(jpg|png)"
     ],
     "cpe": "cpe:2.3:a:ellislab:expressionengine:*:*:*:*:*:*:*:*",
     "description": "ExpressionEngine is a free and open-source CMS.",
     "icon": "ExpressionEngine.svg",
     "implies": "PHP",
     "oss": true,
-    "website": "https://expressionengine.com/"
+    "website": "https://expressionengine.com/",
+    "history": {
+      "2018-11-01": {
+        "pricing": [
+          "recurring"
+        ],
+        "oss": false
+      }
+    }
   },
   "ExtJS": {
     "cats": [
@@ -2369,6 +2385,9 @@
         "exists": ""
       }
     },
+    "imgSrc": [
+      "/ezflow_site/"
+    ],
     "icon": "eZ.svg",
     "implies": "PHP",
     "meta": {

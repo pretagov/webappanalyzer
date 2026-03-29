@@ -575,9 +575,7 @@
     "html": "<[^>]+data-react",
     "icon": "React.svg",
     "js": {
-      "React.version": "^([\\d\\.]+)$\\;version:\\1",
-      "ReactOnRails": "",
-      "__REACT_ON_RAILS_EVENT_HANDLERS_RAN_ONCE__": ""
+      "React.version": "^([\\d\\.]+)$\\;version:\\1"
     },
     "meta": {
       "description": "^Web site created using create-react-app$"
@@ -610,6 +608,25 @@
     "requires": "React",
     "saas": true,
     "website": "https://reactbricks.com"
+  },
+  "React on Rails": {
+    "cats": [
+      12
+    ],
+    "dom": {
+      "script[id='js-react-on-rails-context']": {
+        "exists": ""
+      }
+    },
+    "js": {
+      "ReactOnRails": "",
+      "__REACT_ON_RAILS_EVENT_HANDLERS_RAN_ONCE__": ""
+    },
+    "implies": [
+      "React",
+      "Ruby on Rails"
+    ]
+    
   },
   "React Redux": {
     "cats": [
@@ -2157,6 +2174,22 @@
     "saas": true,
     "website": "https://rive.app"
   },
+  "Rhythmyx": {
+    "cats": [
+      1
+    ],
+    "html": "<[^>]+class=\"perc-region\"",
+    "icon": "Percussion.png",
+    "meta": {
+      "generator": "(?:Percussion|Rhythmyx)"
+    },
+    "website": "https://percussion.com",
+    "description": "Percussion Web Content Management products (Rhythmyx, CM1, Percussion CMS) transition to an open source fulfillment model effective June 30, 2023.",
+    "oss": false,
+    "pricing": [
+      "recurring"
+    ]
+  },
   "RoadRunner": {
     "cats": [
       22
@@ -2460,24 +2493,36 @@
       18
     ],
     "cookies": {
-      "_session_id": ""
+      "_session_id": "[a-z0-9]{32}$",
+      "_site_session": "[A-Za-z0-9]{82}"
     },
+    "_cookies" : [
+      "not RSM_SESSION_ID=pma01q90rre9kmpvggh3o0h2m0; path=/; domain=.rsm.ac.uk",
+      "a001a0e32f21b7804c4456afff6f5144",
+      "fe098c42131e54925893c33bd02b957a",
+      "_site_session=BAh7BzoPc2Vzc2lvbl9pZCIlNmRkM2EzNWU1YzM3OGQzYzVlMmYwNThhMDg1OTFiNzY6DHNpdGVfaWRpBg%3D%3D--27d7d546b5b6ba1bd52fd75ac13fdfaeb796401f; path=/; HttpOnly"
+    ],
     "cpe": "cpe:2.3:a:rubyonrails:rails:*:*:*:*:*:*:*:*",
     "description": "Ruby on Rails is a server-side web application framework written in Ruby under the MIT License.",
     "headers": {
       "Server": "mod_(?:rails|rack)",
       "X-Powered-By": "mod_(?:rails|rack)",
-      "Set-Cookie": "[a-zA-z0-9]*_session_id=\\;confidence:75"
+      "Set-Cookie": "[a-zA-Z0-9_]*_session_id=[a-z0-9]{32};\\;confidence:75"
     },
     "icon": "Ruby on Rails.svg",
     "implies": "Ruby",
     "js": {
-      "ReactOnRails": "",
-      "__REACT_ON_RAILS_EVENT_HANDLERS_RAN_ONCE__": "",
       "_rails_loaded": ""
     },
     "meta": {
       "csrf-param": "^authenticity_token$\\;confidence:50"
+    },
+    "dom" : {
+      "input[name='authenticity_token']": {
+        "attributes": {
+          "value": "[A-Za-z0-9=]{44}"
+        }
+      }
     },
     "scriptSrc": "/assets/application-[a-z\\d]{32}/\\.js\\;confidence:50",
     "website": "https://rubyonrails.org"

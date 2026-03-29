@@ -53,7 +53,13 @@
       "high",
       "poa"
     ],
-    "url": "/wps/wcm/",
+    "url": [
+      "/wps/wcm/",
+      "/wps/portal/"
+    ],
+    "scriptSrc": [
+        "/wps/wcm/"
+    ],
     "website": "https://www.hcltechsw.com/dx"
   },
   "HCL Domino": {

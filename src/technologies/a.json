@@ -1479,7 +1479,7 @@
     "cookies": {
       "CFTOKEN": "[a-zA-Z0-9-]{4,128}",
       "CFID": "^\\d{2,128}$",
-      "CFGLOBALS": ""
+      "CFGLOBALS": ".{1}"
     },
     "html": "<!-- START headerTags\\.cfm",
     "icon": "Adobe ColdFusion.svg",

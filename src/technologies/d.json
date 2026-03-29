@@ -938,20 +938,14 @@
     "headers": {
       "x-powered-by": "^Directus$"
     },
-    "_img_pos": [
+    "_test_imgSrc_pos": [
       "https://www.skriptfabrik.com/data/assets/14f6e4ba-d194-4f4e-b0dd-c7fae4325d12?format=webp",
       "https://insurance-news.directus.app/assets/ea7b1034-2816-4651-bf05-47fb30d3c2f2"
     ],
-    "dom": {
-      "img[src*='directus.app']": {
-        "exists": "" 
-      },
-      "img[src*='/assets/']": {
-        "attributes": {
-          "src": "/assets/[\\da-z]{8}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{12}(?:\\?.*)?$"
-        }
-      }
-    },
+    "imgSrc": [
+      "directus\\.app",
+      "/assets/[\\da-z]{8}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{12}(?:\\?.*)?$"
+    ],
     "icon": "Directus.svg",
     "implies": [
       "Vue.js",
@@ -1132,11 +1126,25 @@
       "__admin_media_prefix__": "",
       "django": ""
     },
+    "_test_imgSrc_pos": [
+      "Easy Thumbnails",
+      "https://web.archive.org/web/20240809112447/https://www.solvingkidscancer.org.uk/media/filer_public_thumbnails/filer_public/1f/df/1fdf6cd2-4f16-49c2-8af0-adec6dbf962d/isla_austin_5.jpg__1440x542_q85_crop_progressive_subject_location-861%2C259_subsampling-2_upscale.jpg",
+      "image_4.png__500x500_crop_progressive_subsampling-2_upscale.png",
+      "https://cofecarlisle.contentfiles.net/media/thumbs/40/58/40580d47edaa6c13c0703a7eb438dbb2.jpg",
+      "https://white-eagle-lodge.s3.amazonaws.com/production/media/filer_public_thumbnails/filer_public/3a/b5/3ab57649-be01-4647-93e6-dfd4af4fe389/shutterstock_644007703.jpg__690x635_q80_crop_progressive_subsampling-2_upscale.jpg",
+      "https://web.archive.org/media/event-images/Add_a_heading.png.600x400_q85_crop-center.png",
+      "TODO background-image: url('/media/home-page/Gardening_copy.jpg.2000x2000_q85.jpg')",
+      "TODO background-image: url('/media/render/photobelt/2823-gmdbs6sjn4hwvtym7dozr663.jpg"
+    ],
     "dom": {
       "input[name='csrfmiddlewaretoken']": {
         "exists": ""
       }
     },
+    "imgSrc": [
+      "[^/](?:\\.|_)\\d{2,5}x\\d{2,5}(?:_q\\d{2}|_crop(?:_|-)[a-z]+).*\\.",
+      "/media/[a-z_]*thumb[a-z_]*(?:/.*)?/[\\da-f]{2}/[\\da-f]{2}/[\\da-f-]{32,36}(?:/|\\.)"
+    ],
     "oss": true,
     "website": "https://djangoproject.com"
   },
@@ -1720,7 +1728,10 @@
     "description": "Dreamweaver is a development tool for creating, publishing, and managing websites and mobile content.",
     "html": [
       "<!--[^>]*(?:InstanceBeginEditable|Dreamweaver([^>]+)target|DWLayoutDefaultTable)\\;version:\\1",
-      "<!-- #BeginTemplate\\s\"[\\d_\\w/]+\\.dwt"
+      "<!-- #BeginTemplate\\s\"[\\d_\\w/]+\\.dwt",
+      "<!-- #BeginEditable\\s\"[\\d_\\w/]+",
+      "dwt.php", 
+      "template=\"/Templates/main\\.dwt\\.asp\""
     ],
     "icon": "DreamWeaver.png",
     "meta": {
@@ -1901,7 +1912,7 @@
     "cpe": "cpe:2.3:a:drupal:drupal:*:*:*:*:*:*:*:*",
     "description": "Drupal is a free and open-source web content management framework.",
     "headers": {
-      "Expires": "19 Nov 1978",
+      "Expires": "19 Nov 1978;\\confidence:75",
       "X-Drupal-Cache": "",
       "X-Generator": "^Drupal(?:\\s([\\d.]+))?\\;version:\\1"
     },
