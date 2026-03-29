@@ -2520,11 +2520,14 @@
     "dom" : {
       "input[name='authenticity_token']": {
         "attributes": {
-          "value": "[A-Za-z0-9=]{44}"
+          "value": "[A-Za-z0-9+/=]{44}"
         }
       }
     },
-    "scriptSrc": "/assets/application-[a-z\\d]{32}/\\.js\\;confidence:50",
+    "scriptSrc": [
+      "/assets/application-[a-z\\d]{32}/\\.js\\;confidence:50",
+      "/javascripts/\\w+_packaged\\.js\\;confidence:50"
+    ],
     "website": "https://rubyonrails.org"
   },
   "Rudderstack": {
