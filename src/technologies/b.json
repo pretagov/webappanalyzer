@@ -188,7 +188,7 @@
     "icon": "Backdrop.svg",
     "implies": "PHP",
     "js": {
-      "Backdrop": ""
+      "Backdrop": "\\{settings"
     },
     "meta": {
       "generator": "^Backdrop CMS(?:\\s([\\d.]+))?\\;version:\\1"
