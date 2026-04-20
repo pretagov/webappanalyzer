@@ -262,6 +262,7 @@
     "headers": {
       "X-Powered-By": "JSP(?:/([\\d.]+))?\\;version:\\1"
     },
+    "url": "\\.jsp(?:[?;#]|$)",
     "icon": "Java.svg",
     "implies": "Java",
     "website": "https://www.oracle.com/technetwork/java/javaee/jsp/index.html"
