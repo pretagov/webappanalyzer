@@ -1269,6 +1269,30 @@
     },
     "website": "https://sourceforge.net/projects/bluefish"
   },
+  "Bluepark": {
+    "cats": [
+      1,
+      6
+    ],
+    "description": "Bluepark is a UK-based all-in-one ecommerce / CMS platform (Central Park product for non-ecommerce sites). Themes include Idyllic, Divine, etc. Distinctive asset pattern /includes/<32-hex-hash>.<name>.(css|js).php — CSS/JS served through PHP with a content-hash prefix. BPSESSID cookie is set client-side via JS.",
+    "cookies": {
+      "BPSESSID": ""
+    },
+    "dom": {
+      "link[href*='/includes/']": {
+        "attributes": {
+          "href": "/includes/[a-f0-9]{32}\\..+\\.css\\.php\\;confidence:80"
+        }
+      }
+    },
+    "scriptSrc": [
+      "/includes/[a-f0-9]{32}\\..+\\.js\\.php\\;confidence:80"
+    ],
+    "saas": true,
+    "pricing": ["recurring"],
+    "implies": "PHP",
+    "website": "https://www.bluepark.co.uk"
+  },
   "Bluehost": {
     "cats": [
       88

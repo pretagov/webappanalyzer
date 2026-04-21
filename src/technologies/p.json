@@ -2781,6 +2781,21 @@
     "scriptSrc": "/wp-content/plugins/chaty/",
     "website": "https://premio.io/downloads/chaty"
   },
+  "Premium TV": {
+    "cats": [
+      1
+    ],
+    "description": "Java-based sports content management platform used by many UK football clubs from 2005-2015. Later acquired by Perform Group / Deltatre. Distinctive URL pattern: /page/.../0,,N[~M],00.ext",
+    "icon": "default.svg",
+    "implies": "Java",
+    "pricing": [
+      "poa",
+      "high"
+    ],
+    "saas": true,
+    "url": "0,,[\\d~]*,00\\.(?:html?|css|js|aspx?|php|jsp)",
+    "website": "https://perform.deltatre.com"
+  },
   "Prepr": {
     "cats": [
       1

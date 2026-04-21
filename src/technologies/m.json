@@ -158,17 +158,22 @@
       "X-Powered-By": "^MODX"
     },
     "html": [
-      "<a[^>]+>Powered by MODX</a>",
-      "<!-- Modx process time debug info -->",
-      "<(?:link|script)[^>]+assets/snippets/\\;confidence:20",
-      "<form[^>]+id=\"ajaxSearch_form\\;confidence:20",
-      "<input[^>]+id=\"ajaxSearch_input\\;confidence:20"
+      "<!-- Modx process time debug info -->"
     ],
     "dom": {
-      "img[src*='/assets/components/phpthumbof']": {
-        "exists": ""
+      "a": {
+        "text": "Powered by MODX"
+      },
+      "link[href*='assets/snippets/'], script[src*='assets/snippets/']": {
+        "exists": "\\;confidence:20"
+      },
+      "form#ajaxSearch_form, input#ajaxSearch_input": {
+        "exists": "\\;confidence:20"
       }
-    }, 
+    },
+    "imgSrc": [
+      "/assets/components/phpthumbof/\\;confidence:50"
+    ],
     "icon": "MODX.svg",
     "implies": "PHP",
     "js": {
