@@ -1098,8 +1098,9 @@
     ],
     "description": "Homestead is a website builder.",
     "icon": "Homestead.png",
+    "dom": "link[href*='homestead.com/~media/elements/']",
     "meta": {
-      "generator": "^Homestead SiteBuilder$"
+      "generator": "Homestead\\b|Intuit SiteBuilder"
     },
     "pricing": [
       "low",

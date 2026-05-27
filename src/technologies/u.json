@@ -282,6 +282,9 @@
       },
       "a[data-udi^='umb://']": {
         "exists": "\\;confidence:90"
+      },
+      "a[href='/umbraco/']": {
+        "exists": ""
       }
     },
     "headers": {

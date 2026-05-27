@@ -944,7 +944,7 @@
     ],
     "imgSrc": [
       "directus\\.app",
-      "/assets/[\\da-z]{8}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{12}(?:\\?.*)?$"
+      "^https?://[^/]+(?:/data)?/assets/[\\da-z]{8}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{4}-[\\da-z]{12}(?:\\?.*)?$"
     ],
     "icon": "Directus.svg",
     "implies": [
@@ -1916,7 +1916,7 @@
       "X-Drupal-Cache": "",
       "X-Generator": "^Drupal(?:\\s([\\d.]+))?\\;version:\\1"
     },
-    "html": "<(?:link|style)[^>]+\"/sites/(?:default|all)/(?:themes|modules)/",
+    "html": "<(?:link|style|script|img)[^>]+\"/sites/[a-z0-9._-]+/(?:themes|modules|files)/",
     "icon": "Drupal.svg",
     "implies": "PHP",
     "js": {

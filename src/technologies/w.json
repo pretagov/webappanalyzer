@@ -1281,6 +1281,12 @@
     "meta": {
       "generator": "WebsiteBaker"
     },
+    "headers": {
+      "Set-Cookie": "^(?:wb_\\d+_session_id=|wb_\\d+-sid=|PHPSESSID-wb-\\w+=)"
+    },
+    "js": {
+      "WB_URL": ""
+    },
     "website": "https://websitebaker2.org/en/home.php"
   },
   "WebsiteBuilder": {
@@ -1673,6 +1679,9 @@
     "cookies": {
       "winter_session": ""
     },
+    "excludes": [
+      "October CMS"
+    ],
     "implies": [
       "Laravel"
     ],

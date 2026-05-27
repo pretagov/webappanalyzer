@@ -928,7 +928,7 @@
     ],
     "imgSrc": [
       "cdn\\.sanity\\.io",
-      "sanity.*/[a-z0-9]{28}-\\d{3,5}x\\d{3,5}\\."
+      "sanity.*/[a-z0-9]{24,40}-\\d{3,5}x\\d{3,5}\\."
     ],
     "headers": {
       "content-security-policy": "cdn\\.sanity\\.io",

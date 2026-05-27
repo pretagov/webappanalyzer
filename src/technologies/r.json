@@ -2505,9 +2505,9 @@
     "cpe": "cpe:2.3:a:rubyonrails:rails:*:*:*:*:*:*:*:*",
     "description": "Ruby on Rails is a server-side web application framework written in Ruby under the MIT License.",
     "headers": {
-      "Server": "mod_(?:rails|rack)",
+      "Server": "(?:mod_(?:rails|rack)|^Mongrel)",
       "X-Powered-By": "mod_(?:rails|rack)",
-      "Set-Cookie": "[a-zA-Z0-9_]*_session_id=[a-z0-9]{32};\\;confidence:75"
+      "Set-Cookie": "[a-zA-Z0-9_]*_session_id=[a-z0-9]{32};\\;confidence:40"
     },
     "icon": "Ruby on Rails.svg",
     "implies": "Ruby",

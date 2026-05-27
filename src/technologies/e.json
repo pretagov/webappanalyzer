@@ -1972,7 +1972,7 @@
     "cpe": "cpe:2.3:a:ellislab:expressionengine:*:*:*:*:*:*:*:*",
     "description": "ExpressionEngine is a free and open-source CMS.",
     "icon": "ExpressionEngine.svg",
-    "implies": "PHP",
+    "implies": ["PHP", "CodeIgniter"],
     "oss": true,
     "website": "https://expressionengine.com/",
     "history": {

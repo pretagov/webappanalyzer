@@ -353,7 +353,7 @@
     ],
     "cpe": "cpe:2.3:a:pagekit:pagekit:*:*:*:*:*:*:*:*",
     "icon": "Pagekit.png",
-    "script": "$pagekit",
+    "scripts": "\\$pagekit",
     "scriptSrc":[
       "/packages/pagekit/",
       "/pagekit-assets/"
