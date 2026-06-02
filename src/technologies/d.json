@@ -1733,6 +1733,9 @@
       "dwt.php", 
       "template=\"/Templates/main\\.dwt\\.asp\""
     ],
+    "dom": {
+      "[onmouseover*='MM_swapImage'], [onmouseout*='MM_swapImgRestore'], a[onmouseover*='MM_swapImage']": ""
+    },
     "icon": "DreamWeaver.png",
     "meta": {
       "generator": "DreamWeaver"

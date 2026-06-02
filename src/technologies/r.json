@@ -2181,7 +2181,8 @@
     "html": "<[^>]+class=\"perc-region\"",
     "icon": "Percussion.png",
     "meta": {
-      "generator": "(?:Percussion|Rhythmyx)"
+      "generator": "(?:Percussion|Rhythmyx)",
+      "perc_linkback": ".+"
     },
     "website": "https://percussion.com",
     "description": "Percussion Web Content Management products (Rhythmyx, CM1, Percussion CMS) transition to an open source fulfillment model effective June 30, 2023.",
