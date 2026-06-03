@@ -328,12 +328,16 @@
     "cats": [
       16
     ],
-    "description": "AWS WAF Captcha helps block unwanted bot traffic by requiring users to successfully complete challenges before their web request are allowed to reach AWS WAF protected resources.",
+    "description": "AWS WAF Captcha helps block unwanted bot traffic by requiring users to successfully complete challenges before their web request are allowed to reach AWS WAF protected resources. Also detects AWS WAF's silent JavaScript challenge engine (Goku) via the gokuProps + awsWafCookieDomainList script globals.",
     "headers": {
       "x-amzn-waf-action": "^captcha$"
     },
     "icon": "AWS WAF Captcha.svg",
     "implies": "Amazon Web Services",
+    "js": {
+      "gokuProps": "",
+      "awsWafCookieDomainList": ""
+    },
     "pricing": [
       "recurring",
       "payg"
