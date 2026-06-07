@@ -1903,7 +1903,7 @@
     },
     "html": "<input[^>]+name=\"__VIEWSTATE",
     "icon": "Microsoft ASP.NET.svg",
-    "url": "\\.aspx(?:$|\\?)",
+    "url": "\\.aspx(?:$|\\?)\\;confidence:30",
     "website": "https://www.asp.net"
   },
   "Microsoft Advertising": {
