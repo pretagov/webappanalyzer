@@ -1953,7 +1953,7 @@
     "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
     "html": [
       "<style>\\s+/\\*!\\s+\\* Bootstrap v(\\d\\.\\d\\.\\d)\\;version:\\1",
-      "<link[^>]* href=[^>]*?bootstrap(?:[^>]*?([0-9a-fA-F]{7,40}|[\\d]+(?:.[\\d]+(?:.[\\d]+)?)?)|)[^>-]*?(?:\\.min)?\\.css\\;version:\\1"
+      "<link[^>]* href=[^>]*?bootstrap(?:[^>]*?([0-9a-fA-F]{7,40}|[\\d]+\\.[\\d]+(?:\\.[\\d]+)?)|)[^>-]*?(?:\\.min)?\\.css\\;version:\\1"
     ],
     "icon": "Bootstrap.svg",
     "js": {
@@ -1961,7 +1961,7 @@
       "jQuery.fn.tooltip.Constructor.VERSION": "^(.+)$\\;version:\\1"
     },
     "scriptSrc": [
-      "bootstrap(?:[^>]*?([0-9a-fA-F]{7,40}|[\\d]+(?:.[\\d]+(?:.[\\d]+)?)?)|)[^>]*?(?:\\.min)?\\.js\\;version:\\1"
+      "bootstrap(?:[^>]*?([0-9a-fA-F]{7,40}|[\\d]+\\.[\\d]+(?:\\.[\\d]+)?)|)[^>]*?(?:\\.min)?\\.js\\;version:\\1"
     ],
     "website": "https://getbootstrap.com"
   },
