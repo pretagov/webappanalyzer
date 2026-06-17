@@ -6678,7 +6678,8 @@
     ],
     "description": "Strapi is an open-source headless CMS used for building fast and easily manageable APIs written in JavaScript.",
     "headers": {
-      "X-Powered-By": "^Strapi"
+      "X-Powered-By": "^Strapi",
+      "Set-Cookie": "strapi_jwt="
     },
     "cookies": {
       "strapi_jwt": ""
@@ -6687,7 +6688,10 @@
       "https://t10studios.azureedge.net/strapi-uploads/assets/turn10_logo_white_921f609fa2.svg"
     ],
     "scripts": [
-      "strapi"
+      "@strapi/"
+    ],
+    "imgSrc": [
+      "/strapi-uploads/"
     ],
     "icon": "Strapi.svg",
     "oss": true,
