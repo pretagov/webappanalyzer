@@ -64,6 +64,7 @@
   },
   "HCL Domino": {
     "cats": [
+      18,
       22
     ],
     "cpe": "cpe:2.3:a:ibm:lotus_domino:*:*:*:*:*:*:*:*",
@@ -73,10 +74,14 @@
     },
     "icon": "HCL Domino.svg",
     "implies": "Java",
+    "meta": {
+      "DC.Identifier": "\\.nsf/"
+    },
     "pricing": [
       "payg",
       "recurring"
     ],
+    "url": "\\.nsf(?:/|\\?)",
     "website": "https://www.hcltechsw.com/domino"
   },
   "HHVM": {

@@ -2186,7 +2186,8 @@
   },
   "GraphQL": {
     "cats": [
-      27
+      27,
+      112
     ],
     "cpe": "cpe:2.3:a:graphql:graphql:*:*:*:*:*:*:*:*",
     "description": "GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.",
@@ -2195,6 +2196,7 @@
       "store-config": "graphqlMethod"
     },
     "oss": true,
+    "scripts": "/graphql(?:[/?\"']|$)",
     "website": "https://graphql.org",
     "xhr": "graphql\\.[\\w]+\\.(?:com|net)/"
   },
