@@ -47,7 +47,7 @@
       "X-Powered-By": "^php/?([\\d.]+)?\\;version:\\1"
     },
     "icon": "PHP.svg",
-    "url": "\\.php(?:$|\\?)",
+    "url": "\\.php(?:$|\\?)\\;confidence:30",
     "website": "https://php.net"
   },
   "PHP-Nuke": {
