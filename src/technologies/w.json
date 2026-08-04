@@ -512,7 +512,8 @@
     },
     "imgSrc": [
       "(?:\\.[a-z:0-9]+(?:/[\\w-]+)*|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\.\\;confidence:80",
-      "images/[^/]+[a-zA-Z0-9]{7,8}\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-(?:\\d+|original))\\.\\;confidence:80"
+      "images/[^/]+[a-zA-Z0-9]{7,8}\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-(?:\\d+|original))\\.\\;confidence:80",
+      "/images/[A-Za-z0-9_-]+=/\\d+/(?:fill|max|min)-\\d+x\\d+\\;confidence:80"
     ],
     "headers": {
       "X-Wagtail-Cache": ""
