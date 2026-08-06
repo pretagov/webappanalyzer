@@ -1921,7 +1921,7 @@
       "poa"
     ],
     "saas": true,
-    "scriptSrc": "hcaptcha\\.com/([\\d]+?)/api\\.js\\;version:\\1",
+    "scriptSrc": "hcaptcha\\.com/[\\d]+/api\\.js",
     "website": "https://www.hcaptcha.com"
   },
   "hantana": {
