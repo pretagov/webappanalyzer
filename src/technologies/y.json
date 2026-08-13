@@ -91,6 +91,7 @@
       "X-XRDS-Location": "/ystore/"
     },
     "html": "<link[^>]+store\\.yahoo\\.net",
+    "url": "stores\\.yahoo\\.com/[\\w-]+\\;confidence:30",
     "icon": "Yahoo.svg",
     "js": {
       "YStore": ""
