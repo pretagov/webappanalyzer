@@ -1734,7 +1734,7 @@
       "template=\"/Templates/main\\.dwt\\.asp\""
     ],
     "dom": {
-      "[onmouseover*='MM_swapImage'], [onmouseout*='MM_swapImgRestore'], a[onmouseover*='MM_swapImage']": ""
+      "[onmouseover*='MM_swapImage'], [onmouseout*='MM_swapImgRestore'], a[onmouseover*='MM_swapImage'], div[id^='Layer'][style^='position:absolute']": ""
     },
     "icon": "DreamWeaver.png",
     "meta": {
