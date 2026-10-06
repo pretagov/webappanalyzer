@@ -773,16 +773,24 @@
   },
   "112": {
     "groups": [
+      5,
       9
     ],
-    "name": "Backend APIs",
-    "priority": 5
+    "name": "Artificial Intelligence",
+    "priority": 9
   },
   "113": {
     "groups": [
       9
     ],
     "name": "Headless frontends",
+    "priority": 5
+  },
+  "114": {
+    "groups": [
+      9
+    ],
+    "name": "Backend APIs",
     "priority": 5
   }
 }
