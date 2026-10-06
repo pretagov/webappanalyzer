@@ -4661,7 +4661,8 @@
     "cookies": {
       "exp_csrf_token": "",
       "exp_last_activity": "",
-      "exp_tracker": ""
+      "exp_tracker": "",
+      "[A-Za-z0-9_]+_last_activity": ""
     },
     "cpe": "cpe:2.3:a:ellislab:expressionengine:*:*:*:*:*:*:*:*",
     "description": "ExpressionEngine is a free and open-source CMS.",
@@ -4672,9 +4673,6 @@
     ],
     "oss": true,
     "website": "https://expressionengine.com/",
-    "headers": {
-      "Set-Cookie": "[A-Za-z0-9_]+_last_activity="
-    },
     "_test_imgSrc_pos": [
       "maybe http://www.neweconomics.org/page/-/images/feature/zerohours_feature.jpg/@mx_650@my_325",
       "maybe http://action.neweconomics.org/page/-/images/feature/WEP_freemovementHPH.png/@mx_650@my_325",
@@ -4953,12 +4951,12 @@
       6
     ],
     "cookies": {
-      "eZSESSID": ""
+      "eZSESSID": "",
+      "eZSESSID_.*": ""
     },
     "cpe": "cpe:2.3:a:ez:ez_publish:*:*:*:*:*:*:*:*",
     "headers": {
-      "X-Powered-By": "^eZ Publish",
-      "Set-Cookie": "^eZSESSID_"
+      "X-Powered-By": "^eZ Publish"
     },
     "icon": "eZ.svg",
     "implies": [

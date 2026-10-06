@@ -3970,7 +3970,8 @@
     ],
     "cookies": {
       "ASP\\.NET_SessionId": "",
-      "\\.ASPXAUTH": ""
+      "\\.ASPXAUTH": "",
+      "\\.AspNetCore\\..+": ""
     },
     "cpe": "cpe:2.3:a:microsoft:asp.net:*:*:*:*:*:*:*:*",
     "description": "ASP.NET is an open-source, server-side web-application framework designed for web development to produce dynamic web pages.",
@@ -3978,8 +3979,7 @@
       "input[name*='__VIEWSTATE']"
     ],
     "headers": {
-      "X-AspNet-Version": "(.+)\\;version:\\1",
-      "set-cookie": "\\.AspNetCore"
+      "X-AspNet-Version": "(.+)\\;version:\\1"
     },
     "html": [
       "<input[^>]+name=\"__VIEWSTATE"

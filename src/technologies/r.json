@@ -5644,14 +5644,14 @@
     ],
     "cookies": {
       "_session_id": "[a-z0-9]{32}$",
-      "_site_session": "[A-Za-z0-9]{82}"
+      "_site_session": "[A-Za-z0-9]{82}",
+      "[a-zA-Z0-9_]*_session_id": "^[a-z0-9]{32}$\\;confidence:40"
     },
     "cpe": "cpe:2.3:a:rubyonrails:rails:*:*:*:*:*:*:*:*",
     "description": "Ruby on Rails is a server-side web application framework written in Ruby under the MIT License.",
     "headers": {
       "Server": "(?:mod_(?:rails|rack)|^Mongrel)",
-      "X-Powered-By": "mod_(?:rails|rack)",
-      "Set-Cookie": "[a-zA-Z0-9_]*_session_id=[a-z0-9]{32};\\;confidence:40"
+      "X-Powered-By": "mod_(?:rails|rack)"
     },
     "icon": "Ruby on Rails.svg",
     "implies": [

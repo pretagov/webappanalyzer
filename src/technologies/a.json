@@ -1968,7 +1968,6 @@
       18
     ],
     "cookies": {
-      "CFID|CFTOKEN|CFMAGIC|CFGLOBALS": "",
       "CFTOKEN": "[a-zA-Z0-9-]{4,128}",
       "CFID": "^\\d{2,128}$",
       "CFGLOBALS": ".{1}"
