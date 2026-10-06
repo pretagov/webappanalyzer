@@ -3200,6 +3200,7 @@
       "ng.probe": ""
     },
     "oss": true,
+    "scriptSrc": "(?:^|/)runtime-es2015(?:\\.[0-9a-f]{20})?\\.js",
     "website": "https://angular.io"
   },
   "Angular Gridster": {
