@@ -953,13 +953,7 @@
     "imgSrc": [
       "cdn\\.sanity\\.io",
       "sanity.*/[a-z0-9]{24,40}-\\d{3,5}x\\d{3,5}\\."
-    ]
-  },
-  "Sanity.io": {
-    "cats": [
-      1
     ],
-    "description": "Sanity is a platform for structured content. It comes with an open-source, headless CMS that can be customized with Javascript, a real-time hosted data store and an asset delivery pipeline.",
     "dom": {
       "img[src*='cdn.sanity.io'],img[srcset*='cdn.sanity.io'],video[src*='cdn.sanity.io'],source[src*='cdn.sanity.io'],source[srcset*='cdn.sanity.io'],track[src*='cdn.sanity.io']": {
         "attributes": {
@@ -968,23 +962,8 @@
         }
       }
     },
-    "headers": {
-      "content-security-policy": "cdn\\.sanity\\.io",
-      "x-sanity-shard": ""
-    },
-    "icon": "Sanity.svg",
-    "pricing": [
-      "freemium",
-      "recurring",
-      "payg"
-    ],
-    "saas": true,
     "scriptSrc": [
       "cdn\\.sanity\\.io"
-    ],
-    "website": "https://www.sanity.io",
-    "xhr": [
-      "api(?:cdn)?\\.sanity\\.io"
     ]
   },
   "SAP": {

@@ -7619,10 +7619,10 @@
     "headers": {
       "Server": "^Contentful Images API$",
       "x-contentful-request-id": "",
-      "content-security-policy": "(?:assets|downloads|images|videos)\\.(?:ct?fassets\\.net|contentful\\.com)\\;confidence:30"
+      "content-security-policy": "(?:assets|downloads|images|videos)\\.(?:eu\\.)?(?:ct?fassets\\.net|contentful\\.com)\\;confidence:30"
     },
     "html": [
-      "<[^>]+(?:assets|downloads|images|videos)\\.(?:ct?fassets\\.net|contentful\\.com)/[a-z0-9]{12}/"
+      "<[^>]+(?:assets|downloads|images|videos)\\.(?:eu\\.)?(?:ct?fassets\\.net|contentful\\.com)/[a-z0-9]{12}/"
     ],
     "icon": "Contentful.svg",
     "pricing": [
@@ -7631,7 +7631,7 @@
       "recurring"
     ],
     "saas": true,
-    "scripts": "(?:assets|downloads|images|videos)\\.(?:ct?fassets\\.net|contentful\\.com)/[a-z0-9]{12}/",
+    "scripts": "(?:assets|downloads|images|videos)\\.(?:eu\\.)?(?:ct?fassets\\.net|contentful\\.com)/[a-z0-9]{12}/",
     "website": "https://www.contentful.com",
     "xhr": [
       "(?:cdn|graphql)\\.contentful\\.com"
