@@ -2034,6 +2034,9 @@
       "<div class=\"[^\"]*aem-Grid"
     ],
     "icon": "Adobe Experience Platform.svg",
+    "imgSrc": [
+      "^/content/dam/"
+    ],
     "implies": [
       "Java"
     ],
