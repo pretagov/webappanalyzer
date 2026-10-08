@@ -1037,9 +1037,6 @@
       "mid",
       "recurring"
     ],
-    "requires": [
-      "React"
-    ],
     "saas": true,
     "website": "https://reactbricks.com"
   },
