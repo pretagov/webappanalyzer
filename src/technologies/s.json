@@ -13594,7 +13594,7 @@
     "oss": true,
     "scripts": [
       "@strapi/",
-      "(?://|-)strapi-|strapi_jwt"
+      "strapi_jwt"
     ],
     "website": "https://strapi.io",
     "cookies": {
