@@ -2653,7 +2653,7 @@
     ],
     "saas": true,
     "scriptSrc": [
-      "/_sitesclouddelivery/renderer/renderer\\.js"
+      "/_sitesclouddelivery/renderer/"
     ],
     "website": "https://www.oracle.com/content-management"
   },
