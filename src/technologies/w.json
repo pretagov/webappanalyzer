@@ -4120,7 +4120,7 @@
     ],
     "description": "Sites using the WordPress Block Editor, also known as Gutenberg.",
     "html": [
-      "<div[^>]+class=[\"']wp-block-*"
+      "<div[^>]+class=[\"'][^\"']*\\bwp-block-[a-z]"
     ],
     "icon": "WordPress.svg",
     "website": "https://wordpress.org/gutenberg/"
