@@ -1815,7 +1815,11 @@
     ],
     "description": "Terminalfour is a digital engagement and web content management platform for higher education.",
     "icon": "Terminalfour.svg",
+    "imgSrc": [
+      "terminalfour\\.net/"
+    ],
     "meta": {
+      "editingPage": "terminalfour\\.net",
       "generator": "TERMINALFOUR"
     },
     "website": "https://www.terminalfour.com"

@@ -2030,25 +2030,12 @@
     ],
     "website": "https://opentelemetry.io"
   },
-  "OpenText Web": {
-    "cats": [
-      1
-    ],
-    "description": "OpenText Web is a web content management platform that supports hybrid headless environments, allowing developers to use preferred tools and enabling marketers to author, test, and publish content seamlessly, with a focus on performance, scalability, and compliance​.",
-    "html": [
-      "<!--[^>]+published by Open Text Web Solutions"
-    ],
-    "icon": "OpenText.svg",
-    "implies": [
-      "Microsoft ASP.NET"
-    ],
-    "website": "https://www.opentext.com/products/content-management-system"
-  },
   "OpenText Web Solutions": {
     "cats": [
       1
     ],
     "html": [
+      "<!--[^>]+published by Open Text Web Solutions",
       "<!--[^>]+(?:generated|published) by (?:Open Text Web Solutions|OpenText Web Site Management|RedDot) [\\d.]+ - ([\\d.]+)\\;version:\\1"
     ],
     "icon": "OpenText Web Solutions.png",

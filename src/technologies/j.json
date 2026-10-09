@@ -954,7 +954,7 @@
     "cpe": "cpe:2.3:a:joomla:joomla\\!:*:*:*:*:*:*:*:*",
     "description": "Joomla is a free and open-source content management system for publishing web content.",
     "dom": [
-      "div[id*='wrapper_r'], link[href*='feed/com_'], link[href*='components/com_'], table[class*='pill']"
+      "link[href*='feed/com_'], link[href*='components/com_']"
     ],
     "headers": {
       "X-Content-Encoded-By": "Joomla! ([\\d.]+)\\;version:\\1"
