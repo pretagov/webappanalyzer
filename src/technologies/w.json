@@ -3428,9 +3428,6 @@
       "recurring"
     ],
     "saas": true,
-    "scripts": [
-      "static\\.wixstatic\\.com"
-    ],
     "website": "https://www.wix.com/freesitebuilder/tae-store"
   },
   "Wiz": {

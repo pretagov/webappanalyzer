@@ -5017,7 +5017,7 @@
     "icon": "Amazon Web Services.svg",
     "saas": true,
     "scripts": [
-      "\\.amazonaws\\.com"
+      "https?:(?:\\\\?/){2}[\\w.-]+\\.amazonaws\\.com(?:\\\\?/)[^\\s\"'*]\\;confidence:30"
     ],
     "website": "https://aws.amazon.com/"
   },
