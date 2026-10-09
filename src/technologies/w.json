@@ -4262,9 +4262,6 @@
     "js": {
       "WordPressPopularPosts": ""
     },
-    "scripts": [
-      "ImportFromWordPressInsideMenu"
-    ],
     "website": "https://wordpress.com",
     "saas": true,
     "pricing": [
