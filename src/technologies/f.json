@@ -384,6 +384,7 @@
       18
     ],
     "cookies": {
+      "CURRENTFARCRYPROJECT": "",
       "FARCRYDEVICETYPE": ""
     },
     "description": "FarCry is a web application framework that helps CFML developers build tailor-made content solutions.",

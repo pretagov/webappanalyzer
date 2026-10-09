@@ -4096,7 +4096,7 @@
       "wp-static\\.assets\\.sh/"
     ],
     "scripts": [
-      "/wp-content"
+      "/wp-content\\;confidence:30"
     ],
     "website": "https://wordpress.org",
     "_img_pos": [
