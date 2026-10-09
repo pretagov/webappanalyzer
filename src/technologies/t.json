@@ -7507,8 +7507,8 @@
     "dom": {
       "link[href*='/typo3'],a[href*='/typo3'],img[src*='/typo3']": {
         "attributes": {
-          "src": "/typo3(?:conf|temp)/",
-          "href": "/typo3(?:conf|temp)/"
+          "src": "/typo3(?:conf|temp)/\\;confidence:50",
+          "href": "/typo3(?:conf|temp)/\\;confidence:50"
         }
       }
     },

@@ -4056,12 +4056,20 @@
     ],
     "cpe": "cpe:2.3:a:wordpress:wordpress:*:*:*:*:*:*:*:*",
     "description": "WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database. Features include a plugin architecture and a template system.",
-    "dom": [
-      "div[class*='wp-block-group'] > div[class*='wp-block-']",
-      "link[rel=stylesheet][href*='/wp-content/']",
-      "link[rel=stylesheet][href*='/wp-includes/']",
-      "link[href*='.wp.com']"
-    ],
+    "dom": {
+      "div[class*='wp-block-group'] > div[class*='wp-block-']": {
+        "exists": ""
+      },
+      "link[rel=stylesheet][href*='/wp-content/']": {
+        "exists": "\\;confidence:50"
+      },
+      "link[rel=stylesheet][href*='/wp-includes/']": {
+        "exists": "\\;confidence:50"
+      },
+      "link[href*='.wp.com']": {
+        "exists": ""
+      }
+    },
     "headers": {
       "X-Pingback": "/xmlrpc\\.php$",
       "link": "rel=\"https://api\\.w\\.org/\""
