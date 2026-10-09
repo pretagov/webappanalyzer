@@ -2025,13 +2025,15 @@
     ],
     "cpe": "cpe:2.3:a:adobe:experience_manager:*:*:*:*:*:*:*:*",
     "description": "Adobe Experience Manager (AEM) is a content management solution for building websites, mobile apps and forms.",
-    "dom": [
-      "div[class*='parbase'], div[data-component-path*='jcr:'], div[class*='aem-Grid']"
-    ],
+    "dom": {
+      "div[class*='parbase'], div[data-component-path*='jcr:'], div[class*='aem-Grid']": {
+        "exists": "\\;confidence:50"
+      }
+    },
     "html": [
-      "<div class=\"[^\"]*parbase",
-      "<div[^>]+data-component-path=\"[^\"+]jcr:",
-      "<div class=\"[^\"]*aem-Grid"
+      "<div class=\"[^\"]*parbase\\;confidence:50",
+      "<div[^>]+data-component-path=\"[^\"+]jcr:\\;confidence:50",
+      "<div class=\"[^\"]*aem-Grid\\;confidence:50"
     ],
     "icon": "Adobe Experience Platform.svg",
     "imgSrc": [

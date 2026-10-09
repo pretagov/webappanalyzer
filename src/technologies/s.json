@@ -12234,13 +12234,17 @@
     "cpe": "cpe:2.3:a:squiz:matrix:*:*:*:*:*:*:*:*",
     "description": "A flexible, low-code enterprise content management system designed to manage multiple sites with many editors.",
     "dom": [
-      "link[href*='/__data/assets/css_file/']"
+      "link[href*='/__data/assets/']",
+      "input[name='queries_all_query']"
     ],
     "headers": {
       "X-Powered-By": "Squiz Matrix"
     },
     "html": [
       "<!--\\s+Running (?:MySource|Squiz) Matrix"
+    ],
+    "imgSrc": [
+      "/__data/assets/"
     ],
     "icon": "Squiz Matrix.svg",
     "implies": [
@@ -12254,7 +12258,7 @@
       "recurring"
     ],
     "scriptSrc": [
-      "/__data/assets/(js_file_folder|git_bridge|js_file)/"
+      "/__data/assets/"
     ],
     "website": "https://www.squiz.net/matrix"
   },
