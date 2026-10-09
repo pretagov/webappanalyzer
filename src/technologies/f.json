@@ -380,6 +380,7 @@
   },
   "FarCry": {
     "cats": [
+      1,
       18
     ],
     "cookies": {
@@ -387,6 +388,9 @@
     },
     "description": "FarCry is a web application framework that helps CFML developers build tailor-made content solutions.",
     "icon": "FarCry.svg",
+    "implies": [
+      "Adobe ColdFusion"
+    ],
     "js": {
       "farcryForgotPassword": "",
       "farcryLogin": ""

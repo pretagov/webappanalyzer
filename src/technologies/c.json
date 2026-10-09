@@ -8904,9 +8904,6 @@
       1
     ],
     "description": "Cornerstone is a content management system that includes modules for CRM and membership management.",
-    "dom": [
-      "#cornerstone-generated-css"
-    ],
     "icon": "Cornerstone.svg",
     "js": {
       "$CornerstoneArticleForms": "",
@@ -8917,9 +8914,6 @@
     },
     "oss": true,
     "saas": true,
-    "scriptSrc": [
-      "cornerstone(?:\\/assets)?(?:\\/js)?(?:\\/site)?(?:\\/cs-classic)?\\.?((?:\\d+\\.)+\\d+)?\\.js\\;version:\\1"
-    ],
     "website": "https://cornerstoneplatform.com"
   },
   "CoRover": {
