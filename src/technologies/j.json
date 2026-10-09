@@ -69,25 +69,17 @@
       "Node": "jadu-web-\\d"
     },
     "icon": "jadu.png",
+    "meta": {
+      "Author-Template": "^Jadu CSS design$",
+      "generator": "www\\.jadu\\.net"
+    },
     "pricing": [
       "mid",
       "recurring"
     ],
     "website": "https://www.jadu.net/"
   },
-  "Jadu Central Content": {
-    "cats": [
-      1
-    ],
-    "description": "Jadu Central Content is a low-code publishing tool for creating, publishing, and managing website content and digital assets.",
-    "icon": "JaduCentralContent.svg",
-    "meta": {
-      "Author-Template": "^Jadu CSS design$",
-      "generator": "www\\.jadu\\.net"
-    },
-    "saas": true,
-    "website": "https://www.jadu.net/cms"
-  },
+
   "Jahia DX": {
     "cats": [
       1,

@@ -7655,28 +7655,15 @@
       "Jimdo"
     ],
     "icon": "MyWebsite.svg",
+    "implies": [
+      "Duda"
+    ],
     "js": {
       "SystemID": "^.*1AND1.*$\\;version:8"
     },
     "meta": {
-      "generator": "IONOS MyWebsite\\;version:8"
+      "generator": "(?:IONOS|1&1) (?:MyWebsite|DIY Websitebuilder)"
     },
-    "pricing": [
-      "low",
-      "recurring"
-    ],
-    "saas": true,
-    "website": "https://www.ionos.com"
-  },
-  "MyWebsite Creator": {
-    "cats": [
-      51
-    ],
-    "description": "MyWebsite Creator is website builder designed for easy editing and fast results.",
-    "icon": "MyWebsite.svg",
-    "implies": [
-      "Duda"
-    ],
     "pricing": [
       "low",
       "recurring"
@@ -7686,11 +7673,9 @@
       "website-editor\\.net",
       "mywebsite-editor\\.com"
     ],
-    "website": "https://www.ionos.com",
-    "meta": {
-      "generator": "1&1 (MyWebsite|DIY Websitebuilder)"
-    }
+    "website": "https://www.ionos.com"
   },
+
   "MyWebsite Now": {
     "cats": [
       51
