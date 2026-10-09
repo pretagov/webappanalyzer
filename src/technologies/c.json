@@ -7619,12 +7619,13 @@
     "headers": {
       "Server": "^Contentful Images API$",
       "x-contentful-request-id": "",
-      "content-security-policy": "(?:assets|downloads|images|videos)\\.(?:eu\\.)?(?:ct?fassets\\.net|contentful\\.com)\\;confidence:30"
+      "content-security-policy": "(?:assets|downloads|images|videos)\\.(?:eu\\.)?(?:ct?fassets\\.net|contentful\\.com)\\;confidence:30",
+      "Content-Security-Policy": "frame-ancestors[^;]*app\\.(?:eu\\.)?contentful\\.com"
     },
-    "html": [
-      "<[^>]+(?:assets|downloads|images|videos)\\.(?:eu\\.)?(?:ct?fassets\\.net|contentful\\.com)/[a-z0-9]{12}/"
-    ],
     "icon": "Contentful.svg",
+    "imgSrc": [
+      "(?:assets|downloads|images|videos)\\.(?:eu\\.)?(?:ct?fassets\\.net|contentful\\.com)/[a-z0-9]{12}/\\;confidence:50"
+    ],
     "pricing": [
       "mid",
       "freemium",
