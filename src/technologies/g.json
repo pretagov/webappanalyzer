@@ -1235,7 +1235,7 @@
       "Node.js"
     ],
     "meta": {
-      "generator": "Ghost(?:\\s([\\d.]+))?\\;version:\\1"
+      "generator": "^Ghost(?:\\s([\\d.]+))?$\\;version:\\1"
     },
     "website": "https://ghost.org"
   },

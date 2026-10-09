@@ -13584,6 +13584,11 @@
     "cats": [
       1
     ],
+    "dom": {
+      "[props*='strapi-provider-upload-']": {
+        "exists": ""
+      }
+    },
     "cpe": "cpe:2.3:a:strapi:strapi:*:*:*:*:*:*:*:*",
     "description": "Strapi is an open-source headless CMS used for building fast and easily manageable APIs written in JavaScript.",
     "headers": {
@@ -13595,7 +13600,8 @@
     "scripts": [
       "@strapi/",
       "strapi_jwt",
-      "previewUrl.{0,120}provider_metadata"
+      "previewUrl.{0,120}provider_metadata",
+      "strapi-provider-upload-"
     ],
     "website": "https://strapi.io",
     "cookies": {
