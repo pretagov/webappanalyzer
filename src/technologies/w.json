@@ -1862,14 +1862,20 @@
     "js": {
       "_site.urls.dataproxy": "\\.mywebsitebuilder\\.com"
     },
-    "meta": {
-      "generator": "^[\\w\\s.&-]{0,40}\\bWebsite Builder$"
-    },
+    "dom": [
+      "link[href*='.mywebsitebuilder.com/']"
+    ],
+    "imgSrc": [
+      "//[\\w-]+\\.mywebsitebuilder\\.com/"
+    ],
     "pricing": [
       "low",
       "recurring"
     ],
     "saas": true,
+    "scriptSrc": [
+      "//[\\w-]+\\.mywebsitebuilder\\.com/"
+    ],
     "website": "https://www.websitebuilder.com"
   },
   "WebSocket": {
