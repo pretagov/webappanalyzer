@@ -5858,7 +5858,7 @@
     },
     "oss": true,
     "scriptSrc": [
-      "rx(?:\\.\\w+)?(?:\\.compat|\\.global)?(?:\\.min)?\\.js"
+      "(?:^|/)rx(?:\\.\\w+)?(?:\\.compat|\\.global)?(?:\\.min)?\\.js"
     ],
     "website": "https://reactivex.io"
   },

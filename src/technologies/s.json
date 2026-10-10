@@ -4575,8 +4575,7 @@
     "icon": "Shopblocks.svg",
     "pricing": [
       "high",
-      "recurring",
-      "poa"
+      "recurring"
     ],
     "saas": true,
     "scriptSrc": [
