@@ -734,6 +734,9 @@
     "meta": {
       "DC.Identifier": "\\.nsf/"
     },
+    "scriptSrc": [
+      "\\.nsf/"
+    ],
     "url": "\\.nsf(?:/|\\?)"
   },
   "Header Bidding Ai": {
