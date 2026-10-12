@@ -5570,6 +5570,9 @@
         "exists": "\\;confidence:20"
       }
     },
+    "cookies": {
+      "SN[0-9a-f]{13}": ""
+    },
     "headers": {
       "X-Powered-By": "^MODX"
     },
