@@ -304,6 +304,12 @@
     "website": "https://explore.raisedonors.com"
   },
   "Raisely": {
+    "imgSrc": [
+      "raisely-images\\.imgix\\.net/"
+    ],
+    "url": [
+      "^https?://[^/]+\\.raisely\\.com/"
+    ],
     "cats": [
       111
     ],

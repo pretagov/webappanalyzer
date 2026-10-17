@@ -286,6 +286,7 @@
       "/storage/app/uploads ??"
     ],
     "imgSrc": [
+      "^(?:(?:https?:)?//[^/]+)?/storage/app/media/",
       "/storage/app/uploads/public/",
       "/storage/app/resized/(?:[0-9a-z]{3}/){3}"
     ],

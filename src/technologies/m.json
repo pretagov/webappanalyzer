@@ -7650,6 +7650,9 @@
     "website": "https://mytime.com"
   },
   "MyWebsite": {
+    "imgSrc": [
+      "/s/cc_images/(?:cache|teaserbox)_\\d+\\."
+    ],
     "cats": [
       51
     ],
