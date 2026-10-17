@@ -13614,7 +13614,8 @@
       "https://t10studios.azureedge.net/strapi-uploads/assets/turn10_logo_white_921f609fa2.svg"
     ],
     "imgSrc": [
-      "/strapi-uploads/"
+      "/strapi-uploads/",
+      "^(?:(?:https?:)?//[^/]+)?/uploads/(?:thumbnail_|small_|medium_|large_)?[^/?]+_[0-9a-f]{10}\\.(?:jpe?g|png|gif|webp|svg|avif)"
     ]
   },
   "Strato": {
