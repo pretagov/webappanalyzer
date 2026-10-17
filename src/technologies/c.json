@@ -7544,8 +7544,11 @@
       "Java",
       "CFML"
     ],
+    "imgSrc": [
+      "\\.x[0-9a-f]{8}\\.(?:jpe?g|png|gif|webp|svg)(?:\\?|$)"
+    ],
     "meta": {
-      "generator": "Contensis CMS Version ([\\d.]+)\\;version:\\1"
+      "generator": "^Contensis(?:\\s+CMS\\s+Version\\s+([\\d.]+))?$\\;version:\\1"
     },
     "website": "https://zengenti.com/en-gb/products/contensis",
     "description": "Contensis, an enterprise headless CMS",
@@ -7556,7 +7559,7 @@
     },
     "headless_since": "2019",
     "headers": {
-      "x-host": "contensis.cloud"
+      "x-host": "contensis\\.cloud|cloud\\.contensis\\.com"
     },
     "pricing": [
       "recurring"
