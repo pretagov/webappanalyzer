@@ -4103,7 +4103,7 @@
     "scriptSrc": [
       "/wp-(?:content|includes)/\\;confidence:30",
       "^/wp-(?:content|includes)/plugins/\\;confidence:90",
-      "wp-embed\\.min\\.js",
+      "/wp-includes/js/wp-embed(?:\\.min)?\\.js",
       "wp-static\\.assets\\.sh/"
     ],
     "scripts": [
