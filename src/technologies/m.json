@@ -5560,6 +5560,9 @@
     "cpe": "cpe:2.3:a:modx:modx_revolution:*:*:*:*:*:*:*:*",
     "description": "MODX (originally MODx) is an open source content management system and web application framework for publishing content on the World Wide Web and intranets.",
     "dom": {
+      "title": {
+        "text": "^Error — MODX Cloud$\\;confidence:50"
+      },
       "a": {
         "text": "Powered by MODX"
       },
