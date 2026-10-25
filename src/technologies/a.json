@@ -5630,8 +5630,8 @@
     "oss": true,
     "website": "https://angular.io",
     "scriptSrc": [
-      "(?:^|/)runtime-es2015(?:\\.[0-9a-f]{20})?\\.js",
-      "(?:^|/)inline(?:\\.[0-9a-f]{20})?\\.bundle\\.js"
+      "^(?:(?:https?:)?//{domain}/|(?!//))(?:[^:?#]*/)?runtime-es2015(?:\\.[0-9a-f]{20})?\\.js",
+      "^(?:(?:https?:)?//{domain}/|(?!//))(?:[^:?#]*/)?inline(?:\\.[0-9a-f]{20})?\\.bundle\\.js"
     ]
   },
   "Angular Gridster": {
