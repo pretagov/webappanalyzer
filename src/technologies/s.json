@@ -12125,7 +12125,7 @@
     ],
     "description": "Squarespace provides Software-as-a-Service (SaaS) for website building and hosting, and allows users to use pre-built website templates.",
     "headers": {
-      "server": "Squarespace"
+      "server": "Squarespace|^SSWS$"
     },
     "icon": "Squarespace.svg",
     "js": {
@@ -12137,6 +12137,9 @@
       "recurring"
     ],
     "saas": true,
+    "scriptSrc": [
+      "/universal/scripts/"
+    ],
     "website": "https://www.squarespace.com"
   },
   "Squarespace Commerce": {

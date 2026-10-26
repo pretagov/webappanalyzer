@@ -3303,7 +3303,11 @@
       1
     ],
     "dom": [
-      "[data-abuse-proto*='https://sites.google.com/']"
+      "[data-abuse-proto*='https://sites.google.com/']",
+      "link[href*='/_/rsrc/'][href*='/system/app/']"
+    ],
+    "scriptSrc": [
+      "gstatic\\.com/sites/"
     ],
     "icon": "Google Sites.svg",
     "url": [
