@@ -4068,6 +4068,11 @@
       },
       "link[href*='.wp.com']": {
         "exists": ""
+      },
+      "link[rel='wlwmanifest']": {
+        "attributes": {
+          "href": "^(?:https?://{domain})?/(?:[\\w.-]+/)*wp-includes/wlwmanifest\\.xml"
+        }
       }
     },
     "headers": {
