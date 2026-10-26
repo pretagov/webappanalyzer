@@ -91,6 +91,16 @@
     "html": [
       "<script id=\"staticAssetAggregatedJavascrip"
     ],
+    "imgSrc": [
+      "/files/live/"
+    ],
+    "scriptSrc": [
+      "/jsp/jahia/",
+      "/files/live/"
+    ],
+    "url": [
+      "/engineName/"
+    ],
     "icon": "JahiaDX.svg",
     "website": "https://www.jahia.com/dx"
   },

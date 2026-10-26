@@ -1736,6 +1736,9 @@
       "<[^>]+=\"vgn-?ext"
     ],
     "icon": "Vignette.png",
+    "imgSrc": [
+      "/0,[\\d,~-]*,00\\.(?:gif|jpe?g|png)\\;confidence:50"
+    ],
     "scriptSrc": [
       "/vgn-ext-templating/",
       "/cda/(?:[\\w-]+/)*0,[\\d,~-]*,00\\.js",
