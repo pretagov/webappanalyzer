@@ -12676,7 +12676,8 @@
     ],
     "saas": false,
     "scripts": [
-      "statamic\\.cp"
+      "statamic\\.cp",
+      "\"@id\":\"[^\"]*#site-owner\""
     ],
     "website": "https://statamic.com",
     "_test_imgSrc_pos": [
