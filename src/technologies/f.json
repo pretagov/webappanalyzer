@@ -387,6 +387,13 @@
       "CURRENTFARCRYPROJECT": "",
       "FARCRYDEVICETYPE": ""
     },
+    "dom": {
+      "a[href^='/']": {
+        "attributes": {
+          "href": "\\.cfm\\?object[Ii][Dd]=[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{16}\\;confidence:50"
+        }
+      }
+    },
     "description": "FarCry is a web application framework that helps CFML developers build tailor-made content solutions.",
     "icon": "FarCry.svg",
     "implies": [
