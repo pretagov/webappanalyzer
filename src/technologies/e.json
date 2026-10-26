@@ -1469,6 +1469,9 @@
     "cats": [
       1
     ],
+    "cookies": {
+      "ecm": "^user_id="
+    },
     "cpe": "cpe:2.3:a:ektron:ektron_content_management_system:*:*:*:*:*:*:*:*",
     "description": "Ektron CMS is developed on the Microsoft .NET framework and is 100% ASP.NET. In 2015 Ektron merged with EPiServer.",
     "icon": "Optimizely.svg",
