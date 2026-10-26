@@ -6777,11 +6777,14 @@
   },
   "Premium TV": {
     "cats": [
-      1
+      88
     ],
-    "description": "Java-based sports content management platform used by many UK football clubs from 2005-2015. Later acquired by Perform Group / Deltatre. Distinctive URL pattern: /page/.../0,,N[~M],00.ext",
+    "description": "Premium TV (NTL, later Perform Group / Deltatre) hosted the official websites of most English Football League clubs from about 2000, on Vignette: its 2002 pages carry Vignette StoryServer 5.0 stamps and /cda/ paths, and the same /page/.../0,,N[~M],00.ext scheme runs on to about 2012. A hosting service, so the reading is Vignette.",
     "icon": "default.svg",
-    "implies": "Java",
+    "implies": [
+      "Java",
+      "Vignette"
+    ],
     "pricing": [
       "poa",
       "high"

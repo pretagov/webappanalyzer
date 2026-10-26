@@ -1726,10 +1726,26 @@
     "cats": [
       1
     ],
+    "description": "Vignette (StoryServer, V5-V7 Content Management, Vignette Portal; now OpenText) is an enterprise content management system.",
+    "dom": {
+      "link[href*='/vgn-ext-templating/']": {
+        "exists": ""
+      }
+    },
     "html": [
       "<[^>]+=\"vgn-?ext"
     ],
     "icon": "Vignette.png",
+    "scriptSrc": [
+      "/vgn-ext-templating/",
+      "/cda/(?:[\\w-]+/)*0,[\\d,~-]*,00\\.js",
+      "/0,[\\d,~-]*,00\\.js\\;confidence:50"
+    ],
+    "url": [
+      "[?&]vgnextoid=[0-9a-f]",
+      "/portal/site/[\\w-]+/menuitem\\.[0-9a-f]{10,}",
+      "/0,[\\d,~-]*,00\\.(?:html?|jsp|aspx?|php)\\;confidence:50"
+    ],
     "website": "https://www.vignette.com"
   },
   "VikaOn": {
