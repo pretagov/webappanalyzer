@@ -12691,6 +12691,7 @@
       "maybe? https://www.dovehouse.org.uk /assets/img/resized/29468898_1825165314443561_4381133634266988544_n-s-w390-h270-q100-m1528823413.jpg"
     ],
     "imgSrc": [
+      "-s-w\\d+(?:-h\\d+)?(?:-q\\d+)?-m\\d{10}\\.(?:jpe?g|png|gif|webp)",
       "/img/(?:asset|http)/[A-Za-z0-9_-]{12,}={0,2}(?:[/?]|$)",
       "/img/containers/.*/[a-z0-9]{32}",
       "/img/.*s=[a-f0-9]{32}$\\;confidence:60"
