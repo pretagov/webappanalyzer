@@ -12692,14 +12692,14 @@
     ],
     "imgSrc": [
       "-s-w\\d+(?:-h\\d+)?(?:-q\\d+)?-m\\d{10}\\.(?:jpe?g|png|gif|webp)",
-      "/img/(?:asset|http)/[A-Za-z0-9_-]{12,}={0,2}(?:[/?]|$)",
-      "/img/containers/.*/[a-z0-9]{32}",
-      "/img/.*s=[a-f0-9]{32}$\\;confidence:60"
+      "^(?:(?:https?:)?//{domain})?/img/(?:asset|http)/[A-Za-z0-9_-]{12,}={0,2}(?:[/?]|$)",
+      "^(?:(?:https?:)?//{domain})?/img/containers/.*/[a-z0-9]{32}",
+      "^(?:(?:https?:)?//{domain})?/img/.*s=[a-f0-9]{32}$\\;confidence:60"
     ],
     "scriptSrc": [
       "^(?:(?:https?:)?//{host})?/vendor/statamic(?:-[\\w-]+)?/",
-      "/build/assets/site-[a-zA-z0-9]{8}\\.js",
-      "/build/assets/site-[a-zA-z0-9]{8}\\.css\\;confidence:30"
+      "/build/assets/site-[\\w-]{8}\\.js",
+      "/build/assets/site-[\\w-]{8}\\.css\\;confidence:30"
     ],
     "dom": {
       "meta[content='STATAMIC_CSRF_TOKEN']": {},
@@ -12710,7 +12710,7 @@
       }
     },
     "html": [
-      "\\.antlers\\.html"
+      "\\.antlers\\.html\\;confidence:50"
     ]
   },
   "Statcounter": {
