@@ -384,7 +384,17 @@
     ],
     "description": "Ycode is a no-code development platform that allows users to create web and mobile applications without any coding skills.",
     "dom": [
-      "link[href*='.ycodeapp.com/']"
+      "link[href*='.ycodeapp.com/']",
+      "#ycode-generated-app, #ycode-main-content"
+    ],
+    "imgSrc": [
+      "^(?:https?:)?//assets\\.ycodeapp\\.com/assets/app\\d+/"
+    ],
+    "implies": [
+      "Laravel"
+    ],
+    "scriptSrc": [
+      "^(?:https?:)?//cdn\\.ycode\\.com/"
     ],
     "icon": "Ycode.svg",
     "pricing": [
