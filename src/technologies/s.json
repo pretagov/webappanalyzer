@@ -12702,7 +12702,12 @@
       "/build/assets/site-[a-zA-z0-9]{8}\\.css\\;confidence:30"
     ],
     "dom": {
-      "meta[content='STATAMIC_CSRF_TOKEN']": {}
+      "meta[content='STATAMIC_CSRF_TOKEN']": {},
+      "[class*='bard']": {
+        "attributes": {
+          "class": "(?:^|\\s)bard(?:[-_][\\w-]*)?(?:\\s|$)\\;confidence:50"
+        }
+      }
     },
     "html": [
       "\\.antlers\\.html"
