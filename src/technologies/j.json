@@ -79,7 +79,7 @@
     ],
     "website": "https://www.jadu.net/",
     "_tests": [
-      {"site": "http://www.alzheimers.org.uk/", "date": "20140423160637", "added": "2026-10-11", "reason": "Jadu Central Content merged into Jadu: this capture read Jadu/Jadu Central Content (footer link + generator) and others Jadu Central Content, flipping the era name (2026-10-09)", "should_not": "Jadu Central Content"}
+      {"site": "http://www.alzheimers.org.uk/", "date": "20140423160637", "added": "2026-10-11", "reason": "Jadu Central Content merged into Jadu: this capture read Jadu/Jadu Central Content (footer link + generator) and others Jadu Central Content, flipping the era name (2026-10-09)", "should_not": ["Jadu Central Content"]}
     ]
   },
 

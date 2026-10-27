@@ -7563,6 +7563,9 @@
     },
     "pricing": [
       "recurring"
+    ],
+    "_tests": [
+      {"site": "https://www.cityoflondon.gov.uk/", "date": "20251217110803", "added": "2026-10-18", "reason": "bare 'Contensis' generator, both hosting domains (contensis.cloud, cloud.contensis.com) and the image rendition token <name>.x<8 hex>.<ext> (c.json): a React front end over Contensis read as React (cityoflondon 2025-12). (deployed 2026-10-17)"}
     ]
   },
   "ContentBot": {
@@ -7644,7 +7647,7 @@
       "/contentful@([\\d.]+)/\\;version:\\1"
     ],
     "_tests": [
-      {"site": "https://www.ellenmacarthurfoundation.org/", "date": "20261017143009", "added": "2026-10-08", "reason": "prod: unnamed Next.js/Headless era; images.ctfassets.net/<space>/ in img/source/og:image (2026-10-07)", "should_not": "Next.js"}
+      {"site": "https://www.ellenmacarthurfoundation.org/", "date": "20261017143009", "added": "2026-10-08", "reason": "prod: unnamed Next.js/Headless era; images.ctfassets.net/<space>/ in img/source/og:image (2026-10-07)", "should_not": ["Next.js"]}
     ]
   },
   "ContentGems": {

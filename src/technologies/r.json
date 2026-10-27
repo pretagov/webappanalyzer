@@ -5691,7 +5691,7 @@
     },
     "_tests": [
       {"site": "http://www.mind.org.uk/", "date": "2009-09-02", "added": "2025-03-30", "reason": "authenticity_token with +/ base64 chars not matching [A-Za-z0-9=]{44}"},
-      {"site": "https://www.raspberrypi.org/", "date": "20240819120825", "added": "2026-10-08", "reason": "2026-10-06: Contentful only in the CSP allow-list (now confidence 30): kept as a 'Contentful?' candidate, promoted in the history by neighbours with real ctfassets assets (2024-09-24); the homepage itself is all Rails /assets. Was: contnetful in CSP - Could be https://www.thumbor.org/ for images?", "should_not": "Contentful"}
+      {"site": "https://www.raspberrypi.org/", "date": "20240819120825", "added": "2026-10-08", "reason": "2026-10-06: Contentful only in the CSP allow-list (now confidence 30): kept as a 'Contentful?' candidate, promoted in the history by neighbours with real ctfassets assets (2024-09-24); the homepage itself is all Rails /assets. Was: contnetful in CSP - Could be https://www.thumbor.org/ for images?", "should_not": ["Contentful"]}
     ]
   },
   "Ruby Receptionists": {

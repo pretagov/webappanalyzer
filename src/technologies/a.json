@@ -1993,7 +1993,7 @@
     ],
     "website": "https://adobe.com/products/coldfusion-family.html",
     "_tests": [
-      {"site": "http://www.ima.org.uk/", "date": "20131025081317", "added": "2026-10-26", "reason": "ColdFusion 10+ with J2EE sessions: JSESSIONID=<hex>.cfusion (its default instance), no CFID/CFTOKEN and no .cfm page url; read Java (2026-10-26).", "should_not": "Java"}
+      {"site": "http://www.ima.org.uk/", "date": "20131025081317", "added": "2026-10-26", "reason": "ColdFusion 10+ with J2EE sessions: JSESSIONID=<hex>.cfusion (its default instance), no CFID/CFTOKEN and no .cfm page url; read Java (2026-10-26).", "should_not": ["Java"]}
     ]
   },
   "Adobe DTM": {
@@ -2184,7 +2184,10 @@
       "recurring"
     ],
     "saas": true,
-    "website": "https://helpx.adobe.com/muse/kb/adobe-muse-end-of-service.html"
+    "website": "https://helpx.adobe.com/muse/kb/adobe-muse-end-of-service.html",
+    "_tests": [
+      {"site": "http://headwayshropshire.org.uk/", "date": "2021-12-04", "added": "2026-10-11", "reason": "a.json: Static site generator -> Editors - a desktop page designer whose output Business Catalyst hosted; BC sites read Business Catalyst/Headless (headwayshropshire 2021, ufidet.salta.gov.ar)."}
+    ]
   },
   "Adobe Portfolio": {
     "cats": [
@@ -6286,7 +6289,7 @@
     "oss": true,
     "website": "https://httpd.apache.org/",
     "_tests": [
-      {"site": "http://www.edge.co.uk/docs/home/", "date": "20080905073806", "added": "2026-08-05", "reason": "PHP url rule downgraded to confidence:30. This capture is served by Apache with NO X-Powered-By, and its only PHP evidence is a search FORM ACTION (/docs/home/search/index.php) — the page URL is /docs/home/. At the old default confidence 100 one such link reported the site as PHP for 2.3y between two ASP.NET eras on edge.co.uk. Mirrors the same downgrade already applied to Microsoft ASP.NET (.aspx, 2026-06-07, kings-school TYPO3 blips) and Classic ASP (.asp). Real PHP still detects: the 2006-2007 captures carry X-Powered-By: PHP/5.1.4 and still report PHP[5].", "should_not": "PHP"}
+      {"site": "http://www.edge.co.uk/docs/home/", "date": "20080905073806", "added": "2026-08-05", "reason": "PHP url rule downgraded to confidence:30. This capture is served by Apache with NO X-Powered-By, and its only PHP evidence is a search FORM ACTION (/docs/home/search/index.php) — the page URL is /docs/home/. At the old default confidence 100 one such link reported the site as PHP for 2.3y between two ASP.NET eras on edge.co.uk. Mirrors the same downgrade already applied to Microsoft ASP.NET (.aspx, 2026-06-07, kings-school TYPO3 blips) and Classic ASP (.asp). Real PHP still detects: the 2006-2007 captures carry X-Powered-By: PHP/5.1.4 and still report PHP[5].", "should_not": ["PHP"]}
     ]
   },
   "Apache JSPWiki": {

@@ -4586,7 +4586,7 @@
     ],
     "website": "https://www.shopblocks.com",
     "_tests": [
-      {"site": "https://theqamartrust.org/", "date": "2024-11-01", "added": "2026-10-11", "reason": "re-pinned (was ShopBlocks/Bootstrap): local ShopBlocks merged into upstream Shopblocks (2026-10-10). from cms detect", "should_not": "ShopBlocks"}
+      {"site": "https://theqamartrust.org/", "date": "2024-11-01", "added": "2026-10-11", "reason": "re-pinned (was ShopBlocks/Bootstrap): local ShopBlocks merged into upstream Shopblocks (2026-10-10). from cms detect", "should_not": ["ShopBlocks"]}
     ]
   },
   "Shopbox AI": {
@@ -13490,7 +13490,7 @@
       "og:image": "\\.storyblok\\.com/"
     },
     "_tests": [
-      {"site": "https://www.hult.edu/coaching/", "date": "20260924151348", "added": "2026-10-11", "reason": "upstream's scripts '/wp-content' (now confidence 30) fired on page data linking to ceo-mag.com/wp-content/uploads ranking badges; was Storyblok/WordPress/Next.js/Radix UI (2026-10-09)", "should_not": "WordPress"}
+      {"site": "https://www.hult.edu/coaching/", "date": "20260924151348", "added": "2026-10-11", "reason": "upstream's scripts '/wp-content' (now confidence 30) fired on page data linking to ceo-mag.com/wp-content/uploads ranking badges; was Storyblok/WordPress/Next.js/Radix UI (2026-10-09)", "should_not": ["WordPress"]}
     ]
   },
   "Storybook": {
@@ -13639,7 +13639,8 @@
       "^(?:(?:https?:)?//[^/]+)?/uploads/(?:thumbnail_|small_|medium_|large_)?[^/?]+_[0-9a-f]{10}\\.(?:jpe?g|png|gif|webp|svg|avif)"
     ],
     "_tests": [
-      {"site": "https://www.mariecurie.org.uk/", "date": "20261017101718", "added": "2026-10-11", "reason": "solved 2026-10-09 (todo was 'Strapi/Astro'): Strapi media records in Astro island props: provider strapi-provider-upload-azure-storage; media at cms.mariecurie.org.uk/uploads. header on cms.mariecurie.org.uk"}
+      {"site": "https://www.mariecurie.org.uk/", "date": "20261017101718", "added": "2026-10-11", "reason": "solved 2026-10-09 (todo was 'Strapi/Astro'): Strapi media records in Astro island props: provider strapi-provider-upload-azure-storage; media at cms.mariecurie.org.uk/uploads. header on cms.mariecurie.org.uk"},
+      {"site": "https://www.profintel.ru/", "date": "20240709115503", "added": "2026-10-18", "reason": "upload file names <name>_<10 hex>.<ext> under /uploads/ at the api root (s.json): headless Strapi behind Nuxt read as Nuxt.js (profintel 2024). (deployed 2026-10-17)"}
     ]
   },
   "Strato": {

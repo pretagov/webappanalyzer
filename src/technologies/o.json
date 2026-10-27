@@ -292,6 +292,9 @@
     ],
     "pricing": [
       "onetime"
+    ],
+    "_tests": [
+      {"site": "https://pennyappeal.org/", "date": "20210710032125", "added": "2026-10-18", "reason": "media manager folder /storage/app/media/ (o.json): pennyappeal 2021 read as its Laravel base. (deployed 2026-10-17)", "should_not": ["Umbraco", "Laravel"]}
     ]
   },
   "Octopress": {
@@ -2051,6 +2054,9 @@
     "saas": false,
     "pricing": [
       "recurring"
+    ],
+    "_tests": [
+      {"site": "http://www.ltmuseum.co.uk:80/", "date": "2010-03-26", "added": "2026-10-11", "reason": "o.json: OpenText Web merged into OpenText Web Solutions (its version-less 'published by Open Text Web Solutions' comment rule moved across); ltmuseum 2010 read both. Also matches OpenText Web Solutions histories.", "should_not": ["OpenText Web"]}
     ]
   },
   "OpenTiendas": {

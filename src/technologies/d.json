@@ -2733,13 +2733,13 @@
     ],
     "website": "https://www.django-cms.org",
     "_tests": [
-      {"site": "https://www.macularsociety.org/", "date": "20220911161733", "added": "2026-10-26", "reason": "read Django: django CMS shows no markup to visitors; its media manager django-filer does (/media/filer_public(_thumbnails)/<hex>/<hex>/) (its django_language cookie also shows on plain Django sites, so not a rule: dandad.org). 12 charity sites in prod's url list read Django with filer media (2026-10-26).", "should_not": "Django"},
-      {"site": "https://www.bipolaruk.org/", "date": "20261017064313", "added": "2026-10-26", "reason": "live 2026-10-26: filer_public / filer_public_thumbnails media and a django_language cookie on a plain visit; read Django.", "should_not": "Django"},
-      {"site": "https://www.whizz-kidz.org.uk/", "date": "20260926181514", "added": "2026-10-26", "reason": "live 2026-10-26: filer media, django_language and csrftoken cookies; read Django.", "should_not": "Django"},
-      {"site": "https://walkingwiththewounded.org.uk/", "date": "20261017080518", "added": "2026-10-26", "reason": "django-filer media /filer_public/ (fork d.json) reads Django CMS; read only Django (2026-10-26).", "should_not": "Django"},
-      {"site": "https://www.solvingkidscancer.org.uk", "date": "2024-08-09", "added": "2026-10-26", "reason": "style didn't change 'Nginx' 1.0-> 'Django' https://web.archive.org/web/20240809112447id_/https://www.solvingkidscancer.org.uk -> https://web.archive.org/web/20240816210559id_/https://www.solvingkidscancer.org.uk", "should_not": "Django"},
-      {"site": "https://www.white-eagle.org.uk/", "date": "2025-06-01", "added": "2026-10-26", "reason": "Django site with embedded Shopify cart — embedded carts intentionally NOT detected (only Shopify (Hosted) full stores are). Site migrated to WordPress/Elementor by 2026 (live) but archive snapshots through Dec 2025 still show Django era", "should_not": "Django"},
-      {"site": "https://www.affinitytrust.org/", "date": "2024-08-01", "added": "2026-10-26", "reason": "django-filer media /filer_public/ (fork d.json) reads Django CMS; read only Django (2026-10-26).", "should_not": "Django"}
+      {"site": "https://www.macularsociety.org/", "date": "20220911161733", "added": "2026-10-26", "reason": "read Django: django CMS shows no markup to visitors; its media manager django-filer does (/media/filer_public(_thumbnails)/<hex>/<hex>/) (its django_language cookie also shows on plain Django sites, so not a rule: dandad.org). 12 charity sites in prod's url list read Django with filer media (2026-10-26).", "should_not": ["Django"]},
+      {"site": "https://www.bipolaruk.org/", "date": "20261017064313", "added": "2026-10-26", "reason": "live 2026-10-26: filer_public / filer_public_thumbnails media and a django_language cookie on a plain visit; read Django.", "should_not": ["Django"]},
+      {"site": "https://www.whizz-kidz.org.uk/", "date": "20260926181514", "added": "2026-10-26", "reason": "live 2026-10-26: filer media, django_language and csrftoken cookies; read Django.", "should_not": ["Django"]},
+      {"site": "https://walkingwiththewounded.org.uk/", "date": "20261017080518", "added": "2026-10-26", "reason": "django-filer media /filer_public/ (fork d.json) reads Django CMS; read only Django (2026-10-26).", "should_not": ["Django"]},
+      {"site": "https://www.solvingkidscancer.org.uk", "date": "2024-08-09", "added": "2026-10-26", "reason": "style didn't change 'Nginx' 1.0-> 'Django' https://web.archive.org/web/20240809112447id_/https://www.solvingkidscancer.org.uk -> https://web.archive.org/web/20240816210559id_/https://www.solvingkidscancer.org.uk", "should_not": ["Django"]},
+      {"site": "https://www.white-eagle.org.uk/", "date": "2025-06-01", "added": "2026-10-26", "reason": "Django site with embedded Shopify cart — embedded carts intentionally NOT detected (only Shopify (Hosted) full stores are). Site migrated to WordPress/Elementor by 2026 (live) but archive snapshots through Dec 2025 still show Django era", "should_not": ["Django"]},
+      {"site": "https://www.affinitytrust.org/", "date": "2024-08-01", "added": "2026-10-26", "reason": "django-filer media /filer_public/ (fork d.json) reads Django CMS; read only Django (2026-10-26).", "should_not": ["Django"]}
     ]
   },
   "DM Polopoly": {
@@ -4578,6 +4578,9 @@
     "saas": true,
     "pricing": [
       "recurring"
+    ],
+    "_tests": [
+      {"site": "http://www.saintronans.co.uk/", "date": "2011-10-13", "added": "2026-10-11", "reason": "techs.json: the index.php?option=com_ / Itemid= link rules get the confidence 50 their 2026-10-08 entry described (the tag was never added): one such link named Joomla beside the real CMS (saintronans Dynamicweb, rovers Premium TV, magistrates-association EditWrxLite). Also j.json's combined dom selector loses its generic div[id*='wrapper_r'] and table[class*='pill'] parts (hubspot.com 2023 read HubSpot CMS Hub/Joomla).", "should_not": ["Joomla"]}
     ]
   },
   "Dynatrace": {

@@ -2580,7 +2580,7 @@
     "icon": "LiteSpeed.svg",
     "website": "https://litespeedtech.com",
     "_tests": [
-      {"site": "https://emmaushull.org.uk/", "date": "20251107084553", "added": "2026-05-26", "reason": "404, no error page indicator in body; was 'LiteSpeed/Generic Error Page' size 1241. Not indexed by archive yet?", "should_not": "Generic Error Page"}
+      {"site": "https://emmaushull.org.uk/", "date": "20251107084553", "added": "2026-05-26", "reason": "404, no error page indicator in body; was 'LiteSpeed/Generic Error Page' size 1241. Not indexed by archive yet?", "should_not": ["Generic Error Page"]}
     ]
   },
   "LiteSpeed Cache": {

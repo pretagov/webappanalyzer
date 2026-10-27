@@ -1091,7 +1091,10 @@
     "html": [
       "<!-- debug: mod_mambo"
     ],
-    "oss": true
+    "oss": true,
+    "_tests": [
+      {"site": "http://www.scvo.info/", "date": "20040722030747", "added": "2026-10-24", "reason": "mosvisitor cookie at 50 (techs.json, shared Mambo evidence) and Mambo's default description at 60 (m.json): scvo.info 2004 read Joomla a year before Joomla existed. (deployed 2026-10-23)", "should_not": ["Joomla"]}
+    ]
   },
   "Manatee": {
     "cats": [
@@ -7695,7 +7698,8 @@
       {"site": "http://www.mkchristianfoundation.co.uk/", "date": "20181002060315", "added": "2026-10-11", "reason": "generator '1&1 MyWebsite' read as MyWebsite Creator and the same page with '1&1 IONOS MyWebsite' as MyWebsite[8]; both load mywebsite-editor.com and jimdoData: one builder, merged (2026-10-09)"},
       {"site": "https://www.cameliabotnar.com/", "date": "2018-06-12", "added": "2026-10-11", "reason": "MyWebsite Creator merged into MyWebsite 2026-10-09 (one 1&1 builder: mywebsite-editor.com + generator + jimdoData); was MyWebsite Creator ('Duda's old name'); style didn't change '' -> 'Duda/MyWebsite Creator'"},
       {"site": "https://www.fortunatushousing.co.uk/", "date": "2018-03-08", "added": "2026-10-11", "reason": "MyWebsite Creator merged into MyWebsite 2026-10-09 (one 1&1 builder: mywebsite-editor.com + generator + jimdoData); was MyWebsite Creator ('Duda's old name'); style didn't change '' -> 'Duda/MyWebsite Creator'"},
-      {"site": "http://www.castlecavendish.org.uk/", "date": "2015-06-26", "added": "2026-10-11", "reason": "MyWebsite Creator merged into MyWebsite 2026-10-09 (one 1&1 builder: mywebsite-editor.com + generator + jimdoData); was MyWebsite Creator ('Duda's old name'); style didn't change '' -> 'Duda/MyWebsite Creator'"}
+      {"site": "http://www.castlecavendish.org.uk/", "date": "2015-06-26", "added": "2026-10-11", "reason": "MyWebsite Creator merged into MyWebsite 2026-10-09 (one 1&1 builder: mywebsite-editor.com + generator + jimdoData); was MyWebsite Creator ('Duda's old name'); style didn't change '' -> 'Duda/MyWebsite Creator'"},
+      {"site": "http://www.julesdemers.com/", "date": "20130515005930", "added": "2026-10-18", "reason": "1&1 image cache path /s/cc_images/cache_<n>. (m.json): julesdemers 2013 read as Apache. (deployed 2026-10-17)"}
     ]
   },
 

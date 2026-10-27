@@ -407,7 +407,7 @@
     "_tests": [
       {"site": "https://almanaar.org.uk/", "date": "20251015055914", "added": "2026-10-26", "reason": "Ycode (built on Laravel) without its XSRF-TOKEN cookie in this capture: root ids ycode-generated-app/ycode-main-content, cdn.ycode.com scripts, assets.ycodeapp.com/assets/app27753/ (sus Laravel/Ycode <-> Ycode, 2026-10-26)."},
       {"site": "https://almanaar.org.uk/", "date": "20240502102845", "added": "2026-10-26", "reason": "with Laravel's XSRF-TOKEN cookie: Laravel is implied by Ycode, so it reads the same as captures without the cookie (2026-10-26)."},
-      {"site": "https://almanaar.org.uk/", "date": "20240328032919", "added": "2026-10-26", "reason": "mchc.org.uk's redirect target: a Ycode page whose news thumbnails are wp.almanaar.org.uk/wp-content/uploads/2024/03/ read Headless WordPress/Ycode -> two 0.1y WordPress/Headless eras between Ycode eras (prod 2026-10-19). A hosted builder renders its own pages, so Headless WordPress beside one is content shown from WordPress, not a headless front end (2026-10-26).", "should_not": "Headless WordPress"}
+      {"site": "https://almanaar.org.uk/", "date": "20240328032919", "added": "2026-10-26", "reason": "mchc.org.uk's redirect target: a Ycode page whose news thumbnails are wp.almanaar.org.uk/wp-content/uploads/2024/03/ read Headless WordPress/Ycode -> two 0.1y WordPress/Headless eras between Ycode eras (prod 2026-10-19). A hosted builder renders its own pages, so Headless WordPress beside one is content shown from WordPress, not a headless front end (2026-10-26).", "should_not": ["Headless WordPress"]}
     ]
   },
   "Yektanet": {
