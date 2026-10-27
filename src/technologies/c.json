@@ -7647,7 +7647,8 @@
       "/contentful@([\\d.]+)/\\;version:\\1"
     ],
     "_tests": [
-      {"site": "https://www.ellenmacarthurfoundation.org/", "date": "20261017143009", "added": "2026-10-08", "reason": "prod: unnamed Next.js/Headless era; images.ctfassets.net/<space>/ in img/source/og:image (2026-10-07)", "should_not": ["Next.js"]}
+      {"site": "https://www.ellenmacarthurfoundation.org/", "date": "20261017143009", "added": "2026-10-08", "reason": "prod: unnamed Next.js/Headless era; images.ctfassets.net/<space>/ in img/source/og:image (2026-10-07)", "should_not": ["Next.js"]},
+      {"site": "https://www.artfund.org/", "date": "20261007133643", "added": "2026-10-09", "reason": "today's headless detections on Nuxt front ends: Contentful Live Preview CSP (artfund.org), Headless WordPress (taratheatre.com, theconsideredask.com), Headless Kirby (nufoundation.org.uk), Strapi media data. The 2026-10-06 entry only re-runs histories updated before that date. | row: Nuxt front end, no ctfassets urls (images proxied); CSP 'frame-ancestors app.contentful.com' = Contentful Live Preview. Was Nuxt.js/Amazon Web Services (2026-10-08)"}
     ]
   },
   "ContentGems": {

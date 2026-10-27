@@ -1021,7 +1021,10 @@
     "scripts": [
       "react\\.js"
     ],
-    "website": "https://reactjs.org"
+    "website": "https://reactjs.org",
+    "_tests": [
+      {"site": "https://bfi.org.uk/", "date": "2024-06-01", "added": "2026-10-09", "reason": "React still reads beside the backend detection; carries the 2026-10-09 React fix key (histories that read the React front end alone)"}
+    ]
   },
   "React Bricks": {
     "cats": [

@@ -878,6 +878,9 @@
     "website": "https://www.netlify.com/",
     "xhr": [
       "cdn\\.netlify\\.com"
+    ],
+    "_tests": [
+      {"site": "https://www.sidneynolantrust.org/", "date": "20261007153208", "added": "2026-10-09", "reason": "Netlify still reads beside the backend detection; carries the 2026-10-09 Netlify fix key (histories that read the Netlify front end alone)"}
     ]
   },
   "Netlify Create": {
