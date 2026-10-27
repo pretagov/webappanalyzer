@@ -6912,7 +6912,10 @@
     "implies": [
       "WordPress"
     ],
-    "website": "https://pressable.com"
+    "website": "https://pressable.com",
+    "_tests": [
+      {"site": "https://prisonreformtrust.org.uk/", "date": "20240507061133", "added": "2026-10-27", "reason": "Pressable (a WordPress host, implies WordPress) read alone between WordPress captures: histories compared names, so WordPress -> Pressable -> WordPress was a blip; WAP.same_cms now makes readings one CMS when either implies the other's (1c1c8dc). Its key redoes the histories holding Pressable"}
+    ]
   },
   "Pressero": {
     "cats": [
