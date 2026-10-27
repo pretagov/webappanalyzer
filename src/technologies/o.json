@@ -2643,7 +2643,10 @@
     "scriptSrc": [
       "/_sitesclouddelivery/renderer/"
     ],
-    "website": "https://www.oracle.com/content-management"
+    "website": "https://www.oracle.com/content-management",
+    "_tests": [
+      {"site": "https://www.turning-point.co.uk", "date": "2020-01-01", "added": "2026-10-11", "reason": "solved 2026-10-09 (todo was '??'): /turningpoint/_cache_<hex>/_sitesclouddelivery/renderer/controller.js (o.json widened from renderer.js); <!--$SCS_SITE_PATH--> placeholders, Oracle Application Server 11g"}
+    ]
   },
   "Oracle Dynamic Monitoring Service": {
     "cats": [

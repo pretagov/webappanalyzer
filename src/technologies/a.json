@@ -6284,7 +6284,10 @@
     },
     "icon": "Apache.svg",
     "oss": true,
-    "website": "https://httpd.apache.org/"
+    "website": "https://httpd.apache.org/",
+    "_tests": [
+      {"site": "http://www.edge.co.uk/docs/home/", "date": "20080905073806", "added": "2026-08-05", "reason": "PHP url rule downgraded to confidence:30. This capture is served by Apache with NO X-Powered-By, and its only PHP evidence is a search FORM ACTION (/docs/home/search/index.php) — the page URL is /docs/home/. At the old default confidence 100 one such link reported the site as PHP for 2.3y between two ASP.NET eras on edge.co.uk. Mirrors the same downgrade already applied to Microsoft ASP.NET (.aspx, 2026-06-07, kings-school TYPO3 blips) and Classic ASP (.asp). Real PHP still detects: the 2006-2007 captures carry X-Powered-By: PHP/5.1.4 and still report PHP[5].", "should_not": "PHP"}
+    ]
   },
   "Apache JSPWiki": {
     "cats": [

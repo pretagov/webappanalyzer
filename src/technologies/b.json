@@ -3072,7 +3072,12 @@
       "recurring"
     ],
     "implies": "PHP",
-    "website": "https://www.bluepark.co.uk"
+    "website": "https://www.bluepark.co.uk",
+    "_tests": [
+      {"site": "https://www.bordercollietrustgb.org.uk", "date": "20260105203544", "added": "2026-04-21", "reason": "UK Bluepark CMS with Idyllic theme: /includes/<hash>.idyllic.css.php + BPSESSID cookie"},
+      {"site": "https://www.boobalou.co.uk", "date": "20240418101612", "added": "2026-04-21", "reason": "Bluepark pattern /includes/<hash>.jquery.js.php + /includes/<hash>.jqueryui.js.php + /includes/<hash>.menu.js.php"},
+      {"site": "https://www.merrittsforhair.co.uk", "date": "20240227125318", "added": "2026-04-21", "reason": "Bluepark with Divine theme + ZURB Foundation frontend framework"}
+    ]
   },
   "Blueshift": {
     "cats": [

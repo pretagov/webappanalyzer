@@ -1822,7 +1822,12 @@
       "editingPage": "terminalfour\\.net",
       "generator": "TERMINALFOUR"
     },
-    "website": "https://www.terminalfour.com"
+    "website": "https://www.terminalfour.com",
+    "_tests": [
+      {"site": "https://www.uow.edu.au/", "date": "2023-06-01", "added": "2026-10-11", "reason": "local entry removed: upstream Terminalfour matches the same generator; its editingPage meta rule moved to t.json (scu.edu.au read TERMINALFOUR/Terminalfour).", "should_not": "TERMINALFOUR"},
+      {"site": "https://www.scu.edu.au/", "date": "2023-06-01", "added": "2026-10-11", "reason": "local entry removed: upstream Terminalfour matches the same generator; its editingPage meta rule moved to t.json (scu.edu.au read TERMINALFOUR/Terminalfour).", "should_not": "TERMINALFOUR"},
+      {"site": "https://www.derby.ac.uk/about/about-us-as-a-charity/", "date": "2023-04-04", "added": "2026-10-11", "reason": "style didn't change '' -> 'TERMINALFOUR'", "should_not": "TERMINALFOUR"}
+    ]
   },
   "Terminus": {
     "cats": [

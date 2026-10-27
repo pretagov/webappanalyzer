@@ -4376,6 +4376,11 @@
     "oss": false,
     "pricing": [
       "recurring"
+    ],
+    "_tests": [
+      {"site": "http://www.theiet.org/", "date": "20061017222706", "added": "2026-06-20", "reason": "Percussion Rhythmyx (rx_page_title + generator meta) on a ColdFusion delivery tier"},
+      {"site": "https://www.sightsavers.org/", "date": "2013-05-17", "added": "2026-06-02", "reason": "perc_linkback meta only (no generator) - verifies the new secondary marker handles meta-stripped pages. Across 8 confirmed Rhythmyx sites, perc_linkback_id, perc_common_ui, perc-region, perc-widget, perc-fixed all appear in 7/8 - widening the rule beyond just perc-region/generator is robust."},
+      {"site": "http://www.bw.edu/", "date": "2015-10-01", "added": "2026-06-02", "reason": "Baldwin Wallace U on Rhythmyx after their mid-2015 migration from ColdFusion (Adobe ColdFusion era was 2015-06 with IIS 6.0 + CFID/CFTOKEN cookies; switched to Rhythmyx + IIS 8.5 by Oct 2015). Confirms multi-marker Rhythmyx detection + UI-framework combo handling."}
     ]
   },
   "Rich Plugins Reviews": {
@@ -5683,7 +5688,11 @@
           "value": "[A-Za-z0-9+/=]{44}"
         }
       }
-    }
+    },
+    "_tests": [
+      {"site": "http://www.mind.org.uk/", "date": "2009-09-02", "added": "2025-03-30", "reason": "authenticity_token with +/ base64 chars not matching [A-Za-z0-9=]{44}"},
+      {"site": "https://www.raspberrypi.org/", "date": "20240819120825", "added": "2026-10-08", "reason": "2026-10-06: Contentful only in the CSP allow-list (now confidence 30): kept as a 'Contentful?' candidate, promoted in the history by neighbours with real ctfassets assets (2024-09-24); the homepage itself is all Rails /assets. Was: contnetful in CSP - Could be https://www.thumbor.org/ for images?", "should_not": "Contentful"}
+    ]
   },
   "Ruby Receptionists": {
     "cats": [

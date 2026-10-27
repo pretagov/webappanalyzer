@@ -134,7 +134,11 @@
     ],
     "headers": {
       "X-Wagtail-Cache": ""
-    }
+    },
+    "_tests": [
+      {"site": "https://www.edge.co.uk/", "date": "20211203123315", "added": "2026-08-05", "reason": "Wagtail's DYNAMIC serve view (/images/<sig>=/<id>/fill-WxH/<name>) — the imgSrc rule only had the STATIC rendition form (images/<name>.<hash>.fill-WxH.), so detection fell back to data-block-key, which is only present when that day's page happens to render rich-text blocks. This capture has none (0 vs 10 in 2022-01-19) and reported Apache HTTP Server -> Unknown, costing 0.8y of a Wagtail era on edge.co.uk. Same site both sides of the boundary: several rendition URLs are byte-identical."},
+      {"site": "https://www.nhs.uk/", "date": "2025-06-01", "added": "2025-06-18", "reason": "Wagtail fix entry 2025-06-18 added with this row (60397a8, 2026-03-28); the commit records no Wagtail rule change."}
+    ]
   },
   "Wair": {
     "cats": [
@@ -4279,6 +4283,9 @@
     "saas": true,
     "pricing": [
       "recurring"
+    ],
+    "_tests": [
+      {"site": "https://frontity.org/", "date": "20260621031239", "added": "2026-10-11", "reason": "2026-10-09: the live site now answers an error page, so pinned to the archive; that capture is served BY WordPress.com (host-header WordPress.com, Batcache) with WordPress's REST Link header, so WordPress renders it and WordPress REST Link excludes Headless WordPress. Earlier: 2026-10-08: + Headless WordPress (backend wp.frontity.org/wp-content/uploads) and WordPress Block Editor. Was Frontity/Loadable-Components/WordPress.com. WordPress.com (not WordPress) hosting + Frontity + Loadable-Components (React SSR code-splitter). Loadable-Components now compiles into maintechs after this session's JS-libraries→BACKUP_CATS change. just_cms output: WordPress.com/Headless via cat 113 Headless frontends (Loadable-Components) + Frontity desc 'headless WordPress' rule. No date = live fetch."}
     ]
   },
   "Workable": {

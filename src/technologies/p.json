@@ -290,7 +290,11 @@
     "meta": {
       "generator": "Pagekit"
     },
-    "website": "https://pagekit.com"
+    "website": "https://pagekit.com",
+    "_tests": [
+      {"site": "https://frontbackend.com/", "date": "2024-10-01", "added": "2026-05-27", "reason": "script regex fixed: \"$pagekit\" -> \"\\\\$pagekit\" (was unescaped $ anchor)"},
+      {"site": "https://boxberry.ru/", "date": "2025-01-01", "added": "2026-05-27", "reason": "confirmed Pagekit ($pagekit inline var + /packages/boxberry/ theme paths); Vue.js for boxberryvue frontend bundle"}
+    ]
   },
   "PageLayer": {
     "cats": [

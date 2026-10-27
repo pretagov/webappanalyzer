@@ -1824,6 +1824,9 @@
     "pricing": [
       "recurring",
       "poa"
+    ],
+    "_tests": [
+      {"site": "http://www.rspb.org.uk/", "date": "20111108133142", "added": "2026-10-09", "reason": "Tridion images with a 1-digit publication id and 5-digit items: oglogo_tcm9-283522.gif, kittiwake90_tcm9-57293_v2.jpg. Was Microsoft ASP.NET[2] (2026-10-08)"}
     ]
   },
   "Seal Subscriptions": {
@@ -4581,7 +4584,10 @@
     "scriptSrc": [
       "\\.myshopblocks\\.com/"
     ],
-    "website": "https://www.shopblocks.com"
+    "website": "https://www.shopblocks.com",
+    "_tests": [
+      {"site": "https://theqamartrust.org/", "date": "2024-11-01", "added": "2026-10-11", "reason": "re-pinned (was ShopBlocks/Bootstrap): local ShopBlocks merged into upstream Shopblocks (2026-10-10). from cms detect", "should_not": "ShopBlocks"}
+    ]
   },
   "Shopbox AI": {
     "cats": [
@@ -13482,7 +13488,10 @@
     "website": "https://www.storyblok.com",
     "meta": {
       "og:image": "\\.storyblok\\.com/"
-    }
+    },
+    "_tests": [
+      {"site": "https://www.hult.edu/coaching/", "date": "20260924151348", "added": "2026-10-11", "reason": "upstream's scripts '/wp-content' (now confidence 30) fired on page data linking to ceo-mag.com/wp-content/uploads ranking badges; was Storyblok/WordPress/Next.js/Radix UI (2026-10-09)", "should_not": "WordPress"}
+    ]
   },
   "Storybook": {
     "cats": [
@@ -13628,6 +13637,9 @@
     "imgSrc": [
       "/strapi-uploads/",
       "^(?:(?:https?:)?//[^/]+)?/uploads/(?:thumbnail_|small_|medium_|large_)?[^/?]+_[0-9a-f]{10}\\.(?:jpe?g|png|gif|webp|svg|avif)"
+    ],
+    "_tests": [
+      {"site": "https://www.mariecurie.org.uk/", "date": "20261017101718", "added": "2026-10-11", "reason": "solved 2026-10-09 (todo was 'Strapi/Astro'): Strapi media records in Astro island props: provider strapi-provider-upload-azure-storage; media at cms.mariecurie.org.uk/uploads. header on cms.mariecurie.org.uk"}
     ]
   },
   "Strato": {
