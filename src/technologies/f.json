@@ -388,9 +388,14 @@
       "FARCRYDEVICETYPE": ""
     },
     "dom": {
-      "a[href^='/']": {
+      "a[href*='.cfm?']": {
         "attributes": {
-          "href": "\\.cfm\\?object[Ii][Dd]=[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{16}\\;confidence:50"
+          "href": "^\\s*(?:https?://{domain})?/[^?\\s]*\\.cfm\\?object[Ii][Dd]=[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{16}\\;confidence:50"
+        }
+      },
+      "form[action*='.cfm?']": {
+        "attributes": {
+          "action": "^\\s*(?:https?://{domain})?/[^?\\s]*\\.cfm\\?object[Ii][Dd]=[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{16}\\;confidence:50"
         }
       }
     },
