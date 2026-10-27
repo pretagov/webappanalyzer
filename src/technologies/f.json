@@ -409,7 +409,11 @@
       "farcryLogin": ""
     },
     "oss": true,
-    "website": "https://www.farcrycore.org"
+    "website": "https://www.farcrycore.org",
+    "_tests": [
+      {"site": "http://www.ids.ac.uk/", "date": "20110629022038", "added": "2026-10-27", "reason": "FarCry content links /index.cfm?objectID=<CF UUID>; this capture has CFID but not FarCry's CURRENTFARCRYPROJECT cookie, so it read Adobe ColdFusion between FarCry eras (2026-10-26)."},
+      {"site": "http://www.ids.ac.uk/", "date": "20100131165600", "added": "2026-10-27", "reason": "FarCry objectID url only in form actions (<form action=\"/index.cfm?objectID=<CF UUID>\">); CFID cookie only - read Adobe ColdFusion (span check 2026-10-27)."}
+    ]
   },
   "FareHarbor": {
     "cats": [

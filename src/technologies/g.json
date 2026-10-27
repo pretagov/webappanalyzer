@@ -3318,6 +3318,9 @@
     "saas": "true",
     "pricing": [
       "recurring"
+    ],
+    "_tests": [
+      {"site": "http://www.headway-nw.org.uk/", "date": "20130730152549", "added": "2026-10-26", "reason": "classic Google Sites on a charity's domain: gstatic.com/sites/.../jot_*.js, /_/rsrc/<d>/system/app/ css, server GSE; read Java (also leedsmencap, mayfaircentre) (2026-10-26).", "should_not": "OpenGSE"}
     ]
   },
   "Google Tag Manager": {

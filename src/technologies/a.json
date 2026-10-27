@@ -1991,7 +1991,10 @@
     "url": [
       "\\.cfm(?:$|\\?)\\;confidence:40"
     ],
-    "website": "https://adobe.com/products/coldfusion-family.html"
+    "website": "https://adobe.com/products/coldfusion-family.html",
+    "_tests": [
+      {"site": "http://www.ima.org.uk/", "date": "20131025081317", "added": "2026-10-26", "reason": "ColdFusion 10+ with J2EE sessions: JSESSIONID=<hex>.cfusion (its default instance), no CFID/CFTOKEN and no .cfm page url; read Java (2026-10-26).", "should_not": "Java"}
+    ]
   },
   "Adobe DTM": {
     "cats": [
