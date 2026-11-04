@@ -7675,9 +7675,6 @@
       "Jimdo"
     ],
     "icon": "MyWebsite.svg",
-    "implies": [
-      "Duda"
-    ],
     "js": {
       "SystemID": "^.*1AND1.*$\\;version:8"
     },
@@ -7690,8 +7687,7 @@
     ],
     "saas": true,
     "scriptSrc": [
-      "website-editor\\.net",
-      "mywebsite-editor\\.com"
+      "website-start\\.de/"
     ],
     "website": "https://www.ionos.com",
     "_tests": [
@@ -7699,7 +7695,32 @@
       {"site": "https://www.cameliabotnar.com/", "date": "2018-06-12", "added": "2026-10-11", "reason": "MyWebsite Creator merged into MyWebsite 2026-10-09 (one 1&1 builder: mywebsite-editor.com + generator + jimdoData); was MyWebsite Creator ('Duda's old name'); style didn't change '' -> 'Duda/MyWebsite Creator'"},
       {"site": "https://www.fortunatushousing.co.uk/", "date": "2018-03-08", "added": "2026-10-11", "reason": "MyWebsite Creator merged into MyWebsite 2026-10-09 (one 1&1 builder: mywebsite-editor.com + generator + jimdoData); was MyWebsite Creator ('Duda's old name'); style didn't change '' -> 'Duda/MyWebsite Creator'"},
       {"site": "http://www.castlecavendish.org.uk/", "date": "2015-06-26", "added": "2026-10-11", "reason": "MyWebsite Creator merged into MyWebsite 2026-10-09 (one 1&1 builder: mywebsite-editor.com + generator + jimdoData); was MyWebsite Creator ('Duda's old name'); style didn't change '' -> 'Duda/MyWebsite Creator'"},
-      {"site": "http://www.julesdemers.com/", "date": "20130515005930", "added": "2026-10-18", "reason": "1&1 image cache path /s/cc_images/cache_<n>. (m.json): julesdemers 2013 read as Apache. (deployed 2026-10-17)"}
+      {"site": "http://www.julesdemers.com/", "date": "20130515005930", "added": "2026-10-18", "reason": "1&1 image cache path /s/cc_images/cache_<n>. (m.json): julesdemers 2013 read as Apache. (deployed 2026-10-17)"},
+      {"site": "http://www.fsncharity.co.uk/", "date": "20180913055650", "added": "2026-11-04", "reason": "1&1's own builder engine (cdn.website-start.de, /s/cc_images/, generator '1&1 MyWebsite'), not Duda: MyWebsite implied Duda, so fsncharity's 2015-18 era read Duda. Split (user 2026-11-04): IONOS's Duda-based builder is MyWebsite Creator again; mywebsite-editor.com, the editor host on both engines, dropped."},
+      {"site": "http://www.mkchristianfoundation.co.uk/", "date": "20170623212302", "added": "2026-11-04", "reason": "generator '1&1 MyWebsite' (url list), yet the history read nothing here between two Duda (MyWebsite) captures: suspect 'Blip of Duda->''->Duda' 2016-10 to 2017-06 (user 2026-11-04: Duda/dotCMS suspects to make the rules stronger)."}
+    ]
+  },
+
+  "MyWebsite Creator": {
+    "cats": [
+      51
+    ],
+    "description": "MyWebsite Creator is IONOS's website builder built on Duda.",
+    "icon": "MyWebsite.svg",
+    "implies": [
+      "Duda"
+    ],
+    "imgSrc": [
+      "website-editor\\.net/md/and1/"
+    ],
+    "pricing": [
+      "low",
+      "recurring"
+    ],
+    "saas": true,
+    "website": "https://www.ionos.com",
+    "_tests": [
+      {"site": "https://aeblondon.uk/", "date": "20220305182156", "added": "2026-11-04", "reason": "IONOS's Duda-based builder: Duda's partner media path website-editor.net/md/and1/ beside Duda's own /_dm/s/rt/ and multiscreensite.com. Split from MyWebsite, 1&1's own engine (user 2026-11-04)."}
     ]
   },
 
