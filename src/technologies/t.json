@@ -7513,7 +7513,13 @@
     ],
     "cpe": "cpe:2.3:a:typo3:typo3:*:*:*:*:*:*:*:*",
     "description": "TYPO3 is a free and open-source Web content management system written in PHP.",
+    "imgSrc": [
+      "^/?fileadmin/\\;confidence:50"
+    ],
     "dom": {
+      "link[rel='stylesheet'][href^='/fileadmin/'],link[rel='stylesheet'][href^='fileadmin/']": {
+        "exists": "\\;confidence:50"
+      },
       "link[href*='/typo3'],a[href*='/typo3'],img[src*='/typo3']": {
         "attributes": {
           "src": "/typo3(?:conf|temp)/\\;confidence:50",
@@ -7546,6 +7552,7 @@
       "fe_typo_user": ""
     },
     "_tests": [
+      {"site": "http://a19.sylaba.pl/", "date": "20050722092944", "added": "2026-11-06", "redo_when": "site", "reason": "Images under fileadmin/, TYPO3's upload folder, and nothing else: read Apache HTTP Server/Adobe Flash."},
       {"site": "http://www.holyoake.com:80/", "date": "20110713053908", "added": "2026-11-06", "redo_when": "site", "reason": "Its generator spells it 'Typo 3.3 CMS', with no fe_typo_user cookie in this capture: read PHP."}
     ]
   },
