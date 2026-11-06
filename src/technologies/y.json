@@ -81,7 +81,12 @@
       "YStore": ""
     },
     "website": "https://smallbusiness.yahoo.com/ecommerce",
-    "url": "stores\\.yahoo\\.com/[\\w-]+\\;confidence:30"
+    "url": "(?:stores\\.yahoo\\.com|(?:www\\.)?turbify\\.com|(?:www\\.)?aabacosmallbusiness\\.com|smallbusiness\\.yahoo\\.com)(?::80)?/[\\w-]+\\;confidence:30",
+    "_tests": [
+      {"site": "https://www.turbify.com/hosting", "date": "20261002201214", "added": "2026-11-06", "reason": "A subpath of Turbify, the platform Yahoo Small Business became: the hoster, its home page the parker (Hosting Platform Landing)."},
+      {"site": "https://www.aabacosmallbusiness.com/ecommerce", "date": "20190906131602", "added": "2026-11-06", "reason": "A subpath of Aabaco, between Yahoo Small Business and Turbify: the hoster, its home page the parker."},
+      {"site": "http://smallbusiness.yahoo.com:80/ecommerce/", "date": "20061028144113", "added": "2026-11-06", "reason": "A subpath of Yahoo Small Business: the hoster, its home page the parker. Read Nginx."}
+    ]
   },
   "Yahoo! Tag Manager": {
     "cats": [
