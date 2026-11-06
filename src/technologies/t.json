@@ -7529,7 +7529,7 @@
       "webpackChunkTYPO3Webpack": ""
     },
     "meta": {
-      "generator": "TYPO3\\s+(?:CMS\\s+)?(?:[\\d.]+)?(?:\\s+CMS)?"
+      "generator": "(?i:typo)\\s*3(?:\\.\\d+)?(?:\\s+CMS)?"
     },
     "oss": true,
     "probe": {
@@ -7544,7 +7544,10 @@
     "website": "https://typo3.org/",
     "cookies": {
       "fe_typo_user": ""
-    }
+    },
+    "_tests": [
+      {"site": "http://www.holyoake.com:80/", "date": "20110713053908", "added": "2026-11-06", "redo_when": "site", "reason": "Its generator spells it 'Typo 3.3 CMS', with no fe_typo_user cookie in this capture: read PHP."}
+    ]
   },
   "Typof": {
     "cats": [
