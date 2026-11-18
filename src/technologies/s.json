@@ -1815,6 +1815,9 @@
       },
       "script": {
         "text": "'TcmId':"
+      },
+      "tcdl\\:componentfield": {
+        "exists": ""
       }
     },
     "implies": [
@@ -1826,7 +1829,9 @@
       "poa"
     ],
     "_tests": [
-      {"site": "http://www.rspb.org.uk/", "date": "20111108133142", "added": "2026-10-09", "reason": "Tridion images with a 1-digit publication id and 5-digit items: oglogo_tcm9-283522.gif, kittiwake90_tcm9-57293_v2.jpg. Was Microsoft ASP.NET[2] (2026-10-08)"}
+      {"site": "http://www.rspb.org.uk/", "date": "20111108133142", "added": "2026-10-09", "reason": "Tridion images with a 1-digit publication id and 5-digit items: oglogo_tcm9-283522.gif, kittiwake90_tcm9-57293_v2.jpg. Was Microsoft ASP.NET[2] (2026-10-08)"},
+      {"site": "http://www.cipd.co.uk/", "date": "20130313080836", "added": "2026-11-18", "confidence": 100, "reason": "Tridion's own <tcdl:ComponentField> in the page (100; its _tcm11- images alone are 80) and its _tcm11- images; the News box's one /NR/rdonlyres/ thumbnail read MCMS at full confidence and trumped Tridion's 80 (a 2011-2013 MCMS era between Tridion)", "should_not": ["Microsoft Content Management Server"]},
+      {"site": "http://www.cipd.co.uk/", "date": "20110429234731", "added": "2026-11-18", "reason": "the same page two weeks after the move to Tridion, read MCMS from the News box thumbnail", "should_not": ["Microsoft Content Management Server"]}
     ]
   },
   "Seal Subscriptions": {
