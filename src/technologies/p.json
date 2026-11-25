@@ -295,8 +295,8 @@
       {"site": "https://frontbackend.com/", "date": "2024-10-01", "added": "2026-05-27", "reason": "script regex fixed: \"$pagekit\" -> \"\\\\$pagekit\" (was unescaped $ anchor)"},
       {"site": "https://boxberry.ru/", "date": "2025-01-01", "added": "2026-05-27", "reason": "confirmed Pagekit ($pagekit inline var + /packages/boxberry/ theme paths); Vue.js for boxberryvue frontend bundle"},
       {"site": "https://www.raspberrypi.org/", "date": "20211127021649", "added": "2026-11-25", "should_not": ["Pagekit"], "reason": "raspberrypi.org's own Rails app is named pagekit (/pagekit-assets/), not the Pagekit CMS: it read a Pagekit era between Headless ones (prod 2026-11-24); /pagekit-assets/ removed (user 2026-11-25)"},
-      {"site": "https://beep.nl/", "date": "2025-01-01", "added": "2026-11-25", "redo_when": "site", "reason": "a Pagekit site with the stock theme-one theme: generator, $pagekit, /packages/pagekit/ and the pagekit_session cookie (user 2026-11-25: find better pagekit rules and examples)"},
-      {"site": "https://encircleall.org/", "date": "2025-01-01", "added": "2026-11-25", "redo_when": "site", "reason": "a Pagekit site with its own theme (/packages/v4dev/): generator, $pagekit and the pagekit_session cookie, no /packages/pagekit/ (user 2026-11-25)"}
+      {"site": "https://beep.nl/", "date": "2025-01-01", "added": "2026-11-25", "redo_when": "site", "matched": ["cookie:pagekit_session", "scriptSrc: /packages/pagekit/", "meta:generator", "scripts: \\$pagekit"], "reason": "a Pagekit site with the stock theme-one theme: generator, $pagekit, /packages/pagekit/ and the pagekit_session cookie (user 2026-11-25: find better pagekit rules and examples)"},
+      {"site": "https://encircleall.org/", "date": "2025-01-01", "added": "2026-11-25", "redo_when": "site", "matched": ["cookie:pagekit_session", "meta:generator", "scripts: \\$pagekit"], "reason": "a Pagekit site with its own theme (/packages/v4dev/): generator, $pagekit and the pagekit_session cookie, no /packages/pagekit/ (user 2026-11-25)"}
     ]
   },
   "PageLayer": {
