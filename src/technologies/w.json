@@ -4062,7 +4062,7 @@
     "description": "WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database. Features include a plugin architecture and a template system.",
     "dom": {
       "div[class*='wp-block-group'] > div[class*='wp-block-']": {
-        "exists": ""
+        "exists": "\\;confidence:50"
       },
       "link[rel=stylesheet][href*='/wp-content/']": {
         "exists": "\\;confidence:50"
