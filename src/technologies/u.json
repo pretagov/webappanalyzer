@@ -483,14 +483,83 @@
       "a[href^='/umbraco/Surface/']": {
         "exists": ""
       },
+      "form[action*='/umbraco/surface/'], a[href*='/umbraco/surface/']": {
+        "exists": ""
+      },
       "fieldset.umbraco-forms-fieldset": {
         "exists": ""
-      }
+      },
+      "umbraco\\:item": {
+        "exists": ""
+      },
+      "a[href='/login']": {
+        "attributes": {
+          "value": "UmbracoMembers\\.Auth0"
+        }
+      },
+      ".umb-grid": {
+        "exists": "\\;confidence:30"
+      },
+      "input[name='ufprt']": {
+        "exists": ""
+      },
+      "div.umb-macro-holder": {
+        "exists": "\\;confidence:30"
+      },
+      "script": {
+        "text": "apiBaseUrl.*/Umbraco/api/|/umbraco/umarketingsuite"
+      },
+      "link[href*='/umbracoforms/assets/']": {
+        "exists": ""
+      },
+      "link[href*='/App_Plugins/']": {
+        "exists": ""
+      },
+      "form[action*='/umbraco/']": {
+        "exists": ""
+      },
+      "html": {
+        "attributes": {
+          "xmlns:umbraco": ""
+        }
+      },
+      ".umb-block-grid": {},
+      "body[data-document-alias*='umb']": {}
     },
+    "excludes": [
+      "WordPress"
+    ],
     "headers": {
-      "X-Umbraco-Version": "^(.+)$\\;version:\\1"
+      "X-Umbraco-Version": "^(.+)$\\;version:\\1",
+      "Content-Security-Policy": [
+        "[\\w-]+\\.[a-z]+\\d\\d\\.umbraco\\.io",
+        "umbraco\\.(?:com|io)\\;confidence:50"
+      ],
+      "Content-Security-Policy-Report-Only": [
+        "[\\w-]+\\.[a-z]+\\d\\d\\.umbraco\\.io",
+        "umbraco\\.(?:com|io)\\;confidence:50"
+      ]
     },
+    "html": [
+      "<!-- <\\?UMBRACO_MACRO macroAlias="
+    ],
     "icon": "Umbraco.svg",
+    "imgSrc": [
+      "/CropUp/[\\w-]+/media/\\d+/",
+      "/media/(?:[0-9a-z]{8}|[0-9a-z]{15}|[0-9]{4,7})/[^/]*(?:crop)?mode=(?:crop|max|min|pad|percentage|stretch|boxpad)",
+      "/media/(?:[0-9a-z]{8}|[0-9]{4,7})/[^/]*format=webp[^/]*(?:rnd=\\d{18}|v=[a-z0-9]{15}|quality=\\d)",
+      "/media/[0-9]{4}/[^/]*(?:rnd|v)=\\d{14}0000$",
+      "/media/.*rxy=[0-9.]+,[0-9.]",
+      "/media/[0-9]{4,7}/[^/?]+\\.[a-z]+\\?(?:[^#]*&(?:amp;)?)?(?:width|height|center|anchor)=\\;confidence:60",
+      "/media/[0-9a-z]{8}/[^/?]+\\.[a-z]+\\?(?:[^#]*&(?:amp;)?)?(?:width|height|center|anchor)=",
+      "^(?:(?:https?:)?//[^/]+)?/media/[0-9]{7}/[^/]*(?:png|jpg|gif)\\;confidence:50",
+      "^(?:(?:https?:)?//[^/]+)?/media/[0-9a-z]{8}/[^/]*(?:png|jpg|gif)\\;confidence:40",
+      "^(?:(?:https?:)?//[^/]+)?/media/[0-9]{4,}/[^/]*(?:png|jpg|gif)\\;confidence:30",
+      "/media/[0-9a-z]*[a-z][0-9a-z]*/[^/?]+\\?(?:[^/]*[&;])?v=[0-9a-f]{15}(?:&|$)\\;confidence:75",
+      "/media/[0-9a-z]{8}/[^/?]+\\?(?:[^/]*[&;])?cc=[0-9.]+,[0-9.]+,[0-9.]+,[0-9.]+\\;confidence:75",
+      "^(?:https?:)?//[^/]+/(?:[^?#]*/)?media/(?-i:(?=[a-z]*[0-9])[0-9a-z]{8})/[^/?#]+\\.(?:jpe?g|png|gif|webp|svg|avif)\\;confidence:40",
+      "ImageGen\\.ashx"
+    ],
     "implies": [
       "Microsoft ASP.NET"
     ],
@@ -511,8 +580,14 @@
       "low"
     ],
     "saas": true,
+    "scriptSrc": [
+      "/DependencyHandler.axd\\?s=",
+      "/redboxcore\\.js",
+      "/umbraco/"
+    ],
     "scripts": [
-      "\\.umbraco\\.io|/Umbraco\\/Api"
+      "\\.umbraco\\.io|/Umbraco\\/Api",
+      "/umbraco/surface/"
     ],
     "url": [
       "/umbraco/login\\.aspx(?:$|\\?)"
@@ -520,6 +595,128 @@
     "website": "https://umbraco.com/",
     "xhr": [
       "/umbraco/api/"
+    ],
+    "_dom": {
+      "img[src*='mode='],source[srcset*='mode='],source[data-srcset*='mode='],link[rel='icon'][href*='mode='],[style*='mode=']": {
+        "attributes": {
+          "srcset": "/media/(?:[0-9a-z]{8}|[0-9a-z]{15}|[0-9]{4,7})/[^/]*(?:crop)?mode=(?:crop|max|min|pad|percentage|stretch|boxpad)",
+          "data-srcset": "/media/(?:[0-9a-z]{8}|[0-9a-z]{15}|[0-9]{4,7})/[^/]*(?:crop)?mode=(?:crop|max|min|pad|percentage|stretch|boxpad)",
+          "src": "/media/(?:[0-9a-z]{8}|[0-9a-z]{15}|[0-9]{4,7})/[^/]*(?:crop)?mode=(?:crop|max|min|pad|percentage|stretch|boxpad)",
+          "href": "/media/(?:[0-9a-z]{8}|[0-9a-z]{15}|[0-9]{4,7})/[^/]*(?:crop)?mode=(?:crop|max|min|pad|percentage|stretch|boxpad)",
+          "style": "/media/(?:[0-9a-z]{8}|[0-9a-z]{15}|[0-9]{4,7})/[^/]*(?:crop)?mode=(?:crop|max|min|pad|percentage|stretch|boxpad)"
+        }
+      },
+      "img[src*='format='],source[srcset*='format='],source[data-srcset*='format='],link[rel='icon'][href*='format='],[style*='format=']": {
+        "attributes": {
+          "srcset": "/media/(?:[0-9a-z]{8}|[0-9]{4,7})/[^/]*format=webp[^/]*(?:rnd=\\d{18}|v=[a-z0-9]{15}|quality=\\d)",
+          "data-srcset": "/media/(?:[0-9a-z]{8}|[0-9]{4,7})/[^/]*format=webp[^/]*(?:rnd=\\d{18}|v=[a-z0-9]{15}|quality=\\d)",
+          "src": "/media/(?:[0-9a-z]{8}|[0-9]{4,7})/[^/]*format=webp[^/]*(?:rnd=\\d{18}|v=[a-z0-9]{15}|quality=\\d)",
+          "href": "/media/(?:[0-9a-z]{8}|[0-9]{4,7})/[^/]*format=webp[^/]*(?:rnd=\\d{18}|v=[a-z0-9]{15}|quality=\\d)",
+          "style": "/media/(?:[0-9a-z]{8}|[0-9]{4,7})/[^/]*format=webp[^/]*(?:rnd=\\d{18}|v=[a-z0-9]{15}|quality=\\d)"
+        }
+      },
+      "img[src*='0000'],source[srcset*='0000'],source[data-srcset*='0000'],link[rel='icon'][href*='0000'],[style*='0000']": {
+        "attributes": {
+          "srcset": "/media/[0-9]{4}/[^/]*(?:rnd|v)=\\d{14}0000$",
+          "data-srcset": "/media/[0-9]{4}/[^/]*(?:rnd|v)=\\d{14}0000$",
+          "src": "/media/[0-9]{4}/[^/]*(?:rnd|v)=\\d{14}0000$",
+          "href": "/media/[0-9]{4}/[^/]*(?:rnd|v)=\\d{14}0000$",
+          "style": "/media/[0-9]{4}/[^/]*(?:rnd|v)=\\d{14}0000"
+        }
+      },
+      "img[src*='/media/'][src*='=']": {
+        "attributes": {
+          "src": "/media/[0-9]{4,7}/[^/?]+\\.[a-z]+\\?(?:[^#]*&(?:amp;)?)?(?:width|height|center|anchor)=\\;confidence:60"
+        }
+      },
+      "img[src*='/media/'],meta[content*='/media/']": {
+        "attributes": {
+          "src": "^(?:(?:https?:)?//[^/]+)?/media/[0-9a-z]{8}/[^/]*(?:png|jpg|gif)\\;confidence:50",
+          "content": "^(?:(?:https?:)?//[^/]+)?/media/[0-9a-z]{8}/[^/]*(?:png|jpg|gif)\\;confidence:50"
+        }
+      },
+      "img[src*='ImageGen.ashx'],img[src*='imagegen.ashx']": {
+        "exists": ""
+      }
+    },
+    "_html": [
+      "(?:/umbraco/|DependencyHandler\\.axd)"
+    ],
+    "_old_dom": {
+      "img[src*='/media/'],source[srcset*='/media/'],source[data-srcset*='/media/'],link[rel='icon'][href*='/media/'],div[style*='/media/']": {
+        "attributes": {
+          "srcset": "/media/(?:[0-9a-z]{8}|[0-9]{4,7})/[^/]*(?:cropmode=|quality=|mode=|anchor=|rnd=\\d{18}|format=)",
+          "data-srcset": "/media/(?:[0-9a-z]{8}|[0-9]{4,7})/[^/]*(?:mode=|anchor=|rnd=\\d{18}|format=)",
+          "src": "/media/(?:[0-9a-z]{8}|[0-9]{4,7})/[^/]*(?:mode=|anchor=|rnd=\\d{18}|format=|v=[a-z0-9]{15})",
+          "href": "/media/(?:[0-9a-z]{8}|[0-9]{4,7})/[^/]*(?:mode=|anchor=|rnd=|format=)",
+          "style": "/media/(?:[0-9a-z]{8}|[0-9]{4,7})/[^/]*(?:mode=|anchor=|rnd=|format=)"
+        }
+      },
+      "img[src*='/media'],div[style*='/media'],a[style*='/media'],meta[content*='/media/']": {
+        "attributes": {
+          "src": "/media/(?:[0-9a-z]{8}|[0-9]{4,7})/[^/]+\\.\\;confidence:30",
+          "style": "/media/[0-9]{4,7}/[^/]+\\.\\;confidence:30",
+          "content": "/media/(?:[0-9a-z]{8}|[0-9]{4,7})/[^/]*(?:png|jpg|gif)\\;confidence:60"
+        }
+      }
+    },
+    "_test_imgSrc_neg": [
+      "https://canoncollins.ams3.digitaloceanspaces.com/media/2022/05/26152238/40th-logo-stacked-horizontal_teal-WEB-1.png",
+      "https://accesstosports.org.uk/media/xjsi5tlj/holiday-banner-1a.jpg?width=2048&height=528&rnd=132881147535100000",
+      "https://www.britishdressage.co.uk/media/1007/logo.svg",
+      "https://www.britishdressage.co.uk/media/1463/inspiration.jpg?center=0.38461538461538464,0.50166666666666671&mode=crop&width=768&height=461&rnd=132132892900000000 - maybe?",
+      "/media/homepage/ashley-griffin.jpg",
+      "http://www.theiet.org:80/policy/media/olympics/1-4_s.jpg"
+    ],
+    "_test_imgSrc_pos": [
+      "/media/tjlhbl03/shutterstock_1738679645-copy.jpg?width=200&height=200&format=webp&quality=80&rnd=133275772300930000",
+      "/media/hnwb41gj/ciht-horse-through-water-1920x1080.jpg?width=1920&height=1080&format=WebP&v=1da9a12c55dd240",
+      "https://web.archive.org/media/hnwb41gj/ciht-horse-through-water-1920x1080.jpg?width=1920&height=1080&format=WebP&v=1da9a12c55dd240",
+      "https://media.drinkaware.co.uk/media/vdno055c/drinkawarecommerciallifestyle2022-iggy-lime-shoot12-34.jpg?width=500&height=400&v=1da9583a2141350",
+      "https://media.drinkaware.co.uk/media/gpblpe4n/considering-change_rgb.png?width=120&v=1da9583a7f310f0&rmode=pad",
+      "https://www.42ndstreet.org.uk/media/sbwigysb/42nd-street-logo-full.png",
+      "https://www.42ndstreet.org.uk/css/images/header-MCR-white-logo.png?width=131&height=38&mode=max   # TODO",
+      "/media/1168328/longbridgehomepage.jpg",
+      "/media/eefi31h2/membership-2.png?mode=crop&width=38&height=20",
+      "/media/7506/alterations-banner.jpg?crop=0.49953078642450516,0.31166838314890566,0.146147186472616,0.16211078452008604&cropmode=percentage&width=350&height=350&format=jpg&quality=70&rnd=132493958340000000",
+      "https://www.britishlegion.org.uk/remote.axd/media.britishlegion.org.uk/Media/16102/ty-screenshot-3.png?anchor=center&amp;mode=crop&amp;width=1610&amp;height=630&amp;rnd=131864939870000000",
+      "https://www.kcs.org.uk/media/7647/dz2a2549.jpg?anchor=center&mode=crop&width=1922&height=1000&meta=false&rnd=133045994990000000",
+      "https://web.archive.org/media/4840/wave-active-centered-whiteout-120x181.png?width=144&height=144",
+      "https://www.waveleisure.co.uk/media/3468/3435cb4d-c663-497b-aa52-9ded0404895a.jpg",
+      "https://nowteachlive.b-cdn.net/live/media/m4slpafb/22.png",
+      "//res.cloudinary.com/ciltproduction/image/upload/cilt//media/1zlfwj2w/cilt-title.svg",
+      "https://web.archive.org/web/20161120175420/https://www.sjomannskirken.no/media/1444/ico-heart_opt.png?cdv=636083217990000000",
+      "https://web.archive.org/web/20210126055457/https://i.sjomannskirken.no/media/8d8b6dcb6bd80f9/telefonsamtale-oppringning-illustrasjon.jpg?anchor=center&mode=crop&heightratio=0.5625&width=5&rnd=132549174360630000",
+      "data-bg-mobile='/media/25592/abbeyfield.png?mode=pad&rnd=131928925320000000'",
+      "https://web.archive.org/media/3mij3wir/researcher-jessica-for-homepage2.png?rxy=0.5831557371607528,0.4532957723953956&width=2800&rnd=133644763791130000&quality=40",
+      "TODO: https://web.archive.org/media/1380507/FR_RegLogo_Mono_LR-new.png",
+      "docs - https://github.com/umbraco/Umbraco-CMS/blob/b839135e7102770d1b6499d5a04d1116890bcf00/src/Umbraco.Core/Models/ImageUrlGenerationOptions.cs#L18",
+      "mode - https://github.com/umbraco/Umbraco-CMS/blob/b839135e7102770d1b6499d5a04d1116890bcf00/src/Umbraco.Core/Models/ImageCropMode.cs#L3",
+      "anchor - https://github.com/umbraco/Umbraco-CMS/blob/b839135e7102770d1b6499d5a04d1116890bcf00/src/Umbraco.Core/Models/ImageCropAnchor.cs",
+      "cropmode - https://our.umbraco.com/packages/website-utilities/slimsy/slimsy-feedback/65306-GetResponsiveCropUrl-returns-different-src-after-Umbraco-upgrade",
+      "cropmode - https://github.com/umbraco/Umbraco-CMS/blob/2029bef6eb8b2a831f55349015dae8e5c902dfb3/src/Umbraco.Web/ImageCropperBaseExtensions.cs#L97",
+      "https://web.archive.org/web/2/http://ImageGen.ashx?width=79&image=%2Fmedia%2F1913214%2Fmod_wheelchair.jpg",
+      "https://www.carmarthenshire.gov.wales/media/1222548/webcasting.png",
+      "maybe? http://www.beyondsport.org/media/9153/real-tool-tile.jpg",
+      "https://media.drinkaware.co.uk/media/fkhfeyp5/david-seaman-taking-the-drinking-check.jpg?width=1920&height=760&v=1db166d50c81da0 (v= 2024-10-04; was in _neg, moved 2026-10-14: same form as drinkaware's other positives, ASP.NET, /umbraco locked down)",
+      "https://web.archive.org/web/20261011080234id_/https://swedishschool.org.uk/media/34dpa43z/swedish-school-studenten1.webp?width=600&height=290&v=1dc8a126d0f35b0 (v= 2026-01-20; v= after width/height)",
+      "https://web.archive.org/web/20261011080234id_/https://swedishschool.org.uk/media/14tbbtkz/ssl_christina_cudsworth.jpeg?cc=0.24953020470546966,0,0,0&width=1040&height=1040&v=1dc906260cc51b0 (Umbraco 9+ crop coordinates cc=)"
+    ],
+    "_tests": [
+      {"site": "http://www.britishlegion.org.uk/", "date": "20090418041327", "added": "2026-06-11", "confidence": 30, "redo_when": "site", "reason": "Only /media/<id>/ images name it, a candidate, on the layout confirmed Umbraco from 2010-12 and by X-Umbraco-Version from 2011: promote_candidates takes it from that era. ASP.NET_SessionId's ASP.NET is hidden, as Umbraco implies it."},
+      {"site": "http://www.natcen.ac.uk/", "date": "20160611164356", "added": "2026-10-27", "reason": "CropUp image paths /CropUp/<crop>/media/<id>/: natcen 2013-23 flipped Umbraco <-> Microsoft ASP.NET where a capture had no plain /media/<id>/ image; brit-thoracic 2014-19 and newcommunity 2013-18 read nothing"},
+      {"site": "https://www.nga.org.uk/", "date": "20261017043530", "added": "2025-06-18", "reason": "CMS detect says Umbraco - /media/tjlhbl03/shutterstock_1738679645-copy.jpg?width=200&height=200&format=webp&quality=80&rnd=133275772300930000"},
+      {"site": "https://www.arthritis-uk.org/", "date": "20261017114747", "added": "2025-06-18", "reason": "ModelsBuilder in title attr + umb-block class"},
+      {"site": "https://nhscharitiestogether.co.uk/", "date": "20261005223338", "added": "2026-10-09", "reason": "Astro front end on Umbraco Cloud: CSP lists (dev-|stage-)nhs-charities-together.uksouth01.umbraco.io; was Astro[5]/Netlify/Umbraco? (2026-10-08)"},
+      {"site": "https://www.rcog.org.uk/", "date": "20261017040720", "added": "2026-05-26", "reason": "site now live; was 403 custom error due to bots. latest unknown 'Umbraco' -> '' https://www.rcog.org.uk/"},
+      {"site": "https://www.carmarthenshire.gov.wales/council-services/", "date": "2025-06-01", "added": "2025-06-18", "reason": "Umbraco umb-block-grid dom rule for higher confidence (60397a8, 2026-03-28)."},
+      {"site": "https://swedishschool.org.uk/", "date": "20261011080234", "added": "2026-10-16", "reason": "added (2026-10-14): Umbraco 9+ crop urls /media/<8>/<f>?width=..&height=..&v=<15 hex> (v= anywhere in the query) and ?cc=<crop coords>; read Azure/Umbraco?"},
+      {"site": "http://scouts.org.uk/home", "date": "20180515235752", "added": "2026-10-16", "reason": "added (2026-10-14): unrendered Umbraco template tag <umbraco:item field=\"prevLinkURL\" runat=\"server\" /> - read Bootstrap"},
+      {"site": "https://accesstosports.org.uk", "date": "2024-10-09", "added": "2026-10-18", "reason": "wp-embed.min.js counts only at /wp-includes/js/ (w.json) and a confirmed Umbraco excludes WordPress: a ported WordPress theme on Umbraco read WordPress (accesstosports). Common CMS -> suspicious histories only. (deployed 2026-10-17)", "should_not": ["WordPress"]},
+      {"site": "https://accesstosports.org.uk/", "date": "20220327075814", "added": "2026-10-18", "reason": "RE-POINTED 2026-11-26 to the exact capture of the day (the day-precision date looped, max redirections reached). image rules measured against the url list (techs.json): the firm ImageProcessor-query rule takes 8-char media ids (100) and center=/anchor=; the three weak /media/ rules anchored at the path root (themes, October's /storage/app/media/, /_assets/ were false positives); confirmed Umbraco excludes WordPress (accesstosports: a ported WordPress theme on Umbraco). Niche CMS -> full re-process. (deployed 2026-10-17)"},
+      {"site": "https://theros.org.uk/", "date": "20261014201317", "added": "2026-10-27", "reason": "Astro front end on Netlify, Umbraco Cloud backend: its Content-Security-Policy-Report-Only frames royal-osteoporosis-society.uksouth01.umbraco.io (the backoffice preview); the Umbraco header rule read only Content-Security-Policy (10-17 enforces it). Media ids also in <img>, island props and Netlify image urls. Read Astro/Netlify alone between Umbraco captures (sus 2026-10-24)"},
+      {"site": "https://ciltuk.org.uk/", "date": "20261012024235", "added": "2026-10-28", "confidence": 40, "reason": "headless Umbraco (cms.ciltuk.org.uk backoffice, Delivery API) behind The MTM Agency's Vue front end: its media served from Cloudinary as .../cilt//media/1zlfwj2w/cilt-title.svg - Umbraco's media id behind another host, a candidate (40: hotlinked images and folder words like 'migrated' measured on the url list), promoted beside a confirmed Umbraco era. Read nothing: the history went Umbraco -> Unknown in 2026-10 (latest-unknown sus, big run 2026-10-24)"},
+      {"site": "https://www.asdan.org.uk/", "date": "20261016184510", "added": "2026-11-26", "redo_when": "site", "matched": ["scripts: /umbraco/surface/"], "reason": "Umbraco's SurfaceController route /umbraco/surface/... in an inline script (config.dhtmlxLearnerDetailsRowValidation); its images are plain /media/<8 chars>/ urls, only a candidate (40), so asdan read Bootstrap/Material Design Lite/Umbraco? from 2022-08 to live after 5 confirmed Umbraco readings 2021-22. Upstream looked for /umbraco/Surface/ (capital S) in links and form actions only"}
     ]
   },
   "UMI.CMS": {
