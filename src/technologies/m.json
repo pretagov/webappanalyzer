@@ -5608,16 +5608,19 @@
     ],
     "saas": true,
     "scriptSrc": [
+      "(?:^|//[^/]+)/assets/templates/[^/]+/",
       "/assets/components/templates/\\;confidence:50",
       "/assets/components/videobox",
       "assets/modext/util/utilities.js"
     ],
     "website": "https://modx.com/content-management-framework",
     "imgSrc": [
+      "(?:^|//[^/]+)/assets/templates/[^/]+/",
       "/assets/components/phpthumbof/\\;confidence:50"
     ],
     "_tests": [
-      {"site": "https://www.thl.org.uk", "date": "20210618161110", "added": "2026-04-21", "reason": "/assets/components/phpthumbof/ URL pattern in style=\"background-image:url(...)\" — imgSrc rule catches CSS background images"}
+      {"site": "https://www.thl.org.uk", "date": "20210618161110", "added": "2026-04-21", "reason": "/assets/components/phpthumbof/ URL pattern in style=\"background-image:url(...)\" — imgSrc rule catches CSS background images"},
+      {"site": "http://www.bipolaruk.org.uk/", "date": "20120406061529", "added": "2026-11-26", "redo_when": "site", "matched": ["scriptSrc: (?:^|//[^/]+)/assets/templates/"], "reason": "MODX Evolution's per-site template folder /assets/templates/bipolar/js/...; read Apache HTTP Server/PHP/jQuery UI 2012-04..2015-11 (in the url list /assets/templates/<name>/ is on 21 hosts, 16 read MODX at the time)"}
     ]
   },
   "MoEngage": {
