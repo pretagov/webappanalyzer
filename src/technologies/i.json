@@ -3211,7 +3211,17 @@
     ],
     "description": "It’seeze is a website design platform with a custom CMS for seamless site updates and management.",
     "dom": [
-      "footer > div[id*='itseezeFooter']"
+      "footer > div[id*='itseezeFooter']",
+      "#itseezeFooter"
+    ],
+    "headers": {
+      "X-Powered-By": "itseeze\\.com"
+    },
+    "imgSrc": [
+      "/_webedit/cached-images/"
+    ],
+    "scriptSrc": [
+      "/_webedit/scripts/"
     ],
     "icon": "Itseeze.svg",
     "pricing": [
@@ -3219,7 +3229,11 @@
       "recurring"
     ],
     "saas": true,
-    "website": "https://itseeze.com/"
+    "website": "https://itseeze.com/",
+    "_tests": [
+      {"site": "https://www.trilogyactive.co.uk/", "date": "20260418093725", "added": "2026-11-26", "redo_when": "site", "matched": ["headers:X-Powered-By"], "reason": "it'seeze's newer build: X-Powered-By itseeze.com, images under /_webedit/cached-images/, no /_webedit/scripts/ and no itseezeFooter - read '' (sus latest unknown 'it'seeze' -> ''; easyha.org live the same)"},
+      {"site": "https://www.tigerstrust.co.uk/", "date": "20251109091829", "added": "2026-11-26", "should_not": ["it'seeze"], "reason": "one product, one name: upstream It'seeze and our local it'seeze both fired (combo It'seeze/it'seeze, sus combo lines); the local tech is folded into upstream's - redoes the histories that hold the local name"}
+    ]
   },
   "Italiaonline": {
     "cats": [
