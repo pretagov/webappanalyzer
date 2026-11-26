@@ -1085,7 +1085,7 @@
     "icon": "Mambo.png",
     "meta": {
       "generator": "Mambo",
-      "description": "^Mambo (?:Open Source )?- the dynamic portal engine\\;confidence:60"
+      "description": "^Mambo (?:Open Source )?- the dynamic portal engine"
     },
     "website": "https://mambo-foundation.org",
     "html": [
