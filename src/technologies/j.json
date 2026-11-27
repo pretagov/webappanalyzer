@@ -62,11 +62,18 @@
       1
     ],
     "description": "The Jadu Digital Platform provides the foundation of accessible, responsive and award-winning Websites, Forms, CRM and Portal solutions.",
-    "dom": [
-      "a[href*='www.jadu.net']"
-    ],
+    "dom": {
+      "a[href*='www.jadu.net']": {
+        "exists": ""
+      },
+      "a[href^='/site/scripts/']": {
+        "attributes": {
+          "href": "^/site/scripts/(?:documents|documents_info|az_index|news_index|home_info|google_results)\\.php"
+        }
+      }
+    },
     "headers": {
-      "Node": "jadu-web-\\d"
+      "Node": "jadu-web-?\\d"
     },
     "icon": "jadu.png",
     "meta": {
@@ -79,7 +86,8 @@
     ],
     "website": "https://www.jadu.net/",
     "_tests": [
-      {"site": "http://www.alzheimers.org.uk/", "date": "20140423160637", "added": "2026-10-11", "reason": "Jadu Central Content merged into Jadu: this capture read Jadu/Jadu Central Content (footer link + generator) and others Jadu Central Content, flipping the era name (2026-10-09)", "should_not": ["Jadu Central Content"]}
+      {"site": "http://www.alzheimers.org.uk/", "date": "20140423160637", "added": "2026-10-11", "reason": "Jadu Central Content merged into Jadu: this capture read Jadu/Jadu Central Content (footer link + generator) and others Jadu Central Content, flipping the era name (2026-10-09)", "should_not": ["Jadu Central Content"]},
+      {"site": "http://www.alzheimers.org.uk/", "date": "20160111231112", "added": "2026-11-27", "redo_when": "sus", "matched": ["headers:", "a[href^='/site/scripts/']->href"], "reason": "no generator from 2015 (0 of 21 url-list pages 2015-17), so alzheimers read PHP/Prototype between Jadu eras until Drupal in 2018. Jadu's server header is Node: jadu-web1 - the rule wanted jadu-web-<n> - and the page links Jadu's own page scripts /site/scripts/documents.php, az_index.php, documents_info.php (108 links)"}
     ]
   },
 
