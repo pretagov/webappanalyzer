@@ -12246,8 +12246,14 @@
     ],
     "cpe": "cpe:2.3:a:squiz:matrix:*:*:*:*:*:*:*:*",
     "description": "A flexible, low-code enterprise content management system designed to manage multiple sites with many editors.",
+    "cookies": {
+      "SQ_SYSTEM_SESSION": "",
+      "dxp-sessionid": ""
+    },
     "dom": [
       "link[rel='stylesheet'][href*='/__data/assets/']",
+      "link[rel='stylesheet'][href*='/_designs/']",
+      "link[href*='/dxp-includes/']",
       "input[name='queries_all_query']"
     ],
     "headers": {
@@ -12257,7 +12263,7 @@
       "<!--\\s+Running (?:MySource|Squiz) Matrix"
     ],
     "imgSrc": [
-      "/__data/assets/"
+      "/__data/assets/\\;confidence:80"
     ],
     "icon": "Squiz Matrix.svg",
     "implies": [
@@ -12271,9 +12277,20 @@
       "recurring"
     ],
     "scriptSrc": [
-      "/__data/assets/"
+      "/__data/assets/",
+      "/_designs/",
+      "/__lib/js/"
     ],
-    "website": "https://www.squiz.net/matrix"
+    "website": "https://www.squiz.net/matrix",
+    "_tests": [
+      {"site": "https://www.hinfra.health.nsw.gov.au/", "date": "20230601065029", "added": "2026-11-27", "redo_when": "site", "should_not": ["Squiz Matrix"], "trumped": ["Squiz Matrix{80} by Kentico CMS"], "reason": "a Kentico page (CMSPages, __VIEWSTATE, App_Themes) whose head still links the old Squiz site's favicon, /__data/assets/file/0007/242737/favicon.ico (rel=shortcut icon; a 404 by 2022): hinfra was Squiz Matrix about 2011-18. The /__data/assets/ image path reads Squiz at 80 and Kentico at 100 trumps it; detection reports the trumped CMS so the sus list shows it"},
+      {"site": "http://www.rcnfoundation.org.uk/", "date": "20190803110056", "added": "2026-11-27", "redo_when": "sus", "matched": ["cookie:SQ_SYSTEM_SESSION"], "reason": "Matrix's session cookie SQ_SYSTEM_SESSION (76 url-list pages on 10 sites, every one read Squiz Matrix, 2026-11-27)"},
+      {"site": "https://www.riverside.org.uk/", "date": "20261126073551", "added": "2026-11-27", "redo_when": "sus", "matched": ["cookie:dxp-sessionid"], "reason": "Squiz DXP's session cookie dxp-sessionid, Matrix hosted by Squiz (58 url-list pages on 5 sites, all read Squiz Matrix)"},
+      {"site": "http://www.shipleys.com/", "date": "20130810024125", "added": "2026-11-27", "redo_when": "sus", "matched": ["link[rel='stylesheet'][href*='/_designs/']->exists"], "reason": "Matrix design files under /_designs/<design>/, here its stylesheets (30 url-list pages on 4 sites, all read Squiz Matrix)"},
+      {"site": "http://www.thersa.org/", "date": "20150127195135", "added": "2026-11-27", "redo_when": "sus", "matched": ["scriptSrc: /_designs/"], "reason": "a Matrix design's script, /_designs/main-site-2011-design-update/scripts/dynamic-content.js/_nocache"},
+      {"site": "http://www.westminster-abbey.org/", "date": "20160829201714", "added": "2026-11-27", "redo_when": "sus", "matched": ["scriptSrc: /__lib/js/"], "reason": "Matrix's system library /__lib/js/general.js; westminster-abbey's 2011-14 captures were Squiz by /__data/assets/ images alone"},
+      {"site": "https://www.cardiff.ac.uk/", "date": "20251125201714", "added": "2026-11-27", "redo_when": "sus", "matched": ["link[href*='/dxp-includes/']"], "reason": "Squiz DXP's own stylesheet /dxp-includes/<hash>/dxp.css (on CloudFront); cardiff's 2018-26 captures were Squiz by 23-30 /__data/assets/ images alone"}
+    ]
   },
   "Sqwiz": {
     "cats": [
