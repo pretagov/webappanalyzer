@@ -2884,9 +2884,11 @@
     "cats": [
       1
     ],
-    "description": "Hubb is an all-in-one integrated system designed for churches, enabling website content management without the need for technical expertise.",
+    "description": "Hubb is an all-in-one integrated system designed for churches, enabling website content management without the need for technical expertise. Formerly ChurchInsight (Endis).",
     "dom": [
-      "div.endis-jquery-ui"
+      "div.endis-jquery-ui",
+      "link[href*='/endis-jquery-ui/']",
+      "a[href*='churchinsight.com']"
     ],
     "icon": "Hubb.svg",
     "js": {
@@ -2901,7 +2903,14 @@
       "recurring"
     ],
     "saas": true,
-    "website": "https://www.hubb.church"
+    "scriptSrc": [
+      "/Modules/FrontPage/"
+    ],
+    "website": "https://www.hubb.church",
+    "_tests": [
+      {"site": "http://www.lcm.org.uk/", "date": "20140831084120", "added": "2026-11-27", "redo_when": "sus", "matched": ["scriptSrc: /Modules/FrontPage/", "link[href*='/endis-jquery-ui/']->exists", "a[href*='churchinsight.com']->exists"], "reason": "Hubb under its old name ChurchInsight (Endis): /Modules/FrontPage/DropdownMenus/DropDownMenu.js, Endis's /Common/ThirdParty/jquery/endis-jquery-ui/ and a ChurchInsight footer link; read Microsoft ASP.NET. In the url list /Modules/FrontPage/ is on 652 pages of 74 sites: 237 read Hubb, 413 on 57 sites only Microsoft ASP.NET (2005-26), none another CMS (2026-11-27)"},
+      {"site": "http://www.asww.org.uk/", "date": "20170202014204", "added": "2026-11-27", "redo_when": "sus", "matched": ["scriptSrc: /Modules/FrontPage/"], "reason": "ChurchInsight's /Modules/FrontPage/ scripts and footer link; asww read Microsoft ASP.NET 2009-17"}
+    ]
   },
   "Huberway": {
     "cats": [
