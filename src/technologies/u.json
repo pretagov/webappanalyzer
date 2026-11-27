@@ -458,6 +458,30 @@
     "website": "https://www.umarketingsuite.com"
   },
   "Umbraco": {
+    "all": [
+      {
+        "imgSrc": "^/media/[0-9]{4,}/[^/]*(?:png|jpg|gif)",
+        "headers": {
+          "X-AspNet-Version": ""
+        }
+      },
+      {
+        "imgSrc": "^/media/[0-9]{4,}/[^/]*(?:png|jpg|gif)",
+        "headers": {
+          "X-Powered-By": "ASP\\.NET"
+        }
+      },
+      {
+        "imgSrc": "^/media/[0-9]{4,}/[^/]*(?:png|jpg|gif)",
+        "cookies": {
+          "ASP.NET_SessionId": ""
+        }
+      },
+      {
+        "imgSrc": "^/media/[0-9]{4,}/[^/]*(?:png|jpg|gif)",
+        "dom": "form[action*='.aspx'], a[href$='.aspx']"
+      }
+    ],
     "cats": [
       1
     ],
@@ -468,6 +492,17 @@
     "cpe": "cpe:2.3:a:umbraco:umbraco:*:*:*:*:*:*:*:*",
     "description": "Umbraco is an open-source Microsoft ASP.NET based content management system.",
     "dom": {
+      "link[rel*='icon'][href^='/media/']": {
+        "attributes": {
+          "href": "^/media/[0-9]+/"
+        }
+      },
+      "link[href*='umbracoAutoForm.css']": {
+        "exists": ""
+      },
+      "input[name*='$UmbracoLoginView$']": {
+        "exists": ""
+      },
       "script[src*='/UmbracoForms/']": {
         "exists": ""
       },
@@ -703,7 +738,7 @@
       "https://web.archive.org/web/20261011080234id_/https://swedishschool.org.uk/media/14tbbtkz/ssl_christina_cudsworth.jpeg?cc=0.24953020470546966,0,0,0&width=1040&height=1040&v=1dc906260cc51b0 (Umbraco 9+ crop coordinates cc=)"
     ],
     "_tests": [
-      {"site": "http://www.britishlegion.org.uk/", "date": "20090418041327", "added": "2026-06-11", "confidence": 30, "redo_when": "site", "reason": "Only /media/<id>/ images name it, a candidate, on the layout confirmed Umbraco from 2010-12 and by X-Umbraco-Version from 2011: promote_candidates takes it from that era. ASP.NET_SessionId's ASP.NET is hidden, as Umbraco implies it."},
+      {"site": "http://www.britishlegion.org.uk/", "date": "20090418041327", "added": "2026-11-27", "redo_when": "site", "matched": ["link[rel*='icon'][href^='/media/']->href"], "reason": "its shortcut icon is an Umbraco media item, /media/308/favicon.ico, on the layout confirmed Umbraco from 2010-12 and by X-Umbraco-Version from 2011 (IIS 6/ASP.NET throughout). Was the candidate row (2026-06-11): its numbered /media/ images and ASP.NET_SessionId now confirm it too"},
       {"site": "http://www.natcen.ac.uk/", "date": "20160611164356", "added": "2026-10-27", "reason": "CropUp image paths /CropUp/<crop>/media/<id>/: natcen 2013-23 flipped Umbraco <-> Microsoft ASP.NET where a capture had no plain /media/<id>/ image; brit-thoracic 2014-19 and newcommunity 2013-18 read nothing"},
       {"site": "https://www.nga.org.uk/", "date": "20261017043530", "added": "2025-06-18", "reason": "CMS detect says Umbraco - /media/tjlhbl03/shutterstock_1738679645-copy.jpg?width=200&height=200&format=webp&quality=80&rnd=133275772300930000"},
       {"site": "https://www.arthritis-uk.org/", "date": "20261017114747", "added": "2025-06-18", "reason": "ModelsBuilder in title attr + umb-block class"},
@@ -716,7 +751,16 @@
       {"site": "https://accesstosports.org.uk/", "date": "20220327075814", "added": "2026-10-18", "reason": "RE-POINTED 2026-11-26 to the exact capture of the day (the day-precision date looped, max redirections reached). image rules measured against the url list (techs.json): the firm ImageProcessor-query rule takes 8-char media ids (100) and center=/anchor=; the three weak /media/ rules anchored at the path root (themes, October's /storage/app/media/, /_assets/ were false positives); confirmed Umbraco excludes WordPress (accesstosports: a ported WordPress theme on Umbraco). Niche CMS -> full re-process. (deployed 2026-10-17)"},
       {"site": "https://theros.org.uk/", "date": "20261014201317", "added": "2026-10-27", "reason": "Astro front end on Netlify, Umbraco Cloud backend: its Content-Security-Policy-Report-Only frames royal-osteoporosis-society.uksouth01.umbraco.io (the backoffice preview); the Umbraco header rule read only Content-Security-Policy (10-17 enforces it). Media ids also in <img>, island props and Netlify image urls. Read Astro/Netlify alone between Umbraco captures (sus 2026-10-24)"},
       {"site": "https://ciltuk.org.uk/", "date": "20261012024235", "added": "2026-10-28", "confidence": 40, "reason": "headless Umbraco (cms.ciltuk.org.uk backoffice, Delivery API) behind The MTM Agency's Vue front end: its media served from Cloudinary as .../cilt//media/1zlfwj2w/cilt-title.svg - Umbraco's media id behind another host, a candidate (40: hotlinked images and folder words like 'migrated' measured on the url list), promoted beside a confirmed Umbraco era. Read nothing: the history went Umbraco -> Unknown in 2026-10 (latest-unknown sus, big run 2026-10-24)"},
-      {"site": "https://www.asdan.org.uk/", "date": "20261016184510", "added": "2026-11-26", "redo_when": "sus", "matched": ["scripts: /umbraco/surface/"], "reason": "Umbraco's SurfaceController route /umbraco/surface/... in an inline script (config.dhtmlxLearnerDetailsRowValidation); its images are plain /media/<8 chars>/ urls, only a candidate (40), so asdan read Bootstrap/Material Design Lite/Umbraco? from 2022-08 to live after 5 confirmed Umbraco readings 2021-22. Upstream looked for /umbraco/Surface/ (capital S) in links and form actions only"}
+      {"site": "https://www.asdan.org.uk/", "date": "20261016184510", "added": "2026-11-26", "redo_when": "sus", "matched": ["scripts: /umbraco/surface/"], "reason": "Umbraco's SurfaceController route /umbraco/surface/... in an inline script (config.dhtmlxLearnerDetailsRowValidation); its images are plain /media/<8 chars>/ urls, only a candidate (40), so asdan read Bootstrap/Material Design Lite/Umbraco? from 2022-08 to live after 5 confirmed Umbraco readings 2021-22. Upstream looked for /umbraco/Surface/ (capital S) in links and form actions only"},
+      {"site": "http://www.gem-a.com/", "date": "20151020064647", "added": "2026-11-26", "redo_when": "sus", "matched": ["all:Umbraco&"], "reason": "Umbraco 4-7's numbered /media/<id>/ images with ASP.NET (X-Powered-By, .aspx links) and no other Umbraco marker; the loose media rule alone is a candidate, so with no confirmed neighbour gem-a read Unknown 2008-16"},
+      {"site": "http://www.eacts.org/", "date": "20160903091021", "added": "2026-11-26", "redo_when": "sus", "matched": ["all:Umbraco&"], "reason": "numbered /media/<id>/ images with X-AspNet-Version and /search.aspx; read Unknown 2012-16"},
+      {"site": "http://www.reprieve.org.uk/", "date": "20141207151816", "added": "2026-11-26", "should_not": ["Umbraco"], "reason": "Django with numbered /media/<id>/ images: no ASP.NET, so not Umbraco"},
+      {"site": "http://www.fote.org.uk/", "date": "20061014222534", "added": "2026-11-26", "redo_when": "sus", "matched": ["link[href*='umbracoAutoForm.css']->exists"], "reason": "Umbraco's AutoForm stylesheet umbracoAutoForm.css (Umbraco 3/4 era); fote read Unknown/ASP.NET 2006-11 with numbered /media/ images only a candidate"},
+      {"site": "http://www.rfs.org.uk/", "date": "20141022112836", "added": "2026-11-26", "redo_when": "sus", "matched": ["input[name*='$UmbracoLoginView$']->exists"], "reason": "a member login built from Umbraco's UmbracoLoginView control (UmbracoLoginView$Login1$UserName); rfs read Unknown 2014-21"},
+      {"site": "http://www.flamingopool.co.uk/", "date": "20160315105542", "added": "2026-11-26", "should_not": ["Umbraco"], "reason": "a PHP site on a host that also sends X-Powered-By ASP.NET; its only numbered /media/ image is hotlinked from troonfc.com, so the ASP.NET + own /media/ rule must not fire"},
+      {"site": "http://www.outwardbound.org.uk/", "date": "20190318102436", "added": "2026-11-27", "redo_when": "sus", "matched": ["link[rel*='icon'][href^='/media/']->href"], "reason": "an icon link to the site's own Umbraco media item, /media/322717/favicon.ico, with 75 numbered /media/ images and no other Umbraco marker; read Umbraco to 2018-11, Craft from 2019-05. Same-site /media/<n>/ icons: 9 cached sites, all Umbraco (2026-11-27)"},
+      {"site": "https://www.begambleaware.org/", "date": "20200211152719", "added": "2026-11-27", "confidence": 30, "redo_when": "site", "reason": "Only a numbered /media/<id>/ image names it (/media/1058/logo-resize-3.png), a candidate: nginx, no ASP.NET header, cookie or .aspx, no /media/ icon. The same template (/assets/ scripts, title) read confirmed Umbraco to 2020-01-01; Drupal from 2020-12. promote_candidates takes it from that era. Replaces britishlegion 2009 as the candidate row, which its /media/ favicon and ASP.NET now confirm"},
+      {"site": "https://canoncollins.org/", "date": "20240714112224", "added": "2026-11-27", "should_not": ["Umbraco"], "reason": "WordPress whose site icon is on another host's /media/2021/02/ (a DigitalOcean Space): the icon rule is for the site's own /media/<n>/ only"}
     ]
   },
   "UMI.CMS": {
