@@ -2455,6 +2455,12 @@
     "implies": [
       "Vue.js"
     ],
+    "headers": {
+      "X-Powered-By": "^(?:HostingerWebsiteBuilder|Zyro\\.com)$"
+    },
+    "imgSrc": [
+      "//assets\\.zyrosite\\.com/"
+    ],
     "meta": {
       "generator": "Hostinger Website Builder"
     },
@@ -2466,7 +2472,11 @@
     "scriptSrc": [
       "userapp\\.zyrosite\\.com/"
     ],
-    "website": "https://www.hostinger.com"
+    "website": "https://www.hostinger.com",
+    "_tests": [
+      {"site": "https://www.xn--mgbfbk2h.com/", "date": "20250321000544", "added": "2026-11-27", "redo_when": "site", "matched": ["headers:X-Powered-By"], "reason": "X-Powered-By: HostingerWebsiteBuilder and no generator; read nothing. alaqsaschool.co.uk, read Vue.js live in prod with the same header, has no archive capture"},
+      {"site": "https://www.idx.inc/", "date": "20231206164301", "added": "2026-11-27", "redo_when": "site", "matched": ["headers:X-Powered-By"], "reason": "the builder before Hostinger renamed it: X-Powered-By: Zyro.com, fonts from assets.zyrosite.com; read Vue.js"}
+    ]
   },
   "Hostiq": {
     "cats": [
